@@ -135,7 +135,7 @@ CtxRtr
 ### Minimal Logo
 ```
 CtxRtr
-Digital Environment Management
+Contextual Prompt Router
 ```
 
 ## 📋 Usage Guidelines

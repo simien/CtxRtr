@@ -10,7 +10,7 @@ CtxRtr uses a **unified monochromatic ASCII-first** approach that creates a cons
 
 ### Primary Name: CtxRtr
 - **Official Name:** CtxRtr
-- **Full Name:** CtxRtr - Digital Environment Management
+- **Full Name:** CtxRtr - Contextual Prompt Router
 - **Source of Truth:** `README.md` (line 1)
 - **Configuration:** `config/project-config.json`
 
@@ -18,7 +18,7 @@ CtxRtr uses a **unified monochromatic ASCII-first** approach that creates a cons
 
 #### ✅ Correct Usage
 - "CtxRtr" (primary name)
-- "CtxRtr - Digital Environment Management" (full name)
+- "CtxRtr - Contextual Prompt Router" (full name)
 - "CtxRtr project"
 - "CtxRtr system"
 
@@ -112,7 +112,7 @@ CtxRtr
 ### Minimal Logo
 ```
 CtxRtr
-Digital Environment Management
+Contextual Prompt Router
 ```
 
 ## 📊 Chart Styles
@@ -161,7 +161,7 @@ The project uses `config/project-config.json` as the centralized configuration:
 {
   "project": {
     "name": "CtxRtr",
-    "fullName": "CtxRtr - Digital Environment Management",
+    "fullName": "CtxRtr - Contextual Prompt Router",
     "description": "A personal experimental project focused on improving my environment to run modern products...",
     "version": "1.0.0"
   },
@@ -282,15 +282,10 @@ Commands:
 - `structure` - Show file structure tree
 
 ### Project Name Update Script
+Removed: it was legacy scaffolding from the DigitalEnv → DgtlEnv rename, self-contradictory by the time of the CtxRtr rename, and never actually run. Check for stray old-name references directly instead:
 ```bash
-./scripts/update-project-name.sh [command]
+git grep -il "dgtlenv\|digitalenv"
 ```
-
-Commands:
-- `update` - Update all files to use CtxRtr
-- `header` - Update README header with source of truth
-- `config` - Show current project configuration
-- `validate` - Validate naming consistency
 - `guidelines` - Create naming guidelines document
 - `full` - Run complete update process
 

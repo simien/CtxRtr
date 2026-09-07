@@ -4,7 +4,7 @@
 
 ### Primary Name: CtxRtr
 - **Official Name:** CtxRtr
-- **Full Name:** CtxRtr - Digital Environment Management
+- **Full Name:** CtxRtr - Contextual Prompt Router
 - **Source of Truth:** `README.md` (line 1)
 - **Configuration:** `config/project-config.json`
 
@@ -12,14 +12,14 @@
 
 #### ✅ Correct Usage
 - "CtxRtr" (primary name)
-- "CtxRtr - Digital Environment Management" (full name)
+- "CtxRtr - Contextual Prompt Router" (full name)
 - "CtxRtr project"
 - "CtxRtr system"
 
 #### ❌ Incorrect Usage
-- "DigitalEnv" (old name)
-- "Digital Environment" (without CtxRtr)
-- "CtxRtr" (inconsistent casing)
+- "DigitalEnv" or "DgtlEnv" (old names, this project has been renamed twice: DigitalEnv → DgtlEnv → CtxRtr)
+- "Digital Environment Management" (the old full name/positioning, before the project was repositioned around the Contextual Prompt Router)
+- "ctxrtr" or "CTXRTR" (inconsistent casing; the primary name is always "CtxRtr")
 
 ### File Naming Conventions
 
@@ -45,24 +45,24 @@ PROJECT_NAME=$(jq -r '.project.name' config/project-config.json)
 
 #### Documentation
 ```markdown
-# **CtxRtr** - Digital Environment Management
+# **CtxRtr** - Local-First Agentic Tooling
 ```
 
 ### Validation
 
-Run the naming validation script:
+There used to be a `scripts/update-project-name.sh`, but it was legacy scaffolding from the DigitalEnv → DgtlEnv rename, self-contradictory by the time of the CtxRtr rename, and never actually run. It was removed rather than fixed. Check for stray old-name references directly instead:
 ```bash
-./scripts/update-project-name.sh validate
+git grep -il "dgtlenv\|digitalenv"
 ```
 
-This will check for:
-- Remaining "DigitalEnv" references
+This should check for:
+- Remaining "DgtlEnv" or "DigitalEnv" references
 - Consistent "CtxRtr" usage
 - Proper casing and formatting
 
 ### Migration Notes
 
-- All "DigitalEnv" references should be updated to "CtxRtr"
+- All "DgtlEnv" and "DigitalEnv" references should be updated to "CtxRtr", except genuinely historical/dated records (e.g. `CHANGELOG.md` entries, `docs/standards/style-system-implementation-summary.md`) describing what a past rename actually changed at the time
 - Script names should use lowercase with hyphens
 - Configuration files should reference the centralized config
 - README.md serves as the authoritative source of truth

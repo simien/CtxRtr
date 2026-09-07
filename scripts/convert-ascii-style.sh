@@ -123,7 +123,7 @@ generate_ascii_logo() {
         "minimal")
             cat << EOF
 CtxRtr
-Digital Environment Management
+Contextual Prompt Router
 EOF
             ;;
         *)
@@ -219,7 +219,7 @@ update_readme_ascii() {
 
     # Create new README content with ASCII style
     cat > "$temp_file" << EOF
-# **CtxRtr** - Digital Environment Management
+# **CtxRtr** - Contextual Prompt Router
 
 $(generate_ascii_logo "styled")
 

@@ -18,7 +18,6 @@ This directory contains utility scripts for environment management, setup, maint
 - **`create-release.sh`** - 🚀 Release management
 - **`setup-github.sh`** - 📦 GitHub repository setup
 - **`export-chat-history.sh`** - 📝 Development history export
-- **`update-project-name.sh`** - 🏷️ Project naming management
 - **`convert-ascii-style.sh`** - 🎨 Documentation styling
 
 ## Scripts by Category
@@ -156,18 +155,13 @@ Generate ASCII art and visual elements for documentation:
 
 ### Project Name Management
 
-Update and validate project naming consistency:
+Check for stray old-project-name references (this used to be handled by `update-project-name.sh`, removed as legacy scaffolding from a prior rename):
 
 ```bash
-# Show current configuration
-./scripts/update-project-name.sh config
-
-# Validate naming consistency
-./scripts/update-project-name.sh validate
-
-# Create naming guidelines
-./scripts/update-project-name.sh guidelines
+git grep -il "dgtlenv\|digitalenv"
 ```
+
+See `docs/standards/naming-guidelines.md` for the actual naming standards.
 
 ## Pre-Release Workflow
 

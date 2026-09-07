@@ -195,7 +195,7 @@ create_initial_commit() {
 - Include documentation and templates
 
 This is the initial commit for the CtxRtr project, providing
-a comprehensive digital environment management system for macOS
+a comprehensive contextual prompt routing system for macOS
 development environments."
 
     print_status "$GREEN" "✓ Initial commit created"

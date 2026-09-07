@@ -449,7 +449,7 @@ By contributing to CtxRtr, you agree that your contributions will be licensed un
 
 ## 🙏 Acknowledgments
 
-Thank you for contributing to CtxRtr! Your contributions help make digital environment management more efficient and accessible for developers worldwide.
+Thank you for contributing to CtxRtr! Your contributions help make contextual prompt routing more efficient and accessible for developers worldwide.
 
 ## 📞 Contact
 

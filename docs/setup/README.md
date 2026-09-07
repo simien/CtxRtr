@@ -1,6 +1,6 @@
 # Setup Documentation
 
-This directory contains setup and installation documentation for the DigitalEnv project.
+This directory contains setup and installation documentation for the CtxRtr project.
 
 ## Contents
 

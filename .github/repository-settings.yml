@@ -1,9 +1,9 @@
-# DigitalEnv Repository Settings
-# This file documents the recommended repository settings for the DigitalEnv project
+# CtxRtr Repository Settings
+# This file documents the recommended repository settings for the CtxRtr project
 
 repository:
   name: ctxrtr
-  description: "Digital Environment Management System for macOS - Optimized for MacBook Pro (Retina, 15-inch, Mid 2015) running macOS 12.7.6 Monterey"
+  description: "Contextual Prompt Router System for macOS - Optimized for MacBook Pro (Retina, 15-inch, Mid 2015) running macOS 12.7.6 Monterey"
   homepage: "https://example.com/"
   topics:
     - macos
@@ -102,7 +102,7 @@ milestones:
     state: "open"
 
 projects:
-  - name: "DigitalEnv Roadmap"
+  - name: "CtxRtr Roadmap"
     description: "Project roadmap and feature planning"
     visibility: "public"
   - name: "Bug Triage"

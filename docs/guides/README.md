@@ -1,6 +1,6 @@
 # Guides
 
-This directory contains step-by-step tutorials and guides for using the DigitalEnv project.
+This directory contains step-by-step tutorials and guides for using the CtxRtr project.
 
 ## Available Guides
 

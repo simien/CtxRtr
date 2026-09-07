@@ -30,7 +30,7 @@ Before setting up the GitHub repository, ensure you have:
 3. Select "New repository"
 4. Configure the repository:
    - **Repository name:** `CtxRtr`
-   - **Description:** `Digital Environment Management System for macOS - Optimized for MacBook Pro (Retina, 15-inch, Mid 2015) running macOS 12.7.6 Monterey`
+   - **Description:** `Contextual Prompt Router System for macOS - Optimized for MacBook Pro (Retina, 15-inch, Mid 2015) running macOS 12.7.6 Monterey`
    - **Visibility:** Public (recommended) or Private
    - **Initialize with:** Don't initialize (we'll use our setup script)
 
