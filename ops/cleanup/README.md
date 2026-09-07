@@ -3,8 +3,8 @@
 Scripts for cleaning up system resources to maintain optimal performance and free up disk space.
 
 ## Scripts
-- `brew-cleanup.sh` — Cleans up Homebrew cache, old versions, and unneeded packages.
-- `docker-cleanup.sh` — Removes stopped containers, dangling images, unused volumes, and networks.
+- `brew-cleanup.sh`: Cleans up Homebrew cache, old versions, and unneeded packages.
+- `docker-cleanup.sh`: Removes stopped containers, dangling images, unused volumes, and networks.
 
 ## Usage
 - Make scripts executable: `chmod +x scriptname.sh`

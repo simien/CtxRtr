@@ -3,19 +3,19 @@
 This directory contains performance tracking, metrics collection, and dashboard generation tools for monitoring environment optimization and PDF conversion progress.
 
 ## Structure
-- `dashboards/` — Visual dashboard files and templates
-- `data/` — Metrics data storage and configuration
-- `reports/` — Generated performance reports
-- `comprehensive-dashboard.sh` — Main dashboard generation script
-- `system-metrics-tracker.sh` — System performance tracking
-- `pdf-processing-dashboard.md` — PDF conversion progress tracking
-- `pdf-conversion-metrics.json` — PDF conversion metrics data
+- `dashboards/`: Visual dashboard files and templates
+- `data/`: Metrics data storage and configuration
+- `reports/`: Generated performance reports
+- `comprehensive-dashboard.sh`: Main dashboard generation script
+- `system-metrics-tracker.sh`: System performance tracking
+- `pdf-processing-dashboard.md`: PDF conversion progress tracking
+- `pdf-conversion-metrics.json`: PDF conversion metrics data
 
 ## Scripts
 
 ### Dashboard Generation
-- **`comprehensive-dashboard.sh`** — Main dashboard with system performance, PDF conversion, and optimization status
-- **`system-metrics-tracker.sh`** — Baseline, current, and comparison metrics collection
+- **`comprehensive-dashboard.sh`**: Main dashboard with system performance, PDF conversion, and optimization status
+- **`system-metrics-tracker.sh`**: Baseline, current, and comparison metrics collection
 
 ### Usage Examples
 ```bash
@@ -35,7 +35,7 @@ This directory contains performance tracking, metrics collection, and dashboard 
 
 ### System Performance Tracking
 - Memory usage and trends
-- CPU utilization monitoring
+- CPU usage monitoring
 - Disk usage and health
 - Swap activity tracking
 - SSD health monitoring
@@ -55,14 +55,14 @@ This directory contains performance tracking, metrics collection, and dashboard 
 ## Data Storage
 
 ### Metrics Data
-- `pdf-conversion-metrics.json` — PDF conversion statistics
-- `data/` — Additional metrics storage
-- `reports/` — Generated performance reports
+- `pdf-conversion-metrics.json`: PDF conversion statistics
+- `data/`: Additional metrics storage
+- `reports/`: Generated performance reports
 
 ### Dashboard Output
-- `dashboards/comprehensive-dashboard.md` — Main dashboard
-- `dashboards/before-after-comparison.md` — Performance comparison
-- `dashboards/progress-chart.md` — Visual progress tracking
+- `dashboards/comprehensive-dashboard.md`: Main dashboard
+- `dashboards/before-after-comparison.md`: Performance comparison
+- `dashboards/progress-chart.md`: Visual progress tracking
 
 ## Integration
 

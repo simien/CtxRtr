@@ -28,7 +28,7 @@ prompts/
 ## Prompt Categories
 
 ### System Optimization
-> **Performance refinement** - Prompts focused on system performance, Docker optimization, IDE management, and resource utilization
+> **Performance refinement** - Prompts focused on system performance, Docker optimization, IDE management, and resource usage
 
 ### Documentation Generation
 > **Knowledge management** - Prompts for creating, updating, and maintaining project documentation with visual enhancements and comprehensive synchronization
@@ -43,7 +43,7 @@ prompts/
 > **Utility functions** - Prompts for conversation summarization, development history export, and other utility functions
 
 ### External Skills
-> **Third-party capabilities** - Skills imported from the broader ecosystem (skills.sh) like advanced git and bash operations
+> **Third-party capabilities** - Skills imported from the broader collection (skills.sh) like advanced git and bash operations
 
 ## Usage Guidelines
 

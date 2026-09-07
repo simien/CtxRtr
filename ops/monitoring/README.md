@@ -3,8 +3,8 @@
 Scripts and helpers for monitoring system performance, resource usage, and early warning for resource exhaustion.
 
 ## Scripts
-- `swap-ssd-health.sh` — Comprehensive system health monitoring (swap usage, SSD health, SMART status)
-- `top-hogs.sh` — Quick script to show top CPU and memory consuming processes
+- `swap-ssd-health.sh`: Comprehensive system health monitoring (swap usage, SSD health, SMART status)
+- `top-hogs.sh`: Quick script to show top CPU and memory consuming processes
 
 ## Usage
 - Make scripts executable: `chmod +x scriptname.sh`
@@ -14,18 +14,18 @@ Scripts and helpers for monitoring system performance, resource usage, and early
 ## Installed Monitoring Tools
 
 ### Real-time Monitoring
-- **Stats** (v2.11.48) — Menu bar system monitor
+- **Stats** (v2.11.48): Menu bar system monitor
   - Location: Applications folder
   - Access: Click menu bar icon for detailed metrics
   - Monitors: CPU, Memory, Disk, Network usage
 
-- **htop** (v3.4.1) — Advanced process monitoring
+- **htop** (v3.4.1): Advanced process monitoring
   - Command: `sudo htop`
   - Controls: Arrow keys, F6 (sort), F9 (kill), F10 (quit)
   - Features: Interactive process list with resource usage
 
 ### Health Monitoring
-- **smartmontools** (v7.5) — SSD health monitoring
+- **smartmontools** (v7.5): SSD health monitoring
   - Command: `sudo smartctl -a disk0`
   - Monitors: SMART status, wear indicators, reallocated sectors
 

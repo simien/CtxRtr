@@ -13,11 +13,11 @@ Scripts for creating backups of the CtxRtr project and optimization configuratio
 See `docs/pdf-incoming-workflow.md` for full details.
 
 ## Scripts
-- `create-ctxrtr-backup.sh` — Creates a timestamped zip archive of the entire CtxRtr project
-- `pdf-to-markdown-converter.sh` — Converts all PDFs in `docs/incoming/` to markdown in `docs/`
-- `pdf-watcher.sh` — Watches `docs/incoming/` for new PDFs and auto-converts
-- `pdf-to-markdown-converter.sh` — Fallback/manual converter for PDFs
-- `move-converted-files.sh` — Moves markdown files from old `docs/converted/` to `docs/`
+- `create-ctxrtr-backup.sh`: Creates a timestamped zip archive of the entire CtxRtr project
+- `pdf-to-markdown-converter.sh`: Converts all PDFs in `docs/incoming/` to markdown in `docs/`
+- `pdf-watcher.sh`: Watches `docs/incoming/` for new PDFs and auto-converts
+- `pdf-to-markdown-converter.sh`: Fallback/manual converter for PDFs
+- `move-converted-files.sh`: Moves markdown files from old `docs/converted/` to `docs/`
 
 ## Usage
 - Make scripts executable: `chmod +x scriptname.sh`
@@ -31,15 +31,15 @@ See `docs/pdf-incoming-workflow.md` for full details.
 
 ### Smart Exclusions
 The backup script automatically excludes unnecessary files:
-- `.git/` — Version control files
-- `*.DS_Store` — macOS system files
-- `*.log` — Log files
-- `node_modules/` — Dependencies (can be reinstalled)
-- `*.tmp`, `*.temp`, `*.cache` — Temporary files
-- `*.swp`, `*.swo`, `*~` — Editor temporary files
-- `.vscode/settings.json`, `.cursor/settings.json` — IDE settings (personal)
-- `*.zip`, `*.tar.gz`, `*.backup` — Existing backup files
-- `docs/converted/` — (no longer used)
+- `.git/`: Version control files
+- `*.DS_Store`: macOS system files
+- `*.log`: Log files
+- `node_modules/`: Dependencies (can be reinstalled)
+- `*.tmp`, `*.temp`, `*.cache`: Temporary files
+- `*.swp`, `*.swo`, `*~`: Editor temporary files
+- `.vscode/settings.json`, `.cursor/settings.json`: IDE settings (personal)
+- `*.zip`, `*.tar.gz`, `*.backup`: Existing backup files
+- `docs/converted/`: (no longer used)
 
 ### Backup Location
 - **Default**: `~/Downloads/CtxRtr-Backups/`

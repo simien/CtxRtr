@@ -1,10 +1,10 @@
 # Prompt Categories
 
-This directory organizes prompts by functional category to ensure easy navigation and appropriate prompt selection for specific tasks.
+This directory organizes prompts by functional category to make it easy to find and select the right prompt for specific tasks.
 
 ## Category Organization
 
-Each category contains prompts designed for specific types of tasks and workflows within the CtxRtr project ecosystem.
+Each category contains prompts designed for specific types of tasks and workflows within the CtxRtr project.
 
 ### Available Categories
 

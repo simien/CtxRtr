@@ -1,6 +1,6 @@
 # docs/
 
-This directory contains comprehensive documentation for the CtxRtr project, organized by category for easy navigation and maintenance. Documentation focuses on **environment optimization** and **environment management** tools.
+This directory contains comprehensive documentation for the CtxRtr project, organized by category to make it easy to find and maintain. Documentation focuses on **environment optimization** and **environment management** tools.
 
 ## ■ Directory Structure
 
@@ -30,7 +30,7 @@ docs/
 
 ## ☐ Documentation Categories
 
-> **Refined categorization** - Sophisticated organization for optimal navigation
+> **Refined categorization** - Sophisticated organization for easy browsing
 
 ### ◆ Guides (`guides/`)
 > **Performance refinement** - Step-by-step tutorials and practical guides for environment optimization
@@ -62,7 +62,7 @@ docs/
 
 ## ▶ Quick Navigation
 
-> **Contextual navigation** - Sophisticated pathways for different user types
+> **Contextual guide** - Sophisticated pathways for different user types
 
 ### For New Users
 1. **Start with** `guides/computer-optimization-quick-reference.md` for environment optimization
@@ -71,7 +71,7 @@ docs/
 
 ### For Developers
 1. **Check** `standards/` for coding standards
-2. **Leverage** prompt system for contextual automation
+2. **Use** the prompt system for contextual automation
 
 ## ☐ Usage Examples
 
@@ -180,17 +180,17 @@ git diff docs/
 ## ■ Related Files
 
 ### Configuration
-- `config/cursor-settings.json` — Cursor IDE settings
-- `ops/templates/` — Configuration templates
+- `config/cursor-settings.json`: Cursor IDE settings
+- `ops/templates/`: Configuration templates
 
 ### Scripts
-- `ops/backup/pdf-to-markdown-converter.sh` — PDF conversion
-- `scripts/pre-release-sanitizer.sh` — Documentation sanitization
-- `scripts/sync-cursor-settings.sh` — Settings synchronization
+- `ops/backup/pdf-to-markdown-converter.sh`: PDF conversion
+- `scripts/pre-release-sanitizer.sh`: Documentation sanitization
+- `scripts/sync-cursor-settings.sh`: Settings synchronization
 
 ### Metrics
-- `metrics/pdf-processing-dashboard.md` — PDF conversion tracking
-- `metrics/comprehensive-dashboard.sh` — System performance
+- `metrics/pdf-processing-dashboard.md`: PDF conversion tracking
+- `metrics/comprehensive-dashboard.sh`: System performance
 
 ---
 

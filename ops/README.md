@@ -5,7 +5,7 @@ This directory contains operational scripts and tools for managing the CtxRtr en
 ## ■ Prompt Router System
 
 ### Overview
-The Prompt Router is a sophisticated system for managing and executing AI prompts within the CtxRtr environment. It provides modular, configurable, and robust prompt routing with advanced features like chaining, context injection, and variable substitution.
+The Prompt Router is a sophisticated system for managing and executing AI prompts within the CtxRtr environment. It provides modular, configurable, and reliable prompt routing with advanced features like chaining, context injection, and variable substitution.
 
 ### Available Scripts
 

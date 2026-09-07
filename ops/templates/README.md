@@ -5,11 +5,11 @@ This folder contains configuration and best-practice examples for optimizing you
 ## Templates Available
 
 ### Performance Optimization
-- `cursor-settings-performance.json` — Optimized Cursor IDE settings for macOS
-- `docker-compose-resource-limits-example.yml` — Example for adding CPU and memory limits to your docker-compose.yml services
+- `cursor-settings-performance.json`: Optimized Cursor IDE settings for macOS
+- `docker-compose-resource-limits-example.yml`: Example for adding CPU and memory limits to your docker-compose.yml services
 
 ### Documentation
-- `optimization-summary-template.md` — Template for documenting optimization projects and results
+- `optimization-summary-template.md`: Template for documenting optimization projects and results
 
 ## Usage
 

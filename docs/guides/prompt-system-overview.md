@@ -247,7 +247,7 @@ The analytics system provides:
 
 ### System Usage
 1. **Natural Language**: Use descriptive input like `"diagnose ci"`
-2. **Context Injection**: Leverage `{{include:}}` for dynamic content
+2. **Context Injection**: Use `{{include:}}` for dynamic content
 3. **Analytics**: Regular monitoring of usage patterns
 4. **Validation**: Run validation before major changes
 5. **Configuration**: Customize aliases and settings as needed
@@ -268,7 +268,7 @@ The analytics system provides:
 
 ## Conclusion
 
-The CtxRtr Prompt System provides a robust, extensible foundation for contextual workflows. With comprehensive validation, analytics, and natural language access, it enables efficient prompt management while maintaining high quality standards.
+The CtxRtr Prompt System provides a reliable, extensible foundation for contextual workflows. With comprehensive validation, analytics, and natural language access, it enables efficient prompt management while maintaining high quality standards.
 
 For detailed usage instructions, see [prompts/README.md](../prompts/README.md) and [docs/prompt-router-system-guide.md](prompt-router-system-guide.md).
 

@@ -4,14 +4,14 @@ This directory contains prompts designed for creating, updating, and maintaining
 
 ## Overview
 
-Documentation generation prompts focus on producing clear, consistent, and well-organized documentation that supports project understanding, navigation, and knowledge transfer.
+Documentation generation prompts focus on producing clear, consistent, and well-organized documentation that supports project understanding, easy browsing, and knowledge transfer.
 
 ## Available Prompts
 
 ### refactor-readme-concise-v1.0.0.md
-- **Purpose**: Refactor README files for brevity and improved navigation
+- **Purpose**: Refactor README files for brevity and easier browsing
 - **Use Case**: Streamlining documentation structure and user experience
-- **Output**: Concise navigation-focused README with internal links
+- **Output**: Concise, easy-to-browse README with internal links
 
 ### update-documentation-ascii-visuals-v1.0.0.md
 - **Purpose**: Enhance documentation with ASCII charts and visuals
@@ -27,7 +27,7 @@ Documentation generation prompts focus on producing clear, consistent, and well-
 
 - **Documentation Updates**: Keeping README files current and accurate
 - **Visual Enhancement**: Adding charts, diagrams, and performance metrics
-- **Content Organization**: Improving navigation and information architecture
+- **Content Organization**: Improving browsing and information architecture
 - **Synchronization**: Ensuring consistency across all documentation
 
 ## Integration Points
@@ -41,7 +41,7 @@ Documentation generation prompts focus on producing clear, consistent, and well-
 
 - Follows CtxRtr documentation standards (kebab-case, ASCII style)
 - Maintains clear, actionable content structure
-- Ensures proper internal linking and navigation
+- Ensures proper internal linking and structure
 - Creates consistent visual language and formatting
 
 ## ■ Contents
