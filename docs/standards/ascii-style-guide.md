@@ -122,8 +122,8 @@ CtxRtr
 ### Styled Logo
 ```
 ┌─────────────────────────────────────┐
-│  CtxRtr - Digital Environment     │
-│  Management System                 │
+│  CtxRtr - Contextual Prompt Router  │
+│  Local-First Agentic Tooling        │
 └─────────────────────────────────────┘
 ```
 
