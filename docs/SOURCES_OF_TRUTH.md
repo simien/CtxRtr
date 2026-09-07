@@ -54,12 +54,13 @@ The **Prompts System** (`prompts/`) is the source of truth for AI interactions, 
 
 ## 5. Workflow Standards
 
-To maintain stability, the project enforces strict branching rules.
+This is a single-branch project. `production` is the only branch: the GitHub
+default, where CI runs, and where all work happens directly. There is no
+separate `development`/`main` branch to merge through; those existed
+briefly but were never actually used that way (real work always landed
+directly on `production`), so they were removed rather than kept as unused
+overhead.
 
-| Branch            | Purpose               | Rules                                                                             |
-| ----------------- | --------------------- | --------------------------------------------------------------------------------- |
-| **`development`** | **Primary Workspace** | All active work, testing, and new features MUST start here.                       |
-| **`production`**  | Releases Only         | **NEVER** work directly on logic here. Only merge stable code from `development`. |
-
-> [!IMPORTANT]
-> **Always Work in Development**: Never commit or test directly on the `production` branch. Switch to `development` for all tasks.
+Feature branches are fine for anything you want isolated before merging back
+into `production`, but there's no standing branch you're required to route
+through.
