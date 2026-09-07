@@ -37,6 +37,7 @@ DIR_NAME=$(basename "$DIRECTORY")
 echo -e "${BLUE}Generating tree for: $DIRECTORY${NC}"
 echo
 
+echo '```'
 echo "$DIR_NAME/"
 find "$DIRECTORY" -type d -not -path "./.git*" -not -path "./.cursor*" -not -path "./.vscode*" | sort | while read -r dir; do
     if [[ "$dir" != "$DIRECTORY" ]]; then
@@ -51,14 +52,12 @@ find "$DIRECTORY" -type d -not -path "./.git*" -not -path "./.cursor*" -not -pat
     fi
 done
 
-done
-
 # Add files
 find "$DIRECTORY" -maxdepth 1 -type f -name "*.md" | sort | while read -r file; do
     basename_file=$(basename "$file")
     echo "└── $basename_file                               # Documentation file"
 done
-echo "```"
+echo '```'
 echo
 
 echo -e "${GREEN}✅ Generated accurate directory tree for '$DIRECTORY'${NC}"
