@@ -78,18 +78,3 @@ Example:
 **Total Archived:** 1 prompt
 **Archive Policy:** Automatic with manual review
 
-## ■ Contents
-
-### **Files**
-- `generate-chat-summary-title-v1.0.0.md` - [Description of purpose]
-
-### **Subdirectories**
-- No subdirectories found
-
-## ▶ Quick Start
-
-```bash
-# Example commands for this directory
-# command1
-# command2
-```

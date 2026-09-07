@@ -453,12 +453,9 @@ Thank you for contributing to CtxRtr! Your contributions help make contextual pr
 
 ## ■ Contact
 
-If you have questions or need to report a sensitive issue (such as a security vulnerability), please contact us:
-
-- **Email:** [maintainer@example.com](mailto:maintainer@example.com)
-
+For questions, open a [GitHub issue](https://github.com/simien/CtxRtr/issues). For a security vulnerability, see [SECURITY.md](SECURITY.md) instead of opening a public issue.
 
 ---
 
-**Last Updated:** 2025-07-25
+**Last Updated:** 2026-09-08
 **Version:** 1.0.0

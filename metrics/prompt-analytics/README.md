@@ -1,33 +1,13 @@
-# prompt-analytics Overview
+# Prompt Analytics
 
-**Purpose:** [Brief description of directory purpose]
-**Contents:** Main files and subdirectories in this directory
-**Usage:** How to use files in this directory
-**Related:** Links to related directories and documentation
+Point-in-time snapshots of `analyze-prompts.sh` output, kept for historical comparison.
 
 ## ■ Contents
 
-### **Files**
-- `prompt-analytics-20250728.md` - [Description of purpose]
-
-### **Subdirectories**
-- No subdirectories found
+- `prompt-analytics-20250728.md` - snapshot captured 2025-07-28
 
 ## ▶ Quick Start
 
 ```bash
-# Example commands for this directory
-# command1
-# command2
+../../scripts/analyze-prompts.sh
 ```
-
-## ■ Related Documentation
-
-- `../README.md` - Parent directory documentation
-- `../../docs/guides/` - Setup and usage guides
-
----
-
-**Last Updated:** 2025-07-29
-**Maintainer:** [Name]
-**Status:** ↻ IN PROGRESS

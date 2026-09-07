@@ -16,7 +16,6 @@ This directory contains utility scripts for environment management, setup, maint
 - **`enforce-organization-standards.sh`** - ☐ Organization standards enforcement
 - **`migrate-todo-items.sh`** - ✓ **FIXED** - Todo migration with comprehensive reporting
 - **`create-release.sh`** - ▶ Release management
-- **`setup-github.sh`** - ■ GitHub repository setup
 - **`export-chat-history.sh`** - ■ Development history export
 - **`convert-ascii-style.sh`** - ■ Documentation styling
 
@@ -52,13 +51,6 @@ The sanitizer automatically checks for and fixes personal information, credentia
 - Sanitizes personal information in documentation
 - Fixes file permissions for security
 - Generates detailed reports
-
-### GitHub Setup
-
-```bash
-# Setup GitHub repository with best practices
-./scripts/setup-github.sh -r https://github.com/username/repository.git
-```
 
 ### Release Management
 
@@ -222,25 +214,3 @@ Regular maintenance to ensure clean organization:
 **Last Updated:** 2025-07-27 (Migration Script Fixed)
 **Maintainer:** CtxRtr Maintainer
 
-## ■ Contents
-
-### **Files**
-- `manage-readmes.sh` - Unified tool for creating, updating, and validating README files
-- `get-prompt-content.sh` - [Description of purpose]
-- `audit-prompts.sh` - [Description of purpose]
-- `start-promptrouter-migration.sh` - [Description of purpose]
-- `convert-ascii-style.sh` - [Description of purpose]
-- `analyze-prompts.sh` - [Description of purpose]
-- `validate-prompts.sh` - [Description of purpose]
-- `pre-release-sanitizer.sh` - [Description of purpose]
-
-### **Subdirectories**
-- No subdirectories found
-
-## ▶ Quick Start
-
-```bash
-# Example commands for this directory
-# command1
-# command2
-```

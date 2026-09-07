@@ -70,7 +70,7 @@ cmd_create_single() {
 **Usage:** How to use files in this directory
 **Related:** Links to related documentation
 
-## 📁 Contents
+## ■ Contents
 
 ### **Files**
 EOF
@@ -102,13 +102,13 @@ EOF
 
     cat >> "$directory/README.md" << EOF
 
-## 🚀 Quick Start
+## ▶ Quick Start
 
 \`\`\`bash
 # Example commands
 \`\`\`
 
-## 🔗 Related Documentation
+## ■ Related Documentation
 - \`../README.md\` - Parent directory
 
 ---
@@ -135,8 +135,8 @@ cmd_scan_missing() {
              cat > "$dir/README.md" << EOF
 # $dir_name Overview
 **Purpose:** Auto-generated placeholder
-## 📁 Contents
-## 🚀 Quick Start
+## ■ Contents
+## ▶ Quick Start
 EOF
             log_success "Generated placeholder for $dir"
             created_count=$((created_count + 1))
@@ -153,16 +153,16 @@ cmd_batch_update() {
 
     while IFS= read -r -d '' file; do
         if [ -f "$file" ]; then
-             if ! grep -q "## 📁 Contents" "$file" || ! grep -q "## 🚀 Quick Start" "$file"; then
+             if ! grep -q "## ■ Contents" "$file" || ! grep -q "## ▶ Quick Start" "$file"; then
                 log_info "Updating: $file"
                 cp "$file" "$file.backup"
 
                 # Append missing sections safely
-                if ! grep -q "## 📁 Contents" "$file"; then
-                    echo -e "\n## 📁 Contents\n\n### **Files**\n[Auto-generated section]\n\n### **Subdirectories**\n" >> "$file"
+                if ! grep -q "## ■ Contents" "$file"; then
+                    echo -e "\n## ■ Contents\n\n### **Files**\n[Auto-generated section]\n\n### **Subdirectories**\n" >> "$file"
                 fi
-                if ! grep -q "## 🚀 Quick Start" "$file"; then
-                    echo -e "\n## 🚀 Quick Start\n\`\`\`bash\n# commands\n\`\`\`\n" >> "$file"
+                if ! grep -q "## ▶ Quick Start" "$file"; then
+                    echo -e "\n## ▶ Quick Start\n\`\`\`bash\n# commands\n\`\`\`\n" >> "$file"
                 fi
                 updated_count=$((updated_count + 1))
              fi
@@ -183,7 +183,7 @@ cmd_check() {
     while IFS= read -r -d '' dir; do
         total=$((total + 1))
         if [ -f "$dir/README.md" ]; then
-             if grep -q "## 📁 Contents" "$dir/README.md" && grep -q "## 🚀 Quick Start" "$dir/README.md"; then
+             if grep -q "## ■ Contents" "$dir/README.md" && grep -q "## ▶ Quick Start" "$dir/README.md"; then
                 valid=$((valid + 1))
              else
                 echo -e "${YELLOW}Invalid:${NC} $dir/README.md"

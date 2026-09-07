@@ -1,6 +1,9 @@
 # CtxRtr Coding Standards
 
-This document defines the mandatory coding standards for the CtxRtr project. These standards are enforced to ensure maintainability, reliability, and security.
+This document defines the coding standards for the CtxRtr project: clarity over
+brevity, consistency within a file and across the project. There's no linter
+or formatter wired into CI to enforce these automatically; they're applied by
+hand during review.
 
 ## 1. Bash Scripting Standards
 

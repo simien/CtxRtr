@@ -239,7 +239,6 @@ Disk Usage: 21% ✓ (Target: < 85%)
 #### Security & Release Management
 - **`./scripts/pre-release-sanitizer.sh`** - Security sanitization
 - **`./scripts/create-release.sh`** - Release management
-- **`./scripts/setup-github.sh`** - GitHub repository setup
 
 #### Todo Management & Quality Control
 - **`./scripts/migrate-todo-items.sh`** - Automated todo migration with comprehensive reporting
@@ -305,9 +304,7 @@ Disk Usage: 21% ✓ (Target: < 85%)
 - **[Test Suite](tests/README.md)** - Validation and testing with interactive and automated modes
 
 ### Setup & Configuration
-> **Configuration management** - Setup guides and development standards
 
-- **[GitHub Setup Guide](docs/setup/github-setup.md)** - Repository configuration
 - **[Contributing Guidelines](CONTRIBUTING.md)** - Development standards
 - **[Security Policies](security/README.md)** - Security and audit information
 
@@ -331,10 +328,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## ■ Contact Information
 
-**Name:** CtxRtr Maintainer
-**Email:** maintainer@example.com
-**Website:** [example.com](https://example.com/)
-**GitHub:** [simien](https://github.com/simien)
+**Maintainer:** [simien](https://github.com/simien)
+**Issues and questions:** [GitHub Issues](https://github.com/simien/CtxRtr/issues)
+**Security reports:** see [SECURITY.md](SECURITY.md)
 
 ## ■ Project Structure
 

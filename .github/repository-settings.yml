@@ -2,9 +2,9 @@
 # This file documents the recommended repository settings for the CtxRtr project
 
 repository:
-  name: ctxrtr
-  description: "Contextual Prompt Router System for macOS - Optimized for MacBook Pro (Retina, 15-inch, Mid 2015) running macOS 12.7.6 Monterey"
-  homepage: "https://example.com/"
+  name: CtxRtr
+  description: "Local-first agentic tooling. Versioned, validated and audited Contextual Prompt Router."
+  homepage: "https://github.com/simien/CtxRtr"
   topics:
     - macos
     - system-optimization
@@ -28,7 +28,7 @@ features:
   pages: false
 
 branches:
-  main:
+  production:
     protection:
       required_status_checks:
         strict: true

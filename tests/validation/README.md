@@ -1,35 +1,17 @@
-# validation Overview
+# Validation Scripts
 
-**Purpose:** [Brief description of directory purpose]
-**Contents:** Main files and subdirectories in this directory
-**Usage:** How to use files in this directory
-**Related:** Links to related directories and documentation
+Standalone resource-usage checks, called by the metrics and monitoring tooling.
 
 ## ■ Contents
 
-### **Files**
-- `check-memory-usage.sh` - [Description of purpose]
-- `check-cpu-usage.sh` - [Description of purpose]
-- `check-disk-usage.sh` - [Description of purpose]
-
-### **Subdirectories**
-- No subdirectories found
+- `check-memory-usage.sh` - prints current memory usage as a percentage
+- `check-cpu-usage.sh` - prints current CPU usage as a percentage
+- `check-disk-usage.sh` - prints current disk usage as a percentage
 
 ## ▶ Quick Start
 
 ```bash
-# Example commands for this directory
-# command1
-# command2
+./check-memory-usage.sh
+./check-cpu-usage.sh
+./check-disk-usage.sh
 ```
-
-## ■ Related Documentation
-
-- `../README.md` - Parent directory documentation
-- `../../docs/guides/` - Setup and usage guides
-
----
-
-**Last Updated:** 2025-07-29
-**Maintainer:** [Name]
-**Status:** ↻ IN PROGRESS

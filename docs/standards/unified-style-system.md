@@ -342,7 +342,7 @@ CtxRtr/
 
 ## ■ Related Documentation
 
-- **ASCII Style Guide:** `docs/ascii-style-guide.md` - Detailed ASCII art system
+- **ASCII Style Guide:** `docs/standards/ascii-style-guide.md` - Detailed ASCII art system
 - **Naming Guidelines:** `docs/naming-guidelines.md` - Project naming standards
 - **Project Configuration:** `config/project-config.json` - Centralized configuration
 - **Source of Truth:** `README.md` - Authoritative project name reference

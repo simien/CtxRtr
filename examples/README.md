@@ -64,17 +64,3 @@ cp examples/configuration/cursor-ide-example.json config/cursor-ide.json
 - `../ops/` - Operation scripts
 - `../tests/` - Test examples
 
-## ■ Contents
-
-### **Files**
-
-### **Subdirectories**
-- No subdirectories found
-
-## ▶ Quick Start
-
-```bash
-# Example commands for this directory
-# command1
-# command2
-```

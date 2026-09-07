@@ -33,17 +33,3 @@ This data is used by:
 - `../reports/` - Generated performance reports
 - `../../ops/monitoring/` - Monitoring scripts
 
-## ■ Contents
-
-### **Files**
-
-### **Subdirectories**
-- No subdirectories found
-
-## ▶ Quick Start
-
-```bash
-# Example commands for this directory
-# command1
-# command2
-```

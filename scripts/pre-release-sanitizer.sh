@@ -70,8 +70,6 @@ EXCLUDE_PATTERNS=(
     "*.backup"
     "*.pdf"
     "*pre-release-sanitizer.sh"
-    "security/audit-reports"
-    "todos/pre-release-workflow-todo.md"
     "security/README.md"
 )
 

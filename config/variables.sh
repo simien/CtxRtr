@@ -29,7 +29,6 @@ if [[ -f "$CONFIG_FILE" ]] && command -v jq >/dev/null 2>&1; then
     export PATH_CONFIG=$(jq -r '.paths.config' "$CONFIG_FILE")
     export PATH_TESTS=$(jq -r '.paths.tests' "$CONFIG_FILE")
     export PATH_EXAMPLES=$(jq -r '.paths.examples' "$CONFIG_FILE")
-    export PATH_TODOS=$(jq -r '.paths.todos' "$CONFIG_FILE")
     export PATH_LOGS=$(jq -r '.paths.logs' "$CONFIG_FILE")
 
     # Export System Variables
@@ -37,9 +36,9 @@ if [[ -f "$CONFIG_FILE" ]] && command -v jq >/dev/null 2>&1; then
     export TARGET_OS=$(jq -r '.system.targetOS' "$CONFIG_FILE")
 else
     # Fallback
-    export CONTACT_NAME="CtxRtr Maintainer"
-    export CONTACT_EMAIL="maintainer@example.com"
-    export CONTACT_WEBSITE="https://example.com/"
+    export CONTACT_NAME="simien"
+    export CONTACT_EMAIL=""
+    export CONTACT_WEBSITE="https://github.com/simien/CtxRtr"
     export CONTACT_GITHUB="simien"
 
     export PATH_ROOT="./"
@@ -51,7 +50,6 @@ else
     export PATH_CONFIG="./config/"
     export PATH_TESTS="./tests/"
     export PATH_EXAMPLES="./examples/"
-    export PATH_TODOS="./todos/"
     export PATH_LOGS="./logs/"
 
     export PROJECT_VERSION="1.0.0"

@@ -4,23 +4,18 @@ This directory contains comprehensive documentation for the CtxRtr project, orga
 
 ## ■ Directory Structure
 
-> **Sophisticated organization** - A refined structure for comprehensive documentation
-
 ```
 docs/
 ├── README.md                                    # This file - main documentation index
 ├── SOURCES_OF_TRUTH.md                          # Central definition of contact info, config, and structure
 ├── guides/                                      # Step-by-step tutorials and guides
 ├── incoming/                                    # Drop zone for new documentation (sanitized)
-├── setup/                                       # Installation and configuration
 ├── standards/                                   # Coding, naming, and documentation standards
 └── templates/                                   # Reusable document templates
 
 ```
 
 ## ■ Sources of Truth
-
-> **Single Source of Truth (SSOT)** - The definitive references for the project.
 
 *   **[SOURCES_OF_TRUTH.md](./SOURCES_OF_TRUTH.md)**: The master document containing:
     *   **Contact Information**: Centralized author and project details.
@@ -30,31 +25,20 @@ docs/
 
 ## ☐ Documentation Categories
 
-> **Refined categorization** - Sophisticated organization for easy browsing
-
 ### ◆ Guides (`guides/`)
-> **Performance refinement** - Step-by-step tutorials and practical guides for environment optimization
 
 - **Environment Optimization** - Comprehensive optimization strategies for your Mac
 - **Cursor/VS Code Settings** - IDE configuration and sync
 - **Development Workflows** - Best practices and procedures
 
-### ⚙️ Setup (`setup/`)
-> **Configuration management** - Installation and configuration
-
-- **GitHub Setup** - Repository configuration and management
-- **Installation Guides** - Setup procedures and requirements
-
 ### ■ Standards (`standards/`)
-> **Consistency & Quality** - Coding, naming, and documentation standards
 
 - **ASCII Style Guide** - Visual elements and art
 - **Naming Guidelines** - File and directory conventions
 - **Unified Style System** - Comprehensive design standards
 - **Coding Standards** - Best practices for scripts
 
-### ■ Contextual Systems (`prompt-system-overview.md`)
-> **Sophisticated orchestration** - Advanced contextual prompt management and automation
+### ■ Contextual Systems (`guides/prompt-system-overview.md`)
 
 - **Prompt System Overview** - Comprehensive prompt management documentation
 - **Router Architecture** - Semantic prompt routing and discovery
@@ -62,12 +46,9 @@ docs/
 
 ## ▶ Quick Navigation
 
-> **Contextual guide** - Sophisticated pathways for different user types
-
 ### For New Users
 1. **Start with** `guides/computer-optimization-quick-reference.md` for environment optimization
-2. **Review** `setup/` for installation requirements
-3. **Check** `standards/` for project conventions
+2. **Check** `standards/` for project conventions
 
 ### For Developers
 1. **Check** `standards/` for coding standards
@@ -75,10 +56,7 @@ docs/
 
 ## ☐ Usage Examples
 
-> **Practical orchestration** - Sophisticated workflows for common tasks
-
 ### PDF Conversion Workflow
-> **Document orchestration** - Automated PDF processing and conversion workflow
 
 ```bash
 # Add PDF to incoming directory
@@ -92,7 +70,6 @@ cp document.pdf docs/incoming/
 ```
 
 ### System Optimization
-> **Performance refinement** - Comprehensive system optimization and health monitoring
 
 ```bash
 # Apply optimization settings
@@ -106,21 +83,16 @@ cp document.pdf docs/incoming/
 ```
 
 ### Documentation Updates
-> **Knowledge management** - Automated documentation generation and maintenance
 
 ```bash
 # Update optimization documentation
 ./metrics/system-metrics-tracker.sh compare
-
-# Generate new documentation
-./docs/setup/github-setup.md
 
 # Review documentation structure
 find docs/ -name "*.md" -type f
 ```
 
 ### Prompt System Management
-> **Contextual orchestration** - Advanced prompt management and analytics
 
 ```bash
 # Run prompt analytics
@@ -180,7 +152,7 @@ git diff docs/
 ## ■ Related Files
 
 ### Configuration
-- `config/cursor-settings.json`: Cursor IDE settings
+- `config/ide-settings.json`: Cursor IDE settings
 - `ops/templates/`: Configuration templates
 
 ### Scripts
@@ -194,27 +166,5 @@ git diff docs/
 
 ---
 
-**Last Updated:** 2025-07-27
-**Maintainer:** CtxRtr Maintainer
-**Status:** ✓ Reorganized and optimized
+**Maintainer:** simien
 
-## ■ Contents
-
-### **Files**
-
-### **Subdirectories**
-- `development-history/` - [Description of contents]
-- `setup/` - [Description of contents]
-- `workflows/` - [Description of contents]
-- `style/` - [Description of contents]
-- `guides/` - [Description of contents]
-- `incoming/` - [Description of contents]
-- `reports/` - [Description of contents]
-
-## ▶ Quick Start
-
-```bash
-# Example commands for this directory
-# command1
-# command2
-```

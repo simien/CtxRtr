@@ -10,13 +10,13 @@ This document serves as the primary index for the project's "Sources of Truth". 
 
 The following contact details are the official project standards. They are programmatically defined in `config/variables.sh` and `config/project-config.json`.
 
-| Field           | Value                     | Variable (Bash)   | Key (JSON)           |
-| --------------- | ------------------------- | ----------------- | -------------------- |
-| **Name**        | CtxRtr Maintainer       | `CONTACT_NAME`    | `project.author`     |
-| **Email**       | maintainer@example.com        | `CONTACT_EMAIL`   | `project.email`      |
-| **Website**     | https://example.com/ | `CONTACT_WEBSITE` | `project.website`    |
-| **GitHub User** | simien                    | `CONTACT_GITHUB`  | *N/A*                |
-| **Repository**  | simien/CtxRtr            | *N/A*             | `project.repository` |
+| Field           | Value                            | Variable (Bash)   | Key (JSON)            |
+| --------------- | --------------------------------- | ----------------- | --------------------- |
+| **Name**        | simien                            | `CONTACT_NAME`    | `project.author`      |
+| **Email**       | (none; use GitHub Issues instead) | `CONTACT_EMAIL`   | `project.email`       |
+| **Website**     | https://github.com/simien/CtxRtr  | `CONTACT_WEBSITE` | `project.website`     |
+| **GitHub User** | simien                            | `CONTACT_GITHUB`  | *N/A*                 |
+| **Repository**  | simien/CtxRtr                     | *N/A*              | `project.repository` |
 
 > **Note**: To update these values, modify `config/project-config.json` and `config/variables.sh`.
 

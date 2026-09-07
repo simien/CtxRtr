@@ -141,19 +141,3 @@ When creating new prompts:
 - **Integration**: Proper links to project components
 - **Maintenance**: Regular updates and version control
 
-## ■ Contents
-
-### **Files**
-- `prompt-format-template-v1.0.0.md` - [Description of purpose]
-
-### **Subdirectories**
-- `archived/` - [Description of contents]
-- `categories/` - [Description of contents]
-
-## ▶ Quick Start
-
-```bash
-# Example commands for this directory
-# command1
-# command2
-```

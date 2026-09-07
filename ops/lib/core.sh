@@ -254,12 +254,11 @@ substitute_variables() {
                     | sed "s/{{time}}/$(date +%H:%M:%S)/g" \
                     | sed "s/{{timestamp}}/$(date +%Y%m%d-%H%M%S)/g" \
                     | sed "s/{{project}}/CtxRtr/g" \
-                    | sed "s/{{project}}/CtxRtr/g" \
                     | sed "s/{{user}}/$(whoami)/g" \
                     | sed "s|{{pwd}}|$(pwd)|g" \
-                    | sed "s/{{contact_name}}/${CONTACT_NAME:-CtxRtr Maintainer}/g" \
-                    | sed "s/{{contact_email}}/${CONTACT_EMAIL:-maintainer@example.com}/g" \
-                    | sed "s|{{contact_website}}|${CONTACT_WEBSITE:-https://example.com/}|g" \
+                    | sed "s/{{contact_name}}/${CONTACT_NAME:-simien}/g" \
+                    | sed "s/{{contact_email}}/${CONTACT_EMAIL:-}/g" \
+                    | sed "s|{{contact_website}}|${CONTACT_WEBSITE:-https://github.com/simien/CtxRtr}|g" \
                     | sed "s/{{contact_github}}/${CONTACT_GITHUB:-simien}/g"
 }
 

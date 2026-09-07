@@ -144,19 +144,4 @@ SMART Status: Verified
 - Keep Stats running in menu bar for real-time monitoring
 - Use htop regularly to identify memory-intensive processes
 - Run health checks weekly to catch issues early
-## ■ Contents
 
-### **Files**
-- `top-hogs.sh` - [Description of purpose]
-- `swap-ssd-health.sh` - [Description of purpose]
-
-### **Subdirectories**
-- No subdirectories found
-
-## ▶ Quick Start
-
-```bash
-# Example commands for this directory
-# command1
-# command2
-```

@@ -1,38 +1,34 @@
 # Security
 
-## Reporting a Vulnerability
+CtxRtr is a personal project maintained by one person. There is no security
+team and no service-level agreement, but reports are taken seriously and
+looked at promptly.
 
-If you discover a security vulnerability within this project, please send an email to [maintainer@example.com]. All security vulnerabilities will be promptly addressed.
+## Reporting a vulnerability
 
-## Security Policy
+Use [GitHub Security Advisories](https://github.com/simien/CtxRtr/security/advisories/new)
+to report a vulnerability privately. Do not open a public issue for a
+security problem.
 
-This project follows security best practices and maintains a security-first approach to development.
+Include what you can:
 
-### Security Measures
+- What the issue is and where it lives (file, script, or config)
+- Steps to reproduce it
+- What you'd expect to happen versus what actually happens
 
-- Regular security audits
-- Dependency vulnerability scanning
-- Code review processes
-- Secure development practices
+## Supported versions
 
-### Security Directory
+Only the current `production` branch is supported. There are no maintained
+older versions.
 
-For detailed security documentation, policies, and audit reports, see the [`security/`](./security/) directory:
+## Scope
 
-- **Policies**: Security policies and guidelines
-- **Audit Reports**: Security audit findings and recommendations
-- **README**: Security documentation overview
+This project is a set of local shell scripts and prompt-router tooling that
+runs on one person's machine. It does not handle other users' data, run a
+public service, or expose a network endpoint by default. Most findings will
+be about script safety (path handling, input validation, accidental
+overwrites) rather than classic web vulnerabilities.
 
-## Supported Versions
-
-| Version | Supported          |
-| ------- | ------------------ |
-| 1.x.x   | :white_check_mark: |
-
-## Security Updates
-
-Security updates are released as needed and will be documented in the [CHANGELOG.md](./CHANGELOG.md).
-
-## Contact
-
-For security-related questions or concerns, please refer to the security documentation in the [`security/`](./security/) directory or contact the maintainers.
+See [`security/policies/security.md`](security/policies/security.md) for
+the project's internal security practices (what the scripts do to protect
+against these issues, and known limitations).

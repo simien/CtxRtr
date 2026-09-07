@@ -155,22 +155,4 @@ Backup completed at Thu Jul 25 14:30:22 PDT 2025
 ### Cleanup Integration
 - Run `../cleanup/brew-cleanup.sh` before backup to reduce size
 - Use `../cleanup/docker-cleanup.sh` to clean Docker resources 
-## ■ Contents
 
-### **Files**
-- `pdf-watcher.sh` - [Description of purpose]
-- `pdf-to-markdown-converter.sh` - [Description of purpose]
-- `move-converted-files.sh` - [Description of purpose]
-- `pdf-to-markdown-converter.sh` - [Description of purpose]
-- `create-ctxrtr-backup.sh` - [Description of purpose]
-
-### **Subdirectories**
-- No subdirectories found
-
-## ▶ Quick Start
-
-```bash
-# Example commands for this directory
-# command1
-# command2
-```
