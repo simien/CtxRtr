@@ -94,13 +94,13 @@ sudo smartctl -a disk0
 === Swap & SSD Health Check - 2025-07-25 17:17:01 ===
 --- Swap Usage ---
 vm.swapusage: total = 2048.00M  used = 315.75M  free = 1732.25M  (encrypted)
-⚠️  WARNING: High swap usage detected (100%)
+[!]  WARNING: High swap usage detected (100%)
    Consider closing unused apps or adding more RAM
 --- Pageouts (Active Swapping) ---
-✅ No active swapping detected
+✓ No active swapping detected
 --- SSD Health ---
 SMART Status: Verified
-✅ SSD SMART status is verified
+✓ SSD SMART status is verified
 ```
 
 ---
@@ -144,7 +144,7 @@ SMART Status: Verified
 - Keep Stats running in menu bar for real-time monitoring
 - Use htop regularly to identify memory-intensive processes
 - Run health checks weekly to catch issues early
-## 📁 Contents
+## ■ Contents
 
 ### **Files**
 - `top-hogs.sh` - [Description of purpose]
@@ -153,7 +153,7 @@ SMART Status: Verified
 ### **Subdirectories**
 - No subdirectories found
 
-## 🚀 Quick Start
+## ▶ Quick Start
 
 ```bash
 # Example commands for this directory

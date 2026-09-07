@@ -99,7 +99,7 @@ tests/
 - `../metrics/` - Performance tracking and dashboard tools
 - `../docs/` - Documentation being validated
 
-## 📁 Contents
+## ■ Contents
 
 ### **Files**
 - `interactive-cursor-sync.sh` - [Description of purpose]
@@ -109,7 +109,7 @@ tests/
 ### **Subdirectories**
 - `validation/` - [Description of contents]
 
-## 🚀 Quick Start
+## ▶ Quick Start
 
 ```bash
 # Example commands for this directory

@@ -54,7 +54,7 @@ source config/environment.sh
 - `../docs/` - Configuration documentation
 - `../examples/` - Usage examples
 
-## 📁 Contents
+## ■ Contents
 
 ### **Files**
 - `cursor-settings.json` - [Description of purpose]
@@ -64,7 +64,7 @@ source config/environment.sh
 ### **Subdirectories**
 - No subdirectories found
 
-## 🚀 Quick Start
+## ▶ Quick Start
 
 ```bash
 # Example commands for this directory

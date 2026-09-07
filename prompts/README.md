@@ -53,19 +53,19 @@ prompts/
 4. **Documentation**: Maintain clear instructions and expected outputs
 5. **Standards**: Follow CtxRtr naming conventions (kebab-case, ASCII style)
 
-## 📊 Current System Analytics (July 28, 2025)
+## ■ Current System Analytics (July 28, 2025)
 
 > **Performance insights** - Comprehensive analytics for prompt system optimization
 
 ### Quality Control Results
 > **Performance insights** - Comprehensive quality control and validation metrics
 
-- **Validation Status**: ✅ All prompts passed validation (24/24)
-- **Template Compliance**: 100% ✅
-- **Metadata Completeness**: 100% ✅
-- **Version Consistency**: 100% ✅
-- **File Naming Standards**: 100% ✅
-- **Outdated Version Management**: 100% ✅
+- **Validation Status**: ✓ All prompts passed validation (24/24)
+- **Template Compliance**: 100% ✓
+- **Metadata Completeness**: 100% ✓
+- **Version Consistency**: 100% ✓
+- **File Naming Standards**: 100% ✓
+- **Outdated Version Management**: 100% ✓
 
 ### System Metrics
 > **Performance tracking** - Real-time system metrics and analytics
@@ -141,7 +141,7 @@ When creating new prompts:
 - **Integration**: Proper links to project components
 - **Maintenance**: Regular updates and version control
 
-## 📁 Contents
+## ■ Contents
 
 ### **Files**
 - `prompt-format-template-v1.0.0.md` - [Description of purpose]
@@ -150,7 +150,7 @@ When creating new prompts:
 - `archived/` - [Description of contents]
 - `categories/` - [Description of contents]
 
-## 🚀 Quick Start
+## ▶ Quick Start
 
 ```bash
 # Example commands for this directory

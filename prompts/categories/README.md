@@ -34,7 +34,7 @@ All categories maintain consistent:
 - Documentation standards
 - Integration with project components
 
-## 📁 Contents
+## ■ Contents
 
 ### **Files**
 
@@ -45,7 +45,7 @@ All categories maintain consistent:
 - `meta-prompts/` - [Description of contents]
 - `workflow-management/` - [Description of contents]
 
-## 🚀 Quick Start
+## ▶ Quick Start
 
 ```bash
 # Example commands for this directory

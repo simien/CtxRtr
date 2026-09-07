@@ -2,7 +2,7 @@
 
 This directory contains comprehensive documentation for the CtxRtr project, organized by category for easy navigation and maintenance. Documentation focuses on **environment optimization** and **environment management** tools.
 
-## 📁 Directory Structure
+## ■ Directory Structure
 
 > **Sophisticated organization** - A refined structure for comprehensive documentation
 
@@ -18,7 +18,7 @@ docs/
 
 ```
 
-## 🌟 Sources of Truth
+## ■ Sources of Truth
 
 > **Single Source of Truth (SSOT)** - The definitive references for the project.
 
@@ -28,11 +28,11 @@ docs/
     *   **Directory Authority**: What each folder represents.
     *   **Prompt System Index**: How to use the AI interaction layer.
 
-## 📋 Documentation Categories
+## ☐ Documentation Categories
 
 > **Refined categorization** - Sophisticated organization for optimal navigation
 
-### 🎯 Guides (`guides/`)
+### ◆ Guides (`guides/`)
 > **Performance refinement** - Step-by-step tutorials and practical guides for environment optimization
 
 - **Environment Optimization** - Comprehensive optimization strategies for your Mac
@@ -45,7 +45,7 @@ docs/
 - **GitHub Setup** - Repository configuration and management
 - **Installation Guides** - Setup procedures and requirements
 
-### 📏 Standards (`standards/`)
+### ■ Standards (`standards/`)
 > **Consistency & Quality** - Coding, naming, and documentation standards
 
 - **ASCII Style Guide** - Visual elements and art
@@ -53,14 +53,14 @@ docs/
 - **Unified Style System** - Comprehensive design standards
 - **Coding Standards** - Best practices for scripts
 
-### 🧠 Contextual Systems (`prompt-system-overview.md`)
+### ■ Contextual Systems (`prompt-system-overview.md`)
 > **Sophisticated orchestration** - Advanced contextual prompt management and automation
 
 - **Prompt System Overview** - Comprehensive prompt management documentation
 - **Router Architecture** - Semantic prompt routing and discovery
 - **Quality Control** - Validation and analytics systems
 
-## 🚀 Quick Navigation
+## ▶ Quick Navigation
 
 > **Contextual navigation** - Sophisticated pathways for different user types
 
@@ -73,7 +73,7 @@ docs/
 1. **Check** `standards/` for coding standards
 2. **Leverage** prompt system for contextual automation
 
-## 📋 Usage Examples
+## ☐ Usage Examples
 
 > **Practical orchestration** - Sophisticated workflows for common tasks
 
@@ -140,7 +140,7 @@ find docs/ -name "*.md" -type f
 ./scripts/audit-prompts.sh --archive
 ```
 
-## 🔗 Integration
+## ■ Integration
 
 ### Pre-Release Workflow
 Documentation is automatically sanitized during pre-release to ensure quality and security:
@@ -162,7 +162,7 @@ git diff docs/
 - Paths are converted to relative references
 - Examples are made generic and reusable
 
-## 📈 Maintenance
+## ↗ Maintenance
 
 ### Regular Tasks
 - Update optimization documentation monthly
@@ -177,7 +177,7 @@ git diff docs/
 - Include troubleshooting sections
 - Follow markdown best practices
 
-## 🔗 Related Files
+## ■ Related Files
 
 ### Configuration
 - `config/cursor-settings.json` — Cursor IDE settings
@@ -196,9 +196,9 @@ git diff docs/
 
 **Last Updated:** 2025-07-27
 **Maintainer:** CtxRtr Maintainer
-**Status:** ✅ Reorganized and optimized
+**Status:** ✓ Reorganized and optimized
 
-## 📁 Contents
+## ■ Contents
 
 ### **Files**
 
@@ -211,7 +211,7 @@ git diff docs/
 - `incoming/` - [Description of contents]
 - `reports/` - [Description of contents]
 
-## 🚀 Quick Start
+## ▶ Quick Start
 
 ```bash
 # Example commands for this directory

@@ -10,11 +10,11 @@
 
 ---
 
-## 🎯 What is CtxRtr?
+## ◆ What is CtxRtr?
 
 **CtxRtr** is two things that turned out to depend on each other. The headline is a **Contextual Prompt Router**: a versioned, validated, and audited prompt library, treated with the same discipline you'd expect from a codebase rather than a folder of text files. The reason it exists at all is the second thing: everything here runs on a **2015 MacBook Pro**, with no cloud compute and no assumption of headroom. Most agentic-dev tooling quietly assumes an unlimited-resource machine. This is what it looks like to build that tooling somewhere resource actually matters, and to monitor the machine closely enough to trust the result.
 
-**💡 Leverage what works well, share how you implement it, and please contribute if you would like to.**
+**[*] Leverage what works well, share how you implement it, and please contribute if you would like to.**
 
 ### **Primary Focus: Contextual Prompt Router (PromptOps)**
 > **Prompts as a versioned, governed system**, not just a folder of `.md` files
@@ -35,7 +35,7 @@
 
 ---
 
-## 🚀 Quick Start
+## ▶ Quick Start
 
 ### Installation
 ```bash
@@ -113,7 +113,7 @@ chmod +x ops/monitoring/swap-ssd-health.sh
 
 ---
 
-## 🧠 Contextual Prompt Router: PromptOps in Detail
+## ■ Contextual Prompt Router: PromptOps in Detail
 
 > **Prompts treated like code**: versioned, validated, audited, and measured, not just written down
 
@@ -129,7 +129,7 @@ chmod +x ops/monitoring/swap-ssd-health.sh
 > **Illustrative snapshot**: captured 2025-07-28, kept here to show what `analyze-prompts.sh` reports. Run it yourself for current numbers
 
 ```
-📊 Prompt Structure Analysis
+■ Prompt Structure Analysis
 ==========================
 Total prompts: 24 (active)
 Archived prompts: 1 (properly managed)
@@ -142,16 +142,16 @@ Prompts by category:
   system-optimization         5 (20%)
   workflow-management         6 (25%)
 
-📈 Quality Metrics
+↗ Quality Metrics
 =================
-Template Compliance: 100% ✅
-Metadata Completeness: 100% ✅
-Version Consistency: 100% ✅
-File Naming Standards: 100% ✅
-Validation Success Rate: 100% ✅
-Outdated Version Management: 100% ✅
+Template Compliance: 100% ✓
+Metadata Completeness: 100% ✓
+Version Consistency: 100% ✓
+File Naming Standards: 100% ✓
+Validation Success Rate: 100% ✓
+Outdated Version Management: 100% ✓
 
-📦 Version Management
+■ Version Management
 ====================
 Active prompts: 24 (clean, current versions only)
 Archived prompts: 1 (outdated version)
@@ -159,43 +159,43 @@ Outdated versions: 0 (all handled)
 Archive system: 100% operational
 ```
 
-**📖 See [prompts/README.md](prompts/README.md) for detailed prompt system documentation**
+**[#] See [prompts/README.md](prompts/README.md) for detailed prompt system documentation**
 
-**📚 See [docs/guides/prompt-system-overview.md](docs/guides/prompt-system-overview.md) for comprehensive system architecture and advanced features**
+**[#] See [docs/guides/prompt-system-overview.md](docs/guides/prompt-system-overview.md) for comprehensive system architecture and advanced features**
 
 ---
 
-## 📊 Current System Status
+## ■ Current System Status
 
 > **System Health Dashboard** - Real-time performance metrics
 
 ```
-📊 System Health Dashboard
+■ System Health Dashboard
 ==========================
-Memory Usage: 40% ✅ (Target: < 80%)
+Memory Usage: 40% ✓ (Target: < 80%)
 ██████████░░░░░░░░░░░░░░░░░░░░
-✅ Memory Status: Excellent
+✓ Memory Status: Excellent
 
-CPU Usage: 22% ✅ (Target: < 70%)
+CPU Usage: 22% ✓ (Target: < 70%)
 ████████░░░░░░░░░░░░░░░░░░░░░░
-✅ CPU Status: Optimal
+✓ CPU Status: Optimal
 
-Disk Usage: 21% ✅ (Target: < 85%)
+Disk Usage: 21% ✓ (Target: < 85%)
 ██████░░░░░░░░░░░░░░░░░░░░░░░░
-✅ Disk Status: Healthy
+✓ Disk Status: Healthy
 
-📈 Performance Summary
+↗ Performance Summary
 =====================
-✅ All systems operating within optimal ranges
-✅ No performance bottlenecks detected
-✅ System optimization targets achieved
+✓ All systems operating within optimal ranges
+✓ No performance bottlenecks detected
+✓ System optimization targets achieved
 ```
 
-**📖 See [docs/guides/computer-optimization-quick-reference.md](docs/guides/computer-optimization-quick-reference.md) for detailed environment optimization guide**
+**[#] See [docs/guides/computer-optimization-quick-reference.md](docs/guides/computer-optimization-quick-reference.md) for detailed environment optimization guide**
 
 ---
 
-## 📋 Available Scripts
+## ☐ Available Scripts
 
 > **Comprehensive tooling** - Sophisticated scripts for environment optimization and management
 
@@ -245,11 +245,11 @@ Disk Usage: 21% ✅ (Target: < 85%)
 - **`./scripts/migrate-todo-items.sh`** - Automated todo migration with comprehensive reporting
 - **`./scripts/enforce-organization-standards.sh`** - Organization standards enforcement
 
-**📖 See [ops/README.md](ops/README.md) for detailed operations documentation**
+**[#] See [ops/README.md](ops/README.md) for detailed operations documentation**
 
 ---
 
-## 🔄 Complete Optimization Workflow
+## ↻ Complete Optimization Workflow
 
 > **Sophisticated orchestration** - A refined workflow for comprehensive optimization
 
@@ -274,11 +274,11 @@ Disk Usage: 21% ✅ (Target: < 85%)
 ./metrics/comprehensive-dashboard.sh dashboard
 ```
 
-**📖 See [docs/guides/computer-optimization-quick-reference.md](docs/guides/computer-optimization-quick-reference.md) for detailed environment optimization guide**
+**[#] See [docs/guides/computer-optimization-quick-reference.md](docs/guides/computer-optimization-quick-reference.md) for detailed environment optimization guide**
 
 ---
 
-## 📚 Documentation
+## ■ Documentation
 
 > **Comprehensive knowledge base** - Documentation for all aspects of this project
 
@@ -313,30 +313,30 @@ Disk Usage: 21% ✅ (Target: < 85%)
 
 ---
 
-## 🤝 Contributing
+## ■ Contributing
 
-**💡 Leverage what works well, share how you implement it, and please contribute if you would like to.**
+**[*] Leverage what works well, share how you implement it, and please contribute if you would like to.**
 
 This is an experimental personal project, but I welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
 
-## 🔒 Security
+## ■ Security
 
 If you discover a security vulnerability, please report it privately. See our [Security Policy](SECURITY.md) for details.
 
-## 📄 License
+## ■ License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 📞 Contact Information
+## ■ Contact Information
 
 **Name:** CtxRtr Maintainer
 **Email:** maintainer@example.com
 **Website:** [example.com](https://example.com/)
 **GitHub:** [simien](https://github.com/simien)
 
-## 📁 Project Structure
+## ■ Project Structure
 
 ### **Core Files**
 - `CHANGELOG.md` - Project version history and release notes

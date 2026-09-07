@@ -2,23 +2,23 @@
 
 This directory contains utility scripts for environment management, setup, maintenance, and organization standards enforcement.
 
-## 🎯 Script Categorization
+## ◆ Script Categorization
 
-### 🖥️ Environment Optimization Scripts
+### ■ Environment Optimization Scripts
 **Tools that directly improve your Mac's performance:**
 
-- **`sync-cursor-settings.sh`** - 💻 Cursor IDE optimization (Faster performance, reduced memory usage)
+- **`sync-cursor-settings.sh`** - ■ Cursor IDE optimization (Faster performance, reduced memory usage)
 
-### 📁 Environment Management Scripts
+### ■ Environment Management Scripts
 **Tools that help manage the development environment:**
 
-- **`pre-release-sanitizer.sh`** - 🔒 Security sanitization
-- **`enforce-organization-standards.sh`** - 📋 Organization standards enforcement
-- **`migrate-todo-items.sh`** - ✅ **FIXED** - Todo migration with comprehensive reporting
-- **`create-release.sh`** - 🚀 Release management
-- **`setup-github.sh`** - 📦 GitHub repository setup
-- **`export-chat-history.sh`** - 📝 Development history export
-- **`convert-ascii-style.sh`** - 🎨 Documentation styling
+- **`pre-release-sanitizer.sh`** - ■ Security sanitization
+- **`enforce-organization-standards.sh`** - ☐ Organization standards enforcement
+- **`migrate-todo-items.sh`** - ✓ **FIXED** - Todo migration with comprehensive reporting
+- **`create-release.sh`** - ▶ Release management
+- **`setup-github.sh`** - ■ GitHub repository setup
+- **`export-chat-history.sh`** - ■ Development history export
+- **`convert-ascii-style.sh`** - ■ Documentation styling
 
 ## Scripts by Category
 
@@ -222,7 +222,7 @@ Regular maintenance to ensure clean organization:
 **Last Updated:** 2025-07-27 (Migration Script Fixed)
 **Maintainer:** CtxRtr Maintainer
 
-## 📁 Contents
+## ■ Contents
 
 ### **Files**
 - `manage-readmes.sh` - Unified tool for creating, updating, and validating README files
@@ -237,7 +237,7 @@ Regular maintenance to ensure clean organization:
 ### **Subdirectories**
 - No subdirectories found
 
-## 🚀 Quick Start
+## ▶ Quick Start
 
 ```bash
 # Example commands for this directory

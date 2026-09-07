@@ -2,11 +2,11 @@
 
 Thank you for your interest in contributing to CtxRtr! This document provides guidelines and best practices for contributing to this project.
 
-## 🎯 Project Overview
+## ◆ Project Overview
 
 CtxRtr is a versioned, validated, and audited Contextual Prompt Router, along with the supporting environment-optimization tooling that keeps it running well on its target hardware: a MacBook Pro (Retina, 15-inch, Mid 2015) running macOS 12.7.6 Monterey.
 
-## 📋 Table of Contents
+## ☐ Table of Contents
 
 - [Code of Conduct](#code-of-conduct)
 - [Getting Started](#getting-started)
@@ -19,7 +19,7 @@ CtxRtr is a versioned, validated, and audited Contextual Prompt Router, along wi
 - [Documentation Standards](#documentation-standards)
 - [Performance Considerations](#performance-considerations)
 
-## 🤝 Code of Conduct
+## ■ Code of Conduct
 
 ### Our Standards
 
@@ -34,7 +34,7 @@ CtxRtr is a versioned, validated, and audited Contextual Prompt Router, along wi
 - Project maintainers are responsible for clarifying standards of acceptable behavior
 - Project maintainers have the right and responsibility to remove, edit, or reject comments, commits, code, and other contributions that are not aligned with this Code of Conduct
 
-## 🚀 Getting Started
+## ▶ Getting Started
 
 ### Prerequisites
 
@@ -57,7 +57,7 @@ cd CtxRtr
    git remote add upstream https://github.com/simien/CtxRtr.git
    ```
 
-## 🛠️ Development Setup
+## ■ Development Setup
 
 ### Environment Setup
 
@@ -102,7 +102,7 @@ cd CtxRtr
 
 5. **Push and create a pull request**
 
-## 📁 Directory Structure
+## ■ Directory Structure
 
 ```
 CtxRtr/
@@ -160,7 +160,7 @@ CtxRtr/
 └── SECURITY.md                   # Security policy
 ```
 
-## 🏷️ Naming Conventions
+## ■ Naming Conventions
 
 ### Files and Directories
 
@@ -183,7 +183,7 @@ CtxRtr/
 - **Shell functions:** snake_case (e.g., `check_system_health()`, `convert_pdf_to_markdown()`)
 - **Configuration keys:** kebab-case (e.g., `system-status`, `pdf-count`)
 
-## 📝 Commit Guidelines
+## ■ Commit Guidelines
 
 We follow the [Conventional Commits](https://www.conventionalcommits.org/) specification.
 
@@ -226,7 +226,7 @@ refactor(cleanup): restructure Docker cleanup script for better maintainability
 4. **Keep it under 50 characters for the subject line**
 5. **Use the body to explain what and why vs. how**
 
-## 🔄 Pull Request Process
+## ↻ Pull Request Process
 
 ### Before Submitting
 
@@ -273,7 +273,7 @@ Brief description of the changes made.
 Any additional information or context for the reviewers.
 ```
 
-## 🔒 Privacy & Sanitization
+## ■ Privacy & Sanitization
 
 This project maintains a strict separation between public code and personal configuration.
 
@@ -288,7 +288,7 @@ This project maintains a strict separation between public code and personal conf
 - It verifies that no private files are accidentally included in the public directory
 - Always run `./scripts/pre-release-sanitizer.sh --dry-run` before submitting a PR
 
-## 🧪 Testing Guidelines
+## ■ Testing Guidelines
 
 ### Manual Testing
 
@@ -331,7 +331,7 @@ This project maintains a strict separation between public code and personal conf
 - **Security:** Run pre-release sanitizer before commits
 - **Personal Information:** Verify no personal data in releases
 
-## 📚 Documentation Standards
+## ■ Documentation Standards
 
 ### README Files
 
@@ -384,7 +384,7 @@ Every directory should have a `README.md` file that includes:
 #   3 - Missing dependencies
 ```
 
-## ⚡ Performance Considerations
+## ■ Performance Considerations
 
 ### Script Performance
 
@@ -406,7 +406,7 @@ Every directory should have a `README.md` file that includes:
 3. **Test thoroughly:** Ensure optimizations don't introduce bugs
 4. **Document changes:** Explain why optimizations were made
 
-## 🔒 Security Guidelines
+## ■ Security Guidelines
 
 ### Script Security
 
@@ -428,7 +428,7 @@ Every directory should have a `README.md` file that includes:
 - **Security scanning:** Use automated security checks
 - **Documentation review:** Verify all documentation is sanitized
 
-## 🤝 Getting Help
+## ■ Getting Help
 
 ### Communication Channels
 
@@ -443,15 +443,15 @@ Every directory should have a `README.md` file that includes:
 3. **Reproduce the issue:** Ensure you can consistently reproduce the problem
 4. **Provide context:** Include system information, error messages, and steps to reproduce
 
-## 📄 License
+## ■ License
 
 By contributing to CtxRtr, you agree that your contributions will be licensed under the same license as the project.
 
-## 🙏 Acknowledgments
+## ■ Acknowledgments
 
 Thank you for contributing to CtxRtr! Your contributions help make contextual prompt routing more efficient and accessible for developers worldwide.
 
-## 📞 Contact
+## ■ Contact
 
 If you have questions or need to report a sensitive issue (such as a security vulnerability), please contact us:
 

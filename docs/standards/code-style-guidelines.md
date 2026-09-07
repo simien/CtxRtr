@@ -5,7 +5,7 @@
 
 ---
 
-## 🎯 **Objective**
+## ◆ **Objective**
 
 This document defines the code style standards for the CtxRtr project. The goal is to ensure consistency, readability, and maintainability across the entire codebase. Adherence to these guidelines is enforced automatically through linters and formatters integrated into the CI/CD pipeline.
 

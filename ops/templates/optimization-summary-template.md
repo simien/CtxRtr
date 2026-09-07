@@ -3,11 +3,11 @@
 **Device:** [Device Model]  
 **OS:** [macOS Version]  
 **Date:** [YYYY-MM-DD]  
-**Status:** ✅ All optimizations completed
+**Status:** ✓ All optimizations completed
 
 ---
 
-## 📊 Optimization Overview
+## ■ Optimization Overview
 
 ### System Specifications
 - **Processor:** [CPU Model and specs]
@@ -22,15 +22,15 @@
 - **Graphics:** Intel Iris Pro + AMD Radeon R9 M370X
 
 ### Performance Goals Achieved
-- ✅ Reduced memory pressure and swap usage
-- ✅ Optimized Cursor IDE performance
-- ✅ Streamlined Docker/Colima resource usage
-- ✅ Implemented comprehensive system monitoring
-- ✅ Created automated maintenance scripts
+- ✓ Reduced memory pressure and swap usage
+- ✓ Optimized Cursor IDE performance
+- ✓ Streamlined Docker/Colima resource usage
+- ✓ Implemented comprehensive system monitoring
+- ✓ Created automated maintenance scripts
 
 ---
 
-## 🔧 Completed Optimizations
+## ■ Completed Optimizations
 
 ### 1. Cursor IDE Performance Optimization
 
@@ -89,7 +89,7 @@
 
 ---
 
-## 📈 Performance Improvements
+## ↗ Performance Improvements
 
 ### Before Optimization:
 - [Describe initial state - e.g., "High swap usage (315MB/2048MB)"]
@@ -104,11 +104,11 @@
 - Unmanaged Docker resource usage
 
 ### After Optimization:
-- ✅ Comprehensive system monitoring
-- ✅ Optimized Cursor IDE performance
-- ✅ Automated health checks
-- ✅ Docker resource management
-- ✅ SSD health monitoring
+- ✓ Comprehensive system monitoring
+- ✓ Optimized Cursor IDE performance
+- ✓ Automated health checks
+- ✓ Docker resource management
+- ✓ SSD health monitoring
 
 ### Key Metrics:
 - **Swap Usage:** Now monitored and managed
@@ -118,9 +118,9 @@
 
 ---
 
-## 🛠️ Maintenance Scripts & Output Procedures
+## ■ Maintenance Scripts & Output Procedures
 
-### 📁 File Locations & Usage
+### ■ File Locations & Usage
 
 #### **Health Monitoring Scripts:**
 ```bash
@@ -155,7 +155,7 @@
 ./ops/monitoring/top-hogs.sh
 ```
 
-### 📊 Monitoring Tools & Output
+### ■ Monitoring Tools & Output
 
 #### **Real-time Monitoring:**
 - **Stats** (Menu Bar): CPU, Memory, Disk, Network usage
@@ -173,13 +173,13 @@
 === Swap & SSD Health Check - [DATE] ===
 --- Swap Usage ---
 vm.swapusage: total = 2048.00M  used = 315.75M  free = 1732.25M  (encrypted)
-⚠️  WARNING: High swap usage detected (100%)
+[!]  WARNING: High swap usage detected (100%)
    Consider closing unused apps or adding more RAM
 --- Pageouts (Active Swapping) ---
-✅ No active swapping detected
+✓ No active swapping detected
 --- SSD Health ---
 SMART Status: Verified
-✅ SSD SMART status is verified
+✓ SSD SMART status is verified
 ```
 
 **Example with actual date:**
@@ -187,43 +187,43 @@ SMART Status: Verified
 === Swap & SSD Health Check - 2025-07-25 17:17:01 ===
 --- Swap Usage ---
 vm.swapusage: total = 2048.00M  used = 315.75M  free = 1732.25M  (encrypted)
-⚠️  WARNING: High swap usage detected (100%)
+[!]  WARNING: High swap usage detected (100%)
    Consider closing unused apps or adding more RAM
 --- Pageouts (Active Swapping) ---
-✅ No active swapping detected
+✓ No active swapping detected
 --- SSD Health ---
 SMART Status: Verified
-✅ SSD SMART status is verified
+✓ SSD SMART status is verified
 ```
 
 #### **Docker Optimization Output:**
 ```bash
 # Sample output from docker-optimize.sh:
 === Docker Optimization - [DATE] ===
-✅ Docker is running
+✓ Docker is running
 --- Docker Resource Usage ---
 Disk Usage:
 Images Space Used: 2.1GB
 Containers Space Used: 156MB
 Volumes Space Used: 0B
 Running containers: 2
-✅ Docker cleanup completed
+✓ Docker cleanup completed
 ```
 
 **Example with actual date:**
 ```bash
 === Docker Optimization - 2025-07-25 17:20:00 ===
-✅ Docker is running
+✓ Docker is running
 --- Docker Resource Usage ---
 Disk Usage:
 Images Space Used: 2.1GB
 Containers Space Used: 156MB
 Volumes Space Used: 0B
 Running containers: 2
-✅ Docker cleanup completed
+✓ Docker cleanup completed
 ```
 
-### 📋 Output File Structure
+### ☐ Output File Structure
 
 ```
 ~/Library/Logs/
@@ -284,7 +284,7 @@ CtxRtr/
     └── optimization-todo.md        # All tasks completed
 ```
 
-### 🔄 Regular Maintenance Schedule
+### ↻ Regular Maintenance Schedule
 
 #### **Weekly Tasks:**
 ```bash
@@ -315,7 +315,7 @@ CtxRtr/
 
 ---
 
-## 🎯 Next Steps & Recommendations
+## ◆ Next Steps & Recommendations
 
 ### Immediate Actions:
 1. **Run health checks weekly:** `./ops/monitoring/swap-ssd-health.sh`
@@ -337,7 +337,7 @@ CtxRtr/
 
 ---
 
-## ✅ Verification Checklist
+## ✓ Verification Checklist
 
 - [x] Cursor IDE settings optimized
 - [x] Unused extensions disabled
@@ -352,13 +352,13 @@ CtxRtr/
 
 ---
 
-**Optimization Status:** ✅ **COMPLETE**  
-**System Health:** ✅ **MONITORED**  
-**Performance:** ✅ **OPTIMIZED**
+**Optimization Status:** ✓ **COMPLETE**  
+**System Health:** ✓ **MONITORED**  
+**Performance:** ✓ **OPTIMIZED**
 
 ---
 
-## 📝 Template Usage Instructions
+## ■ Template Usage Instructions
 
 ### How to Use This Template:
 

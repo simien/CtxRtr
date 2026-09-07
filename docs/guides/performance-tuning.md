@@ -3,7 +3,7 @@
 **Date:** 2026-01-03
 **Status:** Initial Assessment
 
-## 📊 System Assessment (2026-01-03)
+## ■ System Assessment (2026-01-03)
 
 ### 1. High Swap Usage (75%)
 - **Symptoms:** High swap usage (~4GB) and active pageouts.
@@ -18,7 +18,7 @@
     - `corespotlightd`: macOS Spotlight is indexing files. This is temporary but resource-intensive.
     - `Antigravity Agent`: Active during this analysis.
 
-## 🛠️ Recommendations
+## ■ Recommendations
 
 ### Immediate Actions
 1.  **Reduce Browser Load:** Close unused tabs or windows in Brave to free up RAM.

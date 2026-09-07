@@ -9,7 +9,7 @@ This report provides insights into the CtxRtr prompt management system.
 
 ### Prompt Structure
 ```
-📊 Prompt Structure Analysis
+■ Prompt Structure Analysis
 ==========================
 Total prompts: 24
 Total categories: 5
@@ -25,7 +25,7 @@ Prompts by category:
 
 ### Version Analysis
 ```
-📈 Version Analysis
+↗ Version Analysis
 ==================
 Latest versions: 0
 Outdated versions: 24
@@ -38,7 +38,7 @@ Version distribution:
 
 ### Complexity Analysis
 ```
-🔍 Complexity Analysis
+■ Complexity Analysis
 ====================
 Average lines per prompt: 80
 Total lines: 1920
@@ -62,7 +62,7 @@ Simplest prompts (by line count):
 
 ### Usage Patterns
 ```
-📊 Usage Pattern Analysis
+■ Usage Pattern Analysis
 ========================
 Total prompt executions: 3
 

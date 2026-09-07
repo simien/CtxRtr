@@ -44,7 +44,7 @@ Workflow management prompts focus on organizing tasks, maintaining quality stand
 - Ensures proper version control practices
 - Creates trackable and maintainable task structures
 
-## 📁 Contents
+## ■ Contents
 
 ### **Files**
 - `enforce-todo-quality-control-v1.0.0.md` - [Description of purpose]
@@ -57,7 +57,7 @@ Workflow management prompts focus on organizing tasks, maintaining quality stand
 ### **Subdirectories**
 - No subdirectories found
 
-## 🚀 Quick Start
+## ▶ Quick Start
 
 ```bash
 # Example commands for this directory

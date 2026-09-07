@@ -123,7 +123,7 @@ services:
 - **Monitor impact**: Use monitoring tools to measure improvements
 - **Document changes**: Track what works for future reference
 - **Regular updates**: Keep templates current with tool updates 
-## 📁 Contents
+## ■ Contents
 
 ### **Files**
 - `optimization-summary-template.md` - [Description of purpose]
@@ -133,7 +133,7 @@ services:
 ### **Subdirectories**
 - No subdirectories found
 
-## 🚀 Quick Start
+## ▶ Quick Start
 
 ```bash
 # Example commands for this directory

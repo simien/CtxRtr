@@ -2,7 +2,7 @@
 
 **CtxRtr Environment Optimization Tools** - Personal experimental project for improving environment to run modern products
 
-## 🧪 Test Your Environment
+## ■ Test Your Environment
 
 **Before optimizing, test your current setup:**
 ```bash
@@ -13,7 +13,7 @@
 ./tests/interactive-cursor-sync.sh
 ```
 
-## 🏥 System Health Check Card
+## ■ System Health Check Card
 
 ### Quick Command
 ```bash
@@ -45,7 +45,7 @@ crontab -e
 
 ---
 
-## 🧹 System Cleanup Card
+## ■ System Cleanup Card
 
 ### Quick Commands
 ```bash
@@ -78,7 +78,7 @@ df -h /
 
 ---
 
-## 🐳 Docker Optimization Card
+## ■ Docker Optimization Card
 
 ### Quick Command
 ```bash
@@ -109,7 +109,7 @@ colima start --cpu 2 --memory 2048 --disk 20
 
 ---
 
-## 💻 Cursor IDE Optimization Card
+## ■ Cursor IDE Optimization Card
 
 ### Quick Command
 ```bash
@@ -143,7 +143,7 @@ ps aux | grep Cursor
 
 ---
 
-## 📊 Performance Tracking Card
+## ■ Performance Tracking Card
 
 ### Quick Commands
 ```bash
@@ -184,7 +184,7 @@ ps aux | grep Cursor
 
 ---
 
-## 🚀 Complete Optimization Workflow
+## ▶ Complete Optimization Workflow
 
 ### Step 1: Health Check
 ```bash
@@ -223,7 +223,7 @@ ps aux | grep Cursor
 
 ---
 
-## 📈 Expected Performance Improvements
+## ↗ Expected Performance Improvements
 
 | Metric | Before | After | Improvement |
 |--------|--------|-------|-------------|
@@ -236,7 +236,7 @@ ps aux | grep Cursor
 
 ---
 
-## 🔧 Maintenance Schedule
+## ■ Maintenance Schedule
 
 ### Daily
 - Check system status: `./metrics/comprehensive-dashboard.sh status`

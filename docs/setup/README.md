@@ -22,7 +22,7 @@ Refer to these documents when setting up and configuring your environment:
 - See `../troubleshooting/` for common issues and solutions
 - See `../../ops/` for automation scripts
 
-## 📁 Contents
+## ■ Contents
 
 ### **Files**
 - `github-setup.md` - [Description of purpose]
@@ -30,7 +30,7 @@ Refer to these documents when setting up and configuring your environment:
 ### **Subdirectories**
 - `hardware-specs/` - [Description of contents]
 
-## 🚀 Quick Start
+## ▶ Quick Start
 
 ```bash
 # Example commands for this directory

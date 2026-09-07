@@ -93,7 +93,7 @@ These scripts are part of the comprehensive optimization system and should be ru
 ### Documentation
 - Use `../templates/optimization-summary-template.md` to document cleanup results
 - Track disk space improvements over time 
-## 📁 Contents
+## ■ Contents
 
 ### **Files**
 - `brew-cleanup.sh` - [Description of purpose]
@@ -102,7 +102,7 @@ These scripts are part of the comprehensive optimization system and should be ru
 ### **Subdirectories**
 - No subdirectories found
 
-## 🚀 Quick Start
+## ▶ Quick Start
 
 ```bash
 # Example commands for this directory

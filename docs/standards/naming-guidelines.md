@@ -1,6 +1,6 @@
 # CtxRtr Naming Guidelines
 
-## 📋 Project Name Standards
+## ☐ Project Name Standards
 
 ### Primary Name: CtxRtr
 - **Official Name:** CtxRtr
@@ -10,13 +10,13 @@
 
 ### Usage Guidelines
 
-#### ✅ Correct Usage
+#### ✓ Correct Usage
 - "CtxRtr" (primary name)
 - "CtxRtr - Contextual Prompt Router" (full name)
 - "CtxRtr project"
 - "CtxRtr system"
 
-#### ❌ Incorrect Usage
+#### ✗ Incorrect Usage
 - "DigitalEnv" or "DgtlEnv" (old names, this project has been renamed twice: DigitalEnv → DgtlEnv → CtxRtr)
 - "Digital Environment Management" (the old full name/positioning, before the project was repositioned around the Contextual Prompt Router)
 - "ctxrtr" or "CTXRTR" (inconsistent casing; the primary name is always "CtxRtr")

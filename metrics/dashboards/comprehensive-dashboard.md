@@ -6,29 +6,29 @@
 
 ---
 
-## 🖥️ System Performance
+## ■ System Performance
 
 ### Memory Usage: 40%
 ```
 ████████████░░░░░░░░░░░░░░░░░░
 ```
-✅ Memory Status: 40%
+✓ Memory Status: 40%
 
 ### CPU Usage: 15%
 ```
 ████░░░░░░░░░░░░░░░░░░░░░░░░░░
 ```
-✅ CPU Status: 15%
+✓ CPU Status: 15%
 
 ### Disk Usage: 22%
 ```
 ██████░░░░░░░░░░░░░░░░░░░░░░░░
 ```
-✅ Disk Status: 22%
+✓ Disk Status: 22%
 
 ---
 
-## 📄 PDF Conversion Progress
+## ■ PDF Conversion Progress
 
 ### Conversion Rate: %
 ```
@@ -46,9 +46,9 @@ No converted directory found
 
 ---
 
-## 📊 Optimization Progress
+## ■ Optimization Progress
 
-### ✅ Completed Optimizations
+### ✓ Completed Optimizations
 - [x] Cursor IDE performance optimization
 - [x] System monitoring setup (Stats, htop)
 - [x] Docker/Colima resource management
@@ -56,17 +56,17 @@ No converted directory found
 - [x] PDF to markdown conversion system
 - [x] Comprehensive metrics tracking
 
-### 🎯 Performance Targets
+### ◆ Performance Targets
 | Metric | Current | Target | Status |
 |--------|---------|--------|--------|
-| Memory | 40% | < 80% | ✅ Good |
-| CPU | 15% | < 70% | ✅ Good |
-| Disk | 22% | < 85% | ✅ Good |
-| PDF Conversion | % | 100% | 🔄 In Progress |
+| Memory | 40% | < 80% | ✓ Good |
+| CPU | 15% | < 70% | ✓ Good |
+| Disk | 22% | < 85% | ✓ Good |
+| PDF Conversion | % | 100% | ↻ In Progress |
 
 ---
 
-## 🛠️ Available Tools & Scripts
+## ■ Available Tools & Scripts
 
 ### System Monitoring
 - **Stats** (Menu Bar): Real-time system metrics
@@ -85,10 +85,10 @@ No converted directory found
 
 ---
 
-## 📈 Improvement Tracking
+## ↗ Improvement Tracking
 
 ### Before vs After Comparison
-⚠️  No baseline metrics found
+[!]  No baseline metrics found
 Run: `./metrics/system-metrics-tracker.sh baseline` to capture baseline
 
 ### Recent Activity
@@ -96,7 +96,7 @@ No recent activity logged
 
 ---
 
-## 🎯 Recommendations
+## ◆ Recommendations
 
 
 
@@ -108,7 +108,7 @@ No recent activity logged
 
 ---
 
-## 📋 Quick Actions
+## ☐ Quick Actions
 
 ### System Health Check
 ```bash
@@ -133,7 +133,7 @@ No recent activity logged
 
 ---
 
-## 📁 File Locations
+## ■ File Locations
 
 - **Dashboard:** $HOME/Dropbox/Admin/CtxRtr/metrics/dashboards/
 - **Metrics:** $HOME/Dropbox/Admin/CtxRtr/metrics/
@@ -143,6 +143,6 @@ No recent activity logged
 
 ---
 
-**Dashboard Status:** ✅ **ACTIVE**  
-**System Health:** ✅ GOOD  
-**PDF Conversion:** 🔄 IN PROGRESS
+**Dashboard Status:** ✓ **ACTIVE**  
+**System Health:** ✓ GOOD  
+**PDF Conversion:** ↻ IN PROGRESS

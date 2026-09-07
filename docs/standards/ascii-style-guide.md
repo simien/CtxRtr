@@ -2,7 +2,7 @@
 
 A unified monochromatic ASCII art system for CtxRtr documentation and outputs.
 
-## 🎨 Design Philosophy
+## ■ Design Philosophy
 
 CtxRtr uses a **monochromatic ASCII-first** approach that prioritizes:
 - **Consistency** across all documentation and outputs
@@ -11,12 +11,12 @@ CtxRtr uses a **monochromatic ASCII-first** approach that prioritizes:
 - **Performance** - lightweight and fast rendering
 - **Accessibility** - clear and unambiguous symbols
 
-## 📊 Core ASCII Elements
+## ■ Core ASCII Elements
 
 ### Status Indicators
 ```
-✅  PASS/SUCCESS    ⚠️  WARNING    ❌  FAIL/ERROR    🔄  IN PROGRESS
-🟢  GOOD           🟡  WARNING     🔴  CRITICAL      ⚪  NEUTRAL
+✓  PASS/SUCCESS    [!]  WARNING    ✗  FAIL/ERROR    ↻  IN PROGRESS
+✓  GOOD           ▲  WARNING     ✗  CRITICAL      −  NEUTRAL
 ```
 
 ### Progress Bars
@@ -29,7 +29,7 @@ CtxRtr uses a **monochromatic ASCII-first** approach that prioritizes:
 ### System Health
 ```
 ┌─────────────────────────────────────┐
-│  SYSTEM HEALTH: EXCELLENT ✅        │
+│  SYSTEM HEALTH: EXCELLENT ✓        │
 │  Memory: ████████░░░░░░░░░░░░░░░░  │
 │  CPU:    ████░░░░░░░░░░░░░░░░░░░░  │
 │  Disk:   ██████░░░░░░░░░░░░░░░░░░  │
@@ -39,63 +39,63 @@ CtxRtr uses a **monochromatic ASCII-first** approach that prioritizes:
 ### File Structure Trees
 ```
 CtxRtr/
-├── 📁 docs/                    # Documentation
-│   ├── 📄 README.md           # Main docs
-│   └── 📊 metrics/            # Performance data
-├── 🛠️  ops/                   # Operations
-│   ├── 🔧 scripts/            # Automation
-│   └── 📈 monitoring/         # System health
-└── 📋 todos/                  # Task management
+├── ■ docs/                    # Documentation
+│   ├── ■ README.md           # Main docs
+│   └── ■ metrics/            # Performance data
+├── ■  ops/                   # Operations
+│   ├── ■ scripts/            # Automation
+│   └── ↗ monitoring/         # System health
+└── ☐ todos/                  # Task management
 ```
 
-## 🎯 Icon Set
+## ◆ Icon Set
 
 ### System Components
 ```
-🖥️  SYSTEM      💾 MEMORY      🔥 CPU         💿 DISK
-📊 METRICS      📈 DASHBOARD    📄 DOCUMENT    🔧 TOOL
-🛡️  SECURITY    🔒 LOCK        ⚡ PERFORMANCE  🎯 TARGET
+■  SYSTEM      ■ MEMORY      ■ CPU         ■ DISK
+■ METRICS      ↗ DASHBOARD    ■ DOCUMENT    ■ TOOL
+■  SECURITY    ■ LOCK        ■ PERFORMANCE  ◆ TARGET
 ```
 
 ### File Types
 ```
-📁 DIRECTORY    📄 MARKDOWN     📊 JSON         ⚙️  CONFIG
-🔧 SCRIPT       📋 LOG          📈 METRIC       🎨 TEMPLATE
+■ DIRECTORY    ■ MARKDOWN     ■ JSON         ⚙️  CONFIG
+■ SCRIPT       ☐ LOG          ↗ METRIC       ■ TEMPLATE
 ```
 
 ### Actions & States
 ```
-▶️  START        ⏹️  STOP         🔄 RESTART     📝 EDIT
-📤 EXPORT       📥 IMPORT       🔍 SEARCH       🎯 TARGET
-✅ COMPLETE     ⚠️  WARNING      ❌ ERROR       🔄 PROCESSING
+▶  START        ■  STOP         ↻ RESTART     ■ EDIT
+■ EXPORT       ■ IMPORT       ■ SEARCH       ◆ TARGET
+✓ COMPLETE     [!]  WARNING      ✗ ERROR       ↻ PROCESSING
 ```
 
 ### Development Tools
 ```
-💻 CURSOR       🐳 DOCKER       🍺 HOMEBREW    📊 STATS
-🔧 SCRIPT       ⚙️  CONFIG       📈 METRICS     🛠️  TOOLS
+■ CURSOR       ■ DOCKER       ■ HOMEBREW    ■ STATS
+■ SCRIPT       ⚙️  CONFIG       ↗ METRICS     ■  TOOLS
 ```
 
-## 📊 Chart Styles
+## ■ Chart Styles
 
 ### Bar Charts
 ```
-Memory Usage: 34% ✅
+Memory Usage: 34% ✓
 ██████████░░░░░░░░░░░░░░░░░░░░
 Target: < 80% | Current: 34%
 
-CPU Usage: 14% ✅
+CPU Usage: 14% ✓
 ████░░░░░░░░░░░░░░░░░░░░░░░░░░
 Target: < 70% | Current: 14%
 ```
 
 ### Progress Indicators
 ```
-PDF Conversion: 100% ✅
+PDF Conversion: 100% ✓
 ██████████████████████████████
 Status: Complete | Files: 3/3
 
-System Optimization: 85% 🔄
+System Optimization: 85% ↻
 ██████████████████████░░░░░░░░
 Status: In Progress | Remaining: 3 tasks
 ```
@@ -105,14 +105,14 @@ Status: In Progress | Remaining: 3 tasks
 ┌─────────────────────────────────────┐
 │  COMPONENT    │ STATUS │ PROGRESS  │
 ├─────────────────────────────────────┤
-│  System       │ ✅     │ 100%      │
-│  PDF Convert  │ ✅     │ 100%      │
-│  Monitoring   │ ✅     │ 100%      │
-│  Security     │ 🔄     │ 85%       │
+│  System       │ ✓     │ 100%      │
+│  PDF Convert  │ ✓     │ 100%      │
+│  Monitoring   │ ✓     │ 100%      │
+│  Security     │ ↻     │ 85%       │
 └─────────────────────────────────────┘
 ```
 
-## 🎨 CtxRtr Logo Variations
+## ■ CtxRtr Logo Variations
 
 ### Simple Logo
 ```
@@ -138,14 +138,14 @@ CtxRtr
 Contextual Prompt Router
 ```
 
-## 📋 Usage Guidelines
+## ☐ Usage Guidelines
 
 ### 1. Status Reporting
 Always use consistent status indicators:
-- ✅ for success/completion
-- ⚠️ for warnings/attention needed
-- ❌ for errors/failures
-- 🔄 for in-progress operations
+- ✓ for success/completion
+- [!] for warnings/attention needed
+- ✗ for errors/failures
+- ↻ for in-progress operations
 
 ### 2. Progress Visualization
 Use progress bars for:
@@ -168,14 +168,14 @@ Use ASCII charts for:
 - Comparison data
 - Trend analysis
 
-## 🔧 Implementation
+## ■ Implementation
 
 ### Shell Script Integration
 ```bash
 # Status indicators
-echo "✅ System health check completed"
-echo "⚠️  Memory usage above threshold"
-echo "❌ PDF conversion failed"
+echo "✓ System health check completed"
+echo "[!]  Memory usage above threshold"
+echo "✗ PDF conversion failed"
 
 # Progress bars
 create_progress_bar() {
@@ -193,7 +193,7 @@ create_progress_bar() {
 ```markdown
 ### System Status
 ```
-Memory Usage: 34% ✅
+Memory Usage: 34% ✓
 ██████████░░░░░░░░░░░░░░░░░░░░
 ```
 
@@ -211,7 +211,7 @@ cat << EOF
 EOF
 ```
 
-## 🎯 Best Practices
+## ◆ Best Practices
 
 ### 1. Consistency
 - Use the same symbols across all documentation
@@ -233,19 +233,19 @@ EOF
 - Use clear, descriptive symbols
 - Maintain high contrast for visibility
 
-## 📊 Examples
+## ■ Examples
 
 ### System Health Dashboard
 ```
 ┌─────────────────────────────────────┐
 │  CtxRtr System Health           │
 ├─────────────────────────────────────┤
-│  🖥️  System:    ✅ OPERATIONAL     │
-│  💾 Memory:    🟢 34% (Target: <80%)│
-│  🔥 CPU:       🟢 14% (Target: <70%)│
-│  💿 Disk:      🟢 21% (Target: <85%)│
-│  📊 Metrics:   ✅ ACTIVE            │
-│  📄 PDF Conv:  ✅ COMPLETE          │
+│  ■  System:    ✓ OPERATIONAL     │
+│  ■ Memory:    ✓ 34% (Target: <80%)│
+│  ■ CPU:       ✓ 14% (Target: <70%)│
+│  ■ Disk:      ✓ 21% (Target: <85%)│
+│  ■ Metrics:   ✓ ACTIVE            │
+│  ■ PDF Conv:  ✓ COMPLETE          │
 └─────────────────────────────────────┘
 ```
 
@@ -265,21 +265,21 @@ Before vs After Optimization
 ### File Structure
 ```
 CtxRtr/
-├── 📁 docs/                    # Documentation
-│   ├── 📄 README.md           # Main documentation
-│   ├── 📊 optimization-summary.md
-│   └── 📄 pdf-conversion-and-metrics-system.md
-├── 🛠️  ops/                   # Operations
-│   ├── 🔧 backup/             # Backup scripts
-│   ├── 🔧 cleanup/            # Cleanup scripts
-│   ├── 🐳 docker/             # Docker optimization
-│   └── 📈 monitoring/         # System monitoring
-├── 📊 metrics/                # Performance tracking
-│   ├── 📈 dashboards/         # Visual dashboards
-│   └── 📊 system-metrics-tracker.sh
-├── 🔒 security/               # Security policies
-├── 📋 todos/                  # Task management
-└── 🔧 scripts/                # Utility scripts
+├── ■ docs/                    # Documentation
+│   ├── ■ README.md           # Main documentation
+│   ├── ■ optimization-summary.md
+│   └── ■ pdf-conversion-and-metrics-system.md
+├── ■  ops/                   # Operations
+│   ├── ■ backup/             # Backup scripts
+│   ├── ■ cleanup/            # Cleanup scripts
+│   ├── ■ docker/             # Docker optimization
+│   └── ↗ monitoring/         # System monitoring
+├── ■ metrics/                # Performance tracking
+│   ├── ↗ dashboards/         # Visual dashboards
+│   └── ■ system-metrics-tracker.sh
+├── ■ security/               # Security policies
+├── ☐ todos/                  # Task management
+└── ■ scripts/                # Utility scripts
 ```
 
 This ASCII style guide ensures consistent, professional, and universally compatible visual elements throughout the CtxRtr project.

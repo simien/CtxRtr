@@ -46,7 +46,7 @@ When creating new guides, follow these guidelines to ensure consistency and qual
 - See `../troubleshooting/` for common issues
 - See `../../ops/` for automation scripts
 
-## 📁 Contents
+## ■ Contents
 
 ### **Files**
 - `prompt-router-system-guide.md` - [Description of purpose]
@@ -58,7 +58,7 @@ When creating new guides, follow these guidelines to ensure consistency and qual
 ### **Subdirectories**
 - No subdirectories found
 
-## 🚀 Quick Start
+## ▶ Quick Start
 
 ```bash
 # Example commands for this directory

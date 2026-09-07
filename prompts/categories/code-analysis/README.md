@@ -35,7 +35,7 @@ Code analysis prompts focus on ensuring code quality, functionality, and reliabi
 - Ensures cross-platform compatibility where applicable
 - Creates comprehensive testing and verification documentation
 
-## 📁 Contents
+## ■ Contents
 
 ### **Files**
 - `explain-code-v1.0.0.md` - [Description of purpose]
@@ -47,7 +47,7 @@ Code analysis prompts focus on ensuring code quality, functionality, and reliabi
 ### **Subdirectories**
 - No subdirectories found
 
-## 🚀 Quick Start
+## ▶ Quick Start
 
 ```bash
 # Example commands for this directory

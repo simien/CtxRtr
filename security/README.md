@@ -73,7 +73,7 @@ grep -r "sap\|@gmail\|@yahoo" . --exclude-dir=.git
 ---
 *Last Updated: 2025-07-27*
 
-## 📁 Contents
+## ■ Contents
 
 ### **Files**
 
@@ -81,7 +81,7 @@ grep -r "sap\|@gmail\|@yahoo" . --exclude-dir=.git
 - `policies/` - Security policies, guidelines, and best practices.
 - `audit-reports/` - Detailed reports from security audits and verification checks.
 
-## 🚀 Quick Start
+## ▶ Quick Start
 
 ```bash
 # Check main security policy

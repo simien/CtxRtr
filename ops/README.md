@@ -2,7 +2,7 @@
 
 This directory contains operational scripts and tools for managing the CtxRtr environment.
 
-## 🤖 Prompt Router System
+## ■ Prompt Router System
 
 ### Overview
 The Prompt Router is a sophisticated system for managing and executing AI prompts within the CtxRtr environment. It provides modular, configurable, and robust prompt routing with advanced features like chaining, context injection, and variable substitution.
@@ -13,14 +13,14 @@ The Prompt Router is a sophisticated system for managing and executing AI prompt
 The current version of the Prompt Router with advanced features:
 
 **Key Features:**
-- ✅ **Modular Design** - Clean separation of concerns with specific function responsibilities
-- ✅ **Dry-Run Mode** - Safe testing without clipboard interference
-- ✅ **Chain Processing** - Execute multiple prompts in sequence
-- ✅ **Variable Substitution** - Dynamic content with `{{date}}`, `{{user}}`, etc.
-- ✅ **Alias Resolution** - Configured shortcuts for common prompts
-- ✅ **Verbose Logging** - Detailed debugging information
-- ✅ **Configuration Support** - JSON-based configuration system
-- ✅ **Error Recovery** - Graceful handling of edge cases
+- ✓ **Modular Design** - Clean separation of concerns with specific function responsibilities
+- ✓ **Dry-Run Mode** - Safe testing without clipboard interference
+- ✓ **Chain Processing** - Execute multiple prompts in sequence
+- ✓ **Variable Substitution** - Dynamic content with `{{date}}`, `{{user}}`, etc.
+- ✓ **Alias Resolution** - Configured shortcuts for common prompts
+- ✓ **Verbose Logging** - Detailed debugging information
+- ✓ **Configuration Support** - JSON-based configuration system
+- ✓ **Error Recovery** - Graceful handling of edge cases
 
 **Usage:**
 ```bash
@@ -67,18 +67,18 @@ Comprehensive testing for the Prompt Router:
 ```
 
 **Test Coverage:**
-- ✅ Help functionality
-- ✅ List functionality
-- ✅ Search functionality
-- ✅ Dry-run functionality
-- ✅ Valid prompt execution
-- ✅ Invalid prompt handling
-- ✅ No arguments handling
-- ✅ Invalid option handling
-- ✅ Search without term
-- ✅ Verbose mode
-- ✅ Logging functionality
-- ✅ Performance testing
+- ✓ Help functionality
+- ✓ List functionality
+- ✓ Search functionality
+- ✓ Dry-run functionality
+- ✓ Valid prompt execution
+- ✓ Invalid prompt handling
+- ✓ No arguments handling
+- ✓ Invalid option handling
+- ✓ Search without term
+- ✓ Verbose mode
+- ✓ Logging functionality
+- ✓ Performance testing
 
 ### Configuration
 
@@ -244,7 +244,7 @@ Planned features for future versions:
 - **Advanced Chaining:** Conditional prompt execution
 - **Performance Monitoring:** Detailed performance metrics
 
-## 📁 Contents
+## ■ Contents
 
 ### **Files**
 - `run-prompt.sh` - Enhanced prompt router with modular design and configuration support
@@ -256,7 +256,7 @@ Planned features for future versions:
 - `monitoring/` - [Description of contents]
 - `backup/` - [Description of contents]
 
-## 🚀 Quick Start
+## ▶ Quick Start
 
 ```bash
 # Example commands for this directory

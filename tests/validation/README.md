@@ -5,7 +5,7 @@
 **Usage:** How to use files in this directory
 **Related:** Links to related directories and documentation
 
-## 📁 Contents
+## ■ Contents
 
 ### **Files**
 - `check-memory-usage.sh` - [Description of purpose]
@@ -15,7 +15,7 @@
 ### **Subdirectories**
 - No subdirectories found
 
-## 🚀 Quick Start
+## ▶ Quick Start
 
 ```bash
 # Example commands for this directory
@@ -23,7 +23,7 @@
 # command2
 ```
 
-## 🔗 Related Documentation
+## ■ Related Documentation
 
 - `../README.md` - Parent directory documentation
 - `../../docs/guides/` - Setup and usage guides
@@ -32,4 +32,4 @@
 
 **Last Updated:** 2025-07-29
 **Maintainer:** [Name]
-**Status:** 🔄 IN PROGRESS
+**Status:** ↻ IN PROGRESS

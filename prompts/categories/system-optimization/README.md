@@ -44,7 +44,7 @@ System optimization prompts focus on improving performance, managing resources e
 - Includes proper backup and rollback procedures
 - Provides comprehensive monitoring and validation
 
-## 📁 Contents
+## ■ Contents
 
 ### **Files**
 - `generate-dockerfile-v1.0.0.md` - [Description of purpose]
@@ -56,7 +56,7 @@ System optimization prompts focus on improving performance, managing resources e
 ### **Subdirectories**
 - No subdirectories found
 
-## 🚀 Quick Start
+## ▶ Quick Start
 
 ```bash
 # Example commands for this directory

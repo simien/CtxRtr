@@ -146,7 +146,7 @@ colima status
 - Restart Colima/Docker Desktop weekly
 - Use lightweight base images (alpine, slim)
 - Implement resource limits in docker-compose.yml 
-## 📁 Contents
+## ■ Contents
 
 ### **Files**
 - `docker-optimize.sh` - [Description of purpose]
@@ -154,7 +154,7 @@ colima status
 ### **Subdirectories**
 - No subdirectories found
 
-## 🚀 Quick Start
+## ▶ Quick Start
 
 ```bash
 # Example commands for this directory

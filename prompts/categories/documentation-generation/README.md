@@ -44,7 +44,7 @@ Documentation generation prompts focus on producing clear, consistent, and well-
 - Ensures proper internal linking and navigation
 - Creates consistent visual language and formatting
 
-## 📁 Contents
+## ■ Contents
 
 ### **Files**
 - `create-technical-tutorial-v1.0.0.md` - [Description of purpose]
@@ -56,7 +56,7 @@ Documentation generation prompts focus on producing clear, consistent, and well-
 ### **Subdirectories**
 - No subdirectories found
 
-## 🚀 Quick Start
+## ▶ Quick Start
 
 ```bash
 # Example commands for this directory

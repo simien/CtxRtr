@@ -76,7 +76,7 @@ Backup Name: CtxRtr_Backup_20250725_143022.zip
 Backup Path: ~/Downloads/CtxRtr-Backups/CtxRtr_Backup_20250725_143022.zip
 
 Creating backup...
-✅ Backup created successfully!
+✓ Backup created successfully!
 File: ~/Downloads/CtxRtr-Backups/CtxRtr_Backup_20250725_143022.zip
 Size: 2.1M
 
@@ -92,21 +92,21 @@ Backup completed at Thu Jul 25 14:30:22 PDT 2025
 ## What Gets Backed Up
 
 ### Included Files
-- ✅ All optimization scripts (`ops/` folder)
-- ✅ Documentation (`docs/` folder)
-- ✅ Templates (`ops/templates/` folder)
-- ✅ Configuration examples
-- ✅ README files and guides
-- ✅ Todo lists and progress tracking
+- ✓ All optimization scripts (`ops/` folder)
+- ✓ Documentation (`docs/` folder)
+- ✓ Templates (`ops/templates/` folder)
+- ✓ Configuration examples
+- ✓ README files and guides
+- ✓ Todo lists and progress tracking
 
 ### Excluded Files
-- ❌ Git repository (`.git/`)
-- ❌ Log files (`*.log`)
-- ❌ Temporary files (`*.tmp`, `*.cache`)
-- ❌ IDE settings (personal configurations)
-- ❌ Dependencies (`node_modules/`)
-- ❌ Existing backup files
-- ❌ `docs/converted/` (no longer used)
+- ✗ Git repository (`.git/`)
+- ✗ Log files (`*.log`)
+- ✗ Temporary files (`*.tmp`, `*.cache`)
+- ✗ IDE settings (personal configurations)
+- ✗ Dependencies (`node_modules/`)
+- ✗ Existing backup files
+- ✗ `docs/converted/` (no longer used)
 
 ## Best Practices
 
@@ -155,7 +155,7 @@ Backup completed at Thu Jul 25 14:30:22 PDT 2025
 ### Cleanup Integration
 - Run `../cleanup/brew-cleanup.sh` before backup to reduce size
 - Use `../cleanup/docker-cleanup.sh` to clean Docker resources 
-## 📁 Contents
+## ■ Contents
 
 ### **Files**
 - `pdf-watcher.sh` - [Description of purpose]
@@ -167,7 +167,7 @@ Backup completed at Thu Jul 25 14:30:22 PDT 2025
 ### **Subdirectories**
 - No subdirectories found
 
-## 🚀 Quick Start
+## ▶ Quick Start
 
 ```bash
 # Example commands for this directory

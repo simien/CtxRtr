@@ -48,7 +48,7 @@ The prompt validation system now includes checks for outdated versions:
 
 Outdated versions will show warnings like:
 ```
-⚠️  Outdated version: current=v1.0.0, latest=v1.1.0
+[!]  Outdated version: current=v1.0.0, latest=v1.1.0
 ```
 
 ## Best Practices
@@ -78,7 +78,7 @@ Example:
 **Total Archived:** 1 prompt
 **Archive Policy:** Automatic with manual review
 
-## 📁 Contents
+## ■ Contents
 
 ### **Files**
 - `generate-chat-summary-title-v1.0.0.md` - [Description of purpose]
@@ -86,7 +86,7 @@ Example:
 ### **Subdirectories**
 - No subdirectories found
 
-## 🚀 Quick Start
+## ▶ Quick Start
 
 ```bash
 # Example commands for this directory

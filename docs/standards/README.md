@@ -2,7 +2,7 @@
 
 This directory contains style guides, branding documentation, and visual design standards for the CtxRtr project.
 
-## 📁 Contents
+## ■ Contents
 
 ### Style Guides
 - **`ascii-style-guide.md`** - ASCII art and visual elements guide
@@ -11,7 +11,7 @@ This directory contains style guides, branding documentation, and visual design 
 - **`advanced-blockquote-nesting.md`** - Advanced blockquote nesting capabilities and best practices
 - **`style-system-implementation-summary.md`** - Implementation status and summary
 
-## 🎯 Purpose
+## ◆ Purpose
 
 These documents ensure consistent, professional, and recognizable project presentation:
 
@@ -21,7 +21,7 @@ These documents ensure consistent, professional, and recognizable project presen
 - **Brand recognition** through unified styling
 - **Advanced content hierarchy** through sophisticated blockquote nesting
 
-## 📋 Usage
+## ☐ Usage
 
 ### For Documentation
 Apply style guidelines to maintain visual consistency:
@@ -38,7 +38,7 @@ Reference style guides when creating new content and tools:
 - Follow naming conventions for new files
 - Maintain visual consistency across tools
 
-## 🔗 Related Documentation
+## ■ Related Documentation
 
 - See `../guides/` for step-by-step tutorials
 - See `../setup/` for installation and configuration
@@ -49,7 +49,7 @@ Reference style guides when creating new content and tools:
 **Last Updated:** 2025-07-27
 **Maintainer:** CtxRtr Maintainer
 
-## 🚀 Quick Start
+## ▶ Quick Start
 
 ```bash
 # Example commands for this directory

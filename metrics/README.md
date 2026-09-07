@@ -89,10 +89,10 @@ The metrics system integrates with the pre-release sanitizer:
 ## Configuration
 
 ### Performance Targets
-- **Memory Usage:** < 80% (Current: 34% ✅)
-- **CPU Usage:** < 70% (Current: 14% ✅)
-- **Disk Usage:** < 85% (Current: 21% ✅)
-- **PDF Conversion:** 100% (Current: 100% ✅)
+- **Memory Usage:** < 80% (Current: 34% ✓)
+- **CPU Usage:** < 70% (Current: 14% ✓)
+- **Disk Usage:** < 85% (Current: 21% ✓)
+- **PDF Conversion:** 100% (Current: 100% ✓)
 
 ### Monitoring Schedule
 - **Real-time:** Stats app menu bar monitoring
@@ -140,7 +140,7 @@ The metrics system works with the pre-release sanitizer to ensure:
 **Last Updated:** 2025-07-25
 **Maintainer:** CtxRtr Maintainer
 
-## 📁 Contents
+## ■ Contents
 
 ### **Files**
 - `current-metrics.json` - [Description of purpose]
@@ -156,7 +156,7 @@ The metrics system works with the pre-release sanitizer to ensure:
 - `data/` - [Description of contents]
 - `reports/` - [Description of contents]
 
-## 🚀 Quick Start
+## ▶ Quick Start
 
 ```bash
 # Example commands for this directory

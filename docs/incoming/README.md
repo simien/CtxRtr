@@ -24,14 +24,14 @@ Important considerations for the PDF conversion process:
 - The watcher runs via `ops/backup/pdf-watcher.sh`
 - Conversion logs are stored in `logs/pdf-watcher.log`
 
-## 📁 Contents
+## ■ Contents
 
 ### **Files**
 
 ### **Subdirectories**
 - No subdirectories found
 
-## 🚀 Quick Start
+## ▶ Quick Start
 
 ```bash
 # Example commands for this directory

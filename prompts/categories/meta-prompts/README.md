@@ -40,7 +40,7 @@ Meta-prompts focus on managing the conversation experience, preserving developme
 - Ensures titles are memorable and accurately descriptive
 - Creates titles that support future reference and project history
 
-## 📁 Contents
+## ■ Contents
 
 ### **Files**
 - `generate-chat-summary-title-v1.2.0.md` - [Description of purpose]
@@ -50,7 +50,7 @@ Meta-prompts focus on managing the conversation experience, preserving developme
 ### **Subdirectories**
 - No subdirectories found
 
-## 🚀 Quick Start
+## ▶ Quick Start
 
 ```bash
 # Example commands for this directory
