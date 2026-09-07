@@ -6,6 +6,8 @@ A comprehensive guide to the unified monochromatic ASCII style system and centra
 
 CtxRtr uses a **unified monochromatic ASCII-first** approach that creates a consistent, professional, and universally compatible visual identity across all documentation and outputs.
 
+**Symbol policy:** No emoji anywhere in documentation. Use the Unicode Typography and Symbol System instead (geometric shapes, arrows, status marks, bracketed labels). The canonical symbol table lives in the `universal-styling` skill, currently at `.agent/skills/universal-styling/SKILL.md` in the Homelab repo (`simien/Homelab`) since CtxRtr's own copy was removed in the DgtlEnv-to-CtxRtr rename. Every symbol used in this document and across CtxRtr's docs traces back to that table: ■ for section/category markers with no distinct semantic meaning of their own, plus precise equivalents (✓ done, ✗ failed, ▲ warning, ↗ trending, ▶ start/next, [*] note) where the original marker carried real meaning.
+
 ## ☐ Project Name Standards
 
 ### Primary Name: CtxRtr
