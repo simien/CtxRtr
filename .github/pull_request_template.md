@@ -66,4 +66,4 @@ If this PR introduces breaking changes, please describe them and provide migrati
 - **OS:** macOS 12.7.6 Monterey
 - **Device:** MacBook Pro (Retina, 15-inch, Mid 2015)
 - **Shell:** [zsh/bash]
-- **DgtlEnv Version:** [current version] 
+- **CtxRtr Version:** [current version] 

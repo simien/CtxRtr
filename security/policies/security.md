@@ -11,7 +11,7 @@ Use this section to tell people about which versions of your project are current
 
 ## Reporting a Vulnerability
 
-We take the security of DgtlEnv seriously. If you believe you have found a security vulnerability, please report it to us as described below.
+We take the security of CtxRtr seriously. If you believe you have found a security vulnerability, please report it to us as described below.
 
 ### Reporting Process
 
@@ -43,7 +43,7 @@ We follow responsible disclosure practices:
 
 ### Security Best Practices
 
-When using DgtlEnv, please follow these security best practices:
+When using CtxRtr, please follow these security best practices:
 
 1. **Keep Dependencies Updated:**
    ```bash
@@ -67,7 +67,7 @@ When using DgtlEnv, please follow these security best practices:
 
 ### Security Features
 
-DgtlEnv includes several security-focused features:
+CtxRtr includes several security-focused features:
 
 - **Input Validation:** All scripts validate and sanitize inputs
 - **Error Handling:** Comprehensive error handling prevents information leakage
@@ -104,7 +104,7 @@ Security updates will be released as patch versions (e.g., 1.0.1, 1.0.2) and wil
 
 ### Acknowledgments
 
-We thank all security researchers and contributors who help keep DgtlEnv secure by reporting vulnerabilities and suggesting improvements.
+We thank all security researchers and contributors who help keep CtxRtr secure by reporting vulnerabilities and suggesting improvements.
 
 ---
 

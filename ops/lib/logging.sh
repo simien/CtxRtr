@@ -2,9 +2,9 @@
 set -euo pipefail
 
 # ##############################################################################
-# DgtlEnv Logging Library
+# CtxRtr Logging Library
 #
-# Provides standardized logging functions for DgtlEnv scripts.
+# Provides standardized logging functions for CtxRtr scripts.
 # Depends on LOG_FILE and VERBOSE variables being set in the calling script.
 # ##############################################################################
 

@@ -8,7 +8,7 @@
 
 ## 🎯 Overview
 
-DgtlEnv documentation uses sophisticated blockquote nesting to create visual hierarchy and distinction. This system allows blockquotes to contain nested content including code blocks, lists, headers, and other structured elements.
+CtxRtr documentation uses sophisticated blockquote nesting to create visual hierarchy and distinction. This system allows blockquotes to contain nested content including code blocks, lists, headers, and other structured elements.
 
 ## 🏗️ Blockquote Nesting Architecture
 
@@ -84,10 +84,10 @@ Content that follows the blockquote...
 > > **Advanced Usage Examples** - Sophisticated features for complex workflows
 > > ```bash
 > > # Enhanced router with logging
-> > ./ops/run-prompt-enhanced.sh diagnose-ci
+> > ./ops/run-prompt.sh diagnose-ci
 > >
 > > # Prompt chaining
-> > ./ops/run-prompt-enhanced.sh --chain diagnose-ci generate-report
+> > ./ops/run-prompt.sh --chain diagnose-ci generate-report
 > > ```
 ```
 
@@ -182,11 +182,11 @@ PDFs: 0/0 converted ✅
 
 ### **Documentation Structure**
 ```markdown
-## 🎯 What is DgtlEnv?
+## 🎯 What is CtxRtr?
 
 > **Personal Experimental Project** - A personal toolkit for improving my environment to run modern products
 
-**DgtlEnv** is a **personal experimental project** focused on improving my environment to run modern products. Contains explorations for internal management and personal interests in design, development, context systems, and processes. Built as a shell script toolkit for maximum simplicity and extensibility.
+**CtxRtr** is a **personal experimental project** focused on improving my environment to run modern products. Contains explorations for internal management and personal interests in design, development, context systems, and processes. Built as a shell script toolkit for maximum simplicity and extensibility.
 
 ### 🖥️ **Primary Focus: Environment Optimization**
 > **Performance refinement** - Tools that directly improve your Mac's performance

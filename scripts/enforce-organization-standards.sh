@@ -17,7 +17,7 @@ PROJECT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 VIOLATIONS=0
 WARNINGS=0
 
-echo -e "${BLUE}🔍 DgtlEnv Organization Standards Check${NC}"
+echo -e "${BLUE}🔍 CtxRtr Organization Standards Check${NC}"
 echo "=========================================="
 
 # Function to check for violations
@@ -30,9 +30,9 @@ check_violation() {
         echo -e "${RED}❌ VIOLATION: $description${NC}"
         find "$PROJECT_ROOT" -name "$pattern" -type f
         if [[ "$severity" == "error" ]]; then
-            ((VIOLATIONS++))
+            VIOLATIONS=$((VIOLATIONS + 1))
         else
-            ((WARNINGS++))
+            WARNINGS=$((WARNINGS + 1))
         fi
         echo
     else
@@ -49,7 +49,7 @@ check_directory_structure() {
         echo -e "${GREEN}✅ PASS: $description${NC}"
     else
         echo -e "${YELLOW}⚠️  WARNING: $description${NC}"
-        ((WARNINGS++))
+        WARNINGS=$((WARNINGS + 1))
     fi
 }
 
@@ -62,7 +62,7 @@ check_readme_files() {
         echo -e "${GREEN}✅ PASS: $description${NC}"
     else
         echo -e "${RED}❌ VIOLATION: $description${NC}"
-        ((VIOLATIONS++))
+        VIOLATIONS=$((VIOLATIONS + 1))
     fi
 }
 
@@ -87,7 +87,7 @@ check_log_organization() {
         if [[ "$has_subdirs" == false ]]; then
             echo -e "${YELLOW}⚠️  WARNING: Logs not organized by process type${NC}"
             echo -e "${BLUE}💡 Suggestion: Consider creating process-specific log directories${NC}"
-            ((WARNINGS++))
+            WARNINGS=$((WARNINGS + 1))
         fi
 
         # Check for log rotation
@@ -95,15 +95,15 @@ check_log_organization() {
             echo -e "${GREEN}✅ PASS: Log rotation/archives directory exists${NC}"
         else
             echo -e "${YELLOW}⚠️  WARNING: No log rotation/archives directory${NC}"
-            ((WARNINGS++))
+            WARNINGS=$((WARNINGS + 1))
         fi
     fi
 }
 
 # Function to check todo metrics and dashboard
 check_todo_metrics() {
-    local master_todo="$PROJECT_ROOT/todos/planning/master-todo.md"
-    local todo_dashboard="$PROJECT_ROOT/docs/reports/todo-metrics-dashboard.md"
+    local master_todo="$PROJECT_ROOT/.personal/todos/planning/master-todo.md"
+    local todo_dashboard="$PROJECT_ROOT/.personal/docs/reports/todo-metrics-dashboard.md"
 
     echo -e "\n${BLUE}📊 Checking Todo Metrics and Dashboard${NC}"
     echo "----------------------------------------"
@@ -117,7 +117,7 @@ check_todo_metrics() {
             echo -e "${GREEN}✅ PASS: Master todo is current (updated today)${NC}"
         else
             echo -e "${YELLOW}⚠️  WARNING: Master todo may be outdated (last updated: $last_updated)${NC}"
-            ((WARNINGS++))
+            WARNINGS=$((WARNINGS + 1))
         fi
 
         # Check for progress bars
@@ -125,11 +125,11 @@ check_todo_metrics() {
             echo -e "${GREEN}✅ PASS: Master todo contains progress charts${NC}"
         else
             echo -e "${YELLOW}⚠️  WARNING: Master todo missing progress charts${NC}"
-            ((WARNINGS++))
+            WARNINGS=$((WARNINGS + 1))
         fi
     else
         echo -e "${RED}❌ VIOLATION: Master todo file missing${NC}"
-        ((VIOLATIONS++))
+        VIOLATIONS=$((VIOLATIONS + 1))
     fi
 
     # Check todo metrics dashboard exists
@@ -141,7 +141,7 @@ check_todo_metrics() {
             echo -e "${GREEN}✅ PASS: Todo dashboard contains progress charts${NC}"
         else
             echo -e "${YELLOW}⚠️  WARNING: Todo dashboard missing progress charts${NC}"
-            ((WARNINGS++))
+            WARNINGS=$((WARNINGS + 1))
         fi
 
         # Check dashboard is current
@@ -150,15 +150,15 @@ check_todo_metrics() {
             echo -e "${GREEN}✅ PASS: Todo dashboard is current (updated today)${NC}"
         else
             echo -e "${YELLOW}⚠️  WARNING: Todo dashboard may be outdated (last updated: $dashboard_date)${NC}"
-            ((WARNINGS++))
+            WARNINGS=$((WARNINGS + 1))
         fi
     else
         echo -e "${RED}❌ VIOLATION: Todo metrics dashboard missing${NC}"
-        ((VIOLATIONS++))
+        VIOLATIONS=$((VIOLATIONS + 1))
     fi
 
     # Check active todos directory structure
-    local active_todos_dir="$PROJECT_ROOT/todos/active"
+    local active_todos_dir="$PROJECT_ROOT/.personal/todos/active"
     if [[ -d "$active_todos_dir" ]]; then
         local active_todo_count=$(find "$active_todos_dir" -name "*.md" | wc -l | tr -d ' ')
         echo -e "${GREEN}✅ PASS: Active todos directory exists with $active_todo_count todo files${NC}"
@@ -169,19 +169,19 @@ check_todo_metrics() {
                 local filename=$(basename "$todo_file")
                 if grep -q "Status.*Completed" "$todo_file" || grep -q "Status.*\[x\]" "$todo_file"; then
                     echo -e "${YELLOW}⚠️  WARNING: $filename appears completed but still in active directory${NC}"
-                    ((WARNINGS++))
+                    WARNINGS=$((WARNINGS + 1))
                 fi
             fi
         done
     else
         echo -e "${RED}❌ VIOLATION: Active todos directory missing${NC}"
-        ((VIOLATIONS++))
+        VIOLATIONS=$((VIOLATIONS + 1))
     fi
 }
 
 # Function to check todo quality standards
 check_todo_quality() {
-    local completed_dir="$PROJECT_ROOT/todos/completed"
+    local completed_dir="$PROJECT_ROOT/.personal/todos/completed"
 
     if [[ -d "$completed_dir" ]]; then
         echo -e "\n${BLUE}📋 Checking Todo Quality Standards${NC}"
@@ -195,7 +195,7 @@ check_todo_quality() {
                 # Check for unchecked boxes (only [ ] is a violation, [-] is allowed for future tasks)
                 if grep -q "\[ \]" "$todo_file"; then
                     echo -e "${RED}❌ VIOLATION: $filename has unchecked boxes in completed directory${NC}"
-                    ((VIOLATIONS++))
+                    VIOLATIONS=$((VIOLATIONS + 1))
                 else
                     echo -e "${GREEN}✅ PASS: $filename has all boxes properly marked${NC}"
                 fi
@@ -203,37 +203,37 @@ check_todo_quality() {
                 # Check for proper outcome communication in non-completed tasks
                 if grep -q "\[-\]" "$todo_file" && ! grep -q "\[-\].*:" "$todo_file"; then
                     echo -e "${YELLOW}⚠️  WARNING: $filename has [-] tasks without outcome communication${NC}"
-                    ((WARNINGS++))
+                    WARNINGS=$((WARNINGS + 1))
                 fi
 
                 if grep -q "\[~\]" "$todo_file" && ! grep -q "\[~\].*:" "$todo_file"; then
                     echo -e "${YELLOW}⚠️  WARNING: $filename has [~] tasks without outcome communication${NC}"
-                    ((WARNINGS++))
+                    WARNINGS=$((WARNINGS + 1))
                 fi
 
                         if grep -q "\[>\]" "$todo_file" && ! grep -q "\[>\].*:" "$todo_file"; then
             echo -e "${YELLOW}⚠️  WARNING: $filename has [>] tasks without outcome communication${NC}"
-            ((WARNINGS++))
+            WARNINGS=$((WARNINGS + 1))
         fi
 
         # Check for proper "Moved to" communication
         if grep -q "\[>\]" "$todo_file" && ! grep -q "\[>\].*Moved to:" "$todo_file" && ! grep -q "\[>\].*Deferred to:" "$todo_file"; then
             echo -e "${YELLOW}⚠️  WARNING: $filename has [>] tasks without proper 'Moved to' or 'Deferred to' communication${NC}"
-            ((WARNINGS++))
+            WARNINGS=$((WARNINGS + 1))
         fi
 
         # Check for items that should be migrated (but exclude items that already have migration notes)
         if grep -q "\[[-~>!?]\]" "$todo_file" && ! grep -q "MIGRATED:" "$todo_file"; then
             echo -e "${YELLOW}⚠️  WARNING: $filename has dynamic symbol items that should be migrated to appropriate todo files${NC}"
             echo -e "${BLUE}💡 Suggestion: Run ./scripts/migrate-todo-items.sh to migrate these items${NC}"
-            ((WARNINGS++))
+            WARNINGS=$((WARNINGS + 1))
         elif grep -q "\[[-~>!?]\]" "$todo_file" && grep -q "MIGRATED:" "$todo_file"; then
             echo -e "${GREEN}✅ PASS: $filename has dynamic symbol items that have already been migrated${NC}"
         fi
 
                 if grep -q "\[!\]" "$todo_file" && ! grep -q "\[!\].*:" "$todo_file"; then
                     echo -e "${YELLOW}⚠️  WARNING: $filename has [!] tasks without outcome communication${NC}"
-                    ((WARNINGS++))
+                    WARNINGS=$((WARNINGS + 1))
                 fi
 
                 # Check for COMPLETED status (with or without bold formatting)
@@ -241,7 +241,7 @@ check_todo_quality() {
                     echo -e "${GREEN}✅ PASS: $filename shows COMPLETED status${NC}"
                 else
                     echo -e "${RED}❌ VIOLATION: $filename missing COMPLETED status${NC}"
-                    ((VIOLATIONS++))
+                    VIOLATIONS=$((VIOLATIONS + 1))
                 fi
             fi
         done
@@ -266,12 +266,15 @@ echo -e "\n${BLUE}📋 Checking Directory Structure${NC}"
 echo "----------------------------------------"
 
 # Check required directories
+# Note: reports/, workflows/, and development-history all moved under .personal/ when this
+# project split public code from personal configuration; checks below point at the real,
+# current locations rather than their pre-move paths.
 check_directory_structure "$PROJECT_ROOT/docs/guides" "Guides directory exists"
 check_directory_structure "$PROJECT_ROOT/docs/setup" "Setup directory exists"
 check_directory_structure "$PROJECT_ROOT/docs/standards" "Style directory exists"
-check_directory_structure "$PROJECT_ROOT/docs/reports" "Reports directory exists"
-check_directory_structure "$PROJECT_ROOT/docs/workflows" "Workflows directory exists"
-check_directory_structure "$PROJECT_ROOT/docs/development-history" "Development history directory exists"
+check_directory_structure "$PROJECT_ROOT/.personal/docs/reports" "Reports directory exists"
+check_directory_structure "$PROJECT_ROOT/.personal/docs/workflows" "Workflows directory exists"
+check_directory_structure "$PROJECT_ROOT/.personal/history" "Development history directory exists"
 check_directory_structure "$PROJECT_ROOT/docs/incoming" "Incoming directory exists"
 
 echo -e "\n${BLUE}📖 Checking README Files${NC}"
@@ -282,7 +285,7 @@ check_readme_files "$PROJECT_ROOT/docs" "Main docs README exists"
 check_readme_files "$PROJECT_ROOT/docs/guides" "Guides README exists"
 check_readme_files "$PROJECT_ROOT/docs/setup" "Setup README exists"
 check_readme_files "$PROJECT_ROOT/docs/standards" "Style README exists"
-check_readme_files "$PROJECT_ROOT/docs/development-history" "Development history README exists"
+check_readme_files "$PROJECT_ROOT/.personal/history" "Development history README exists"
 check_readme_files "$PROJECT_ROOT/docs/incoming" "Incoming README exists"
 
 # Check metrics subdirectories for README files
@@ -300,14 +303,15 @@ check_readme_files "$PROJECT_ROOT/ops/monitoring" "Ops monitoring README exists"
 check_readme_files "$PROJECT_ROOT/ops/templates" "Ops templates README exists"
 
 check_readme_files "$PROJECT_ROOT/scripts" "Scripts README exists"
-check_readme_files "$PROJECT_ROOT/todos" "Todos README exists"
-check_readme_files "$PROJECT_ROOT/todos/active" "Todos active README exists"
-check_readme_files "$PROJECT_ROOT/todos/completed" "Todos completed README exists"
-check_readme_files "$PROJECT_ROOT/todos/planning" "Todos planning README exists"
-check_readme_files "$PROJECT_ROOT/todos/templates" "Todos templates README exists"
+# Todos live under .personal/ (gitignored) by design; see CONTRIBUTING.md's public/personal split
+check_readme_files "$PROJECT_ROOT/.personal/todos" "Todos README exists"
+check_readme_files "$PROJECT_ROOT/.personal/todos/active" "Todos active README exists"
+check_readme_files "$PROJECT_ROOT/.personal/todos/completed" "Todos completed README exists"
+check_readme_files "$PROJECT_ROOT/.personal/todos/planning" "Todos planning README exists"
+check_readme_files "$PROJECT_ROOT/.personal/todos/templates" "Todos templates README exists"
 
 check_readme_files "$PROJECT_ROOT/security" "Security README exists"
-check_readme_files "$PROJECT_ROOT/security/audit-reports" "Security audit reports README exists"
+check_readme_files "$PROJECT_ROOT/.personal/security-reports" "Security audit reports README exists"
 check_readme_files "$PROJECT_ROOT/security/policies" "Security policies README exists"
 
 check_readme_files "$PROJECT_ROOT/tests" "Tests README exists"
@@ -326,7 +330,7 @@ echo "----------------------------------------"
 if find "$PROJECT_ROOT/docs" -maxdepth 1 -name "*.md" | grep -v "README.md" | grep -q .; then
     echo -e "${RED}❌ VIOLATION: Files in docs root that should be in subdirectories${NC}"
     find "$PROJECT_ROOT/docs" -maxdepth 1 -name "*.md" | grep -v "README.md"
-    ((VIOLATIONS++))
+    VIOLATIONS=$((VIOLATIONS + 1))
 else
     echo -e "${GREEN}✅ PASS: No scattered files in docs root${NC}"
 fi

@@ -1,17 +1,17 @@
 {
   "project": {
-    "name": "DgtlEnv",
-    "fullName": "DgtlEnv - Digital Environment Management",
-    "description": "A personal experimental project focused on improving my environment to run modern products. Contains explorations for internal management and personal interests in design, development, context systems, and processes.",
+    "name": "CtxRtr",
+    "fullName": "CtxRtr - Contextual Prompt Router",
+    "description": "A versioned, validated, and audited Contextual Prompt Router, plus the environment-optimization tooling that keeps it running well on constrained hardware (a 2015 MacBook Pro).",
     "version": "1.0.0",
-    "contact_name": "DgtlEnv Maintainer",
+    "contact_name": "CtxRtr Maintainer",
     "license": "MIT",
-    "author": "DgtlEnv Maintainer",
-    "maintainer": "DgtlEnv Maintainer",
+    "author": "CtxRtr Maintainer",
+    "maintainer": "CtxRtr Maintainer",
     "website": "https://example.com/",
-    "documentation": "https://github.com/dgtlenv-maintainer/DgtlEnv#readme",
+    "documentation": "https://github.com/simien/CtxRtr#readme",
     "email": "maintainer@example.com",
-    "githubUser": "dgtlenv-maintainer"
+    "githubUser": "simien"
   },
   "system": {
     "targetOS": "macOS 12.7.6 Monterey",
@@ -67,10 +67,10 @@
   },
   "ascii": {
     "logo": {
-      "simple": "DgtlEnv",
-      "styled": "┌─────────────────────────────────────┐\n│  DgtlEnv - Digital Environment     │\n│  Management System                 │\n└─────────────────────────────────────┘",
-      "art": "DgtlEnv",
-      "minimal": "DgtlEnv\nDigital Environment Management"
+      "simple": "CtxRtr",
+      "styled": "┌─────────────────────────────────────┐\n│  CtxRtr - Contextual Prompt Router │\n└─────────────────────────────────────┘",
+      "art": "CtxRtr",
+      "minimal": "CtxRtr\nContextual Prompt Router"
     },
     "icons": {
       "system": "🖥️",
@@ -135,8 +135,8 @@
   },
   "scripts": {
     "backup": {
-      "create": "./ops/backup/create-digitalenv-backup.sh",
-      "pdfConverter": "./ops/backup/simple-pdf-converter.sh",
+      "create": "./ops/backup/create-ctxrtr-backup.sh",
+      "pdfConverter": "./ops/backup/pdf-to-markdown-converter.sh",
       "pdfWatcher": "./ops/backup/pdf-watcher.sh"
     },
     "monitoring": {

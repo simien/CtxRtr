@@ -1,5 +1,5 @@
 #!/bin/bash
-# DgtlEnv Release Management Script
+# CtxRtr Release Management Script
 # Automates the release process for GitHub
 
 set -e
@@ -57,7 +57,7 @@ update_changelog() {
     cat > temp_changelog.md << EOF
 # Changelog
 
-All notable changes to DgtlEnv will be documented in this file.
+All notable changes to CtxRtr will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
@@ -172,7 +172,7 @@ main() {
 
     print_success "Release process completed successfully!"
     print_status "GitHub Actions will automatically create the release"
-    print_status "Monitor the workflow at: https://github.com/dgtlenv-maintainer/DgtlEnv/actions"
+    print_status "Monitor the workflow at: https://github.com/simien/CtxRtr/actions"
 }
 
 # Run main function with all arguments

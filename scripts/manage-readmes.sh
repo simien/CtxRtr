@@ -2,7 +2,7 @@
 set -euo pipefail
 
 # Scripts/Manage-Readmes.sh
-# A unified tool for managing, validating, and updating Directory READMEs in DgtlEnv.
+# A unified tool for managing, validating, and updating Directory READMEs in CtxRtr.
 
 # --- Configuration ---
 PROJECT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
@@ -139,7 +139,7 @@ cmd_scan_missing() {
 ## 🚀 Quick Start
 EOF
             log_success "Generated placeholder for $dir"
-            ((created_count++))
+            created_count=$((created_count + 1))
         fi
     done < <(find . -type d -not -path "./.git*" -not -path "./.cursor*" -not -path "./.vscode*" -not -path "./node_modules*" -not -path ".")
 
@@ -164,7 +164,7 @@ cmd_batch_update() {
                 if ! grep -q "## 🚀 Quick Start" "$file"; then
                     echo -e "\n## 🚀 Quick Start\n\`\`\`bash\n# commands\n\`\`\`\n" >> "$file"
                 fi
-                ((updated_count++))
+                updated_count=$((updated_count + 1))
              fi
         fi
     done < <(find . -name "README.md" -not -path "./.git*" -not -path "./node_modules*" -print0)
@@ -181,17 +181,17 @@ cmd_check() {
     local missing=0
 
     while IFS= read -r -d '' dir; do
-        ((total++))
+        total=$((total + 1))
         if [ -f "$dir/README.md" ]; then
              if grep -q "## 📁 Contents" "$dir/README.md" && grep -q "## 🚀 Quick Start" "$dir/README.md"; then
-                ((valid++))
+                valid=$((valid + 1))
              else
                 echo -e "${YELLOW}Invalid:${NC} $dir/README.md"
-                ((invalid++))
+                invalid=$((invalid + 1))
              fi
         else
             echo -e "${RED}Missing:${NC} $dir"
-            ((missing++))
+            missing=$((missing + 1))
         fi
     done < <(find . -type d -not -path "./.git*" -not -path "./.cursor*" -not -path "./.vscode*" -not -path "./node_modules*" -not -path "." -print0)
 

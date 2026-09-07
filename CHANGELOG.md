@@ -1,11 +1,22 @@
 # Changelog
 
-All notable changes to DgtlEnv will be documented in this file.
+All notable changes to CtxRtr will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+### Changed: Renamed from DgtlEnv to CtxRtr, repositioned around the Prompt Router
+- **Project renamed** DgtlEnv → CtxRtr (GitHub repo, local folder, all in-repo references)
+- **Repositioning**: README and CONTRIBUTING now lead with the Contextual Prompt Router as the primary system (versioned, validated, audited prompts, called "PromptOps"), with system/hardware optimization reframed as supporting infrastructure justified by running on a 2015 MacBook Pro rather than as the headline feature
+- **Fixed broken GitHub links**: `dgtlenv-maintainer`/`ctxrtr-maintainer` placeholder org replaced with the real `simien` org across README, CONTRIBUTING, config, and scripts. Clone and remote instructions were previously non-functional
+- **Canonicalized the PDF converter**: `pdf-to-markdown-converter.sh` (real `pdftotext`/`pdfinfo` extraction) is now the documented and wired-in script everywhere; `simple-pdf-converter.sh` (a placeholder-only "manual conversion required" stub) is removed, and `pdf-watcher.sh`'s automated pipeline now calls the real converter instead of the stub
+- **Removed unused agent scaffolding**: deleted `.agent/` (a one-commit, unreferenced generic Cursor-rules import) and the duplicate `prompts/categories/{agents,external-skills}/` bundle
+- **Modernized `.github/workflows/release.yml`**: replaced deprecated `actions/create-release@v1`/`actions/upload-release-asset@v1` (archived by GitHub since 2021, and referencing a release step ID that was never set) with `softprops/action-gh-release@v2`
+- **Fixed doc drift**: `CONTRIBUTING.md`'s directory tree now matches reality (`prompts/`, `config/` added; nonexistent top-level `todos/` removed), `docs/SOURCES_OF_TRUTH.md`'s `config/cursor-settings.json` reference corrected to `config/ide-settings.json`, and `README.md`'s link to `docs/prompt-system-overview.md` corrected to its real path under `docs/guides/`
+- **Fixed phantom script references**: `ops/run-prompt-enhanced.sh` was documented across 7 files but never existed. Its features (chaining, verbose logging) were already merged into `ops/run-prompt.sh`; all references now point to the real script
+- Renamed `ops/backup/create-dgtlenv-backup.sh` → `create-ctxrtr-backup.sh` and corrected the several places that referenced it under a third name, `create-digitalenv-backup.sh`, which never matched any file on disk
 
 ### Added
 - **Contextual Prompt Management System:** Comprehensive prompt router with natural language support, fuzzy matching, and quality control
@@ -93,7 +104,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Scripts and Tools Added
 - `ops/run-prompt.sh` - Basic contextual prompt router
-- `ops/run-prompt-enhanced.sh` - Enhanced router with logging and chaining
+- `ops/run-prompt.sh` - Enhanced router with logging and chaining
 - `scripts/validate-prompts.sh` - Comprehensive prompt validation
 - `scripts/analyze-prompts.sh` - Usage analytics and reporting
 - `scripts/audit-prompts.sh` - Version management and archiving
@@ -145,9 +156,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Scripts Added
 - `ops/monitoring/swap-ssd-health.sh` - System health monitoring
 - `ops/monitoring/top-hogs.sh` - Resource usage monitoring
-- `ops/backup/simple-pdf-converter.sh` - PDF conversion utility
+- `ops/backup/pdf-to-markdown-converter.sh` - PDF conversion utility
 - `ops/backup/pdf-watcher.sh` - Automatic file watching
-- `ops/backup/create-digitalenv-backup.sh` - Project backup
+- `ops/backup/create-ctxrtr-backup.sh` - Project backup
 - `ops/cleanup/brew-cleanup.sh` - Homebrew cleanup
 - `ops/cleanup/docker-cleanup.sh` - Docker cleanup
 - `ops/docker/docker-optimize.sh` - Docker optimization
@@ -199,7 +210,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Release Notes
 
 ### Version 1.0.0
-This is the first stable release of DgtlEnv, providing a comprehensive digital environment management system for macOS development environments. The system includes automated optimization, monitoring, and maintenance tools specifically designed for MacBook Pro (Retina, 15-inch, Mid 2015) running macOS 12.7.6 Monterey.
+This is the first stable release of CtxRtr, providing a comprehensive digital environment management system for macOS development environments. The system includes automated optimization, monitoring, and maintenance tools specifically designed for MacBook Pro (Retina, 15-inch, Mid 2015) running macOS 12.7.6 Monterey.
 
 **Key Features:**
 - Complete system optimization suite
@@ -259,4 +270,4 @@ When adding entries to the changelog, please follow these guidelines:
 ---
 
 **Last Updated:** 2025-07-25
-**Maintainer:** DgtlEnv Maintainer
+**Maintainer:** CtxRtr Maintainer

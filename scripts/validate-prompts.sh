@@ -2,7 +2,7 @@
 set -euo pipefail
 
 # ##############################################################################
-# DgtlEnv Prompt Validator v1.0.0
+# CtxRtr Prompt Validator v1.0.0
 #
 # Validates all prompts in the system to ensure they follow the template format
 # and meet quality standards.
@@ -25,7 +25,7 @@ validate_metadata() {
     # Check for required metadata fields
     local required_fields=("id" "name" "version" "purpose" "category" "model_compatibility")
 
-    for field in "${required_fields[@]}"; do
+    for field in "${required_fields[@]:-}"; do
         if ! grep -q "^${field}:" "$file"; then
             errors+=("Missing required field: $field")
         fi
@@ -39,7 +39,10 @@ validate_metadata() {
         fi
     fi
 
-    echo "${errors[@]}"
+    if [[ ${#errors[@]} -gt 0 ]]; then
+        printf '%s\n' "${errors[@]}"
+    fi
+    return 0
 }
 
 validate_structure() {
@@ -49,7 +52,7 @@ validate_structure() {
     # Check for required sections
     local required_sections=("System Message / Role" "Context Engineering" "Instructions" "Expected Outputs")
 
-    for section in "${required_sections[@]}"; do
+    for section in "${required_sections[@]:-}"; do
         if ! grep -q "^## $section" "$file"; then
             errors+=("Missing required section: $section")
         fi
@@ -66,7 +69,10 @@ validate_structure() {
         errors+=("Missing proper markdown section headers")
     fi
 
-    echo "${errors[@]}"
+    if [[ ${#errors[@]} -gt 0 ]]; then
+        printf '%s\n' "${errors[@]}"
+    fi
+    return 0
 }
 
 validate_content() {
@@ -93,7 +99,10 @@ validate_content() {
         fi
     fi
 
-    echo "${errors[@]}"
+    if [[ ${#errors[@]} -gt 0 ]]; then
+        printf '%s\n' "${errors[@]}"
+    fi
+    return 0
 }
 
 validate_filename() {
@@ -114,7 +123,10 @@ validate_filename() {
         errors+=("Version mismatch: filename=$filename_version, content=$content_version")
     fi
 
-    echo "${errors[@]}"
+    if [[ ${#errors[@]} -gt 0 ]]; then
+        printf '%s\n' "${errors[@]}"
+    fi
+    return 0
 }
 
 # Function to compare versions
@@ -160,7 +172,7 @@ check_outdated_versions() {
         local latest_version="$current_version"
 
         # Find the latest version
-        for version_file in "${all_versions[@]}"; do
+        for version_file in "${all_versions[@]:-}"; do
             local version_filename=$(basename "$version_file")
             local version=$(echo "$version_filename" | sed -n 's/.*-v\([0-9]\+\.[0-9]\+\.[0-9]\+\)\.md/\1/p')
 
@@ -175,7 +187,10 @@ check_outdated_versions() {
         fi
     fi
 
-    echo "${warnings[@]}"
+    if [[ ${#warnings[@]} -gt 0 ]]; then
+        printf '%s\n' "${warnings[@]}"
+    fi
+    return 0
 }
 
 # --- Main Validation Function ---
@@ -187,40 +202,51 @@ validate_prompt() {
 
     echo "🔍 Validating: $filename"
 
-    # Run all validation checks
-    local metadata_errors=($(validate_metadata "$file"))
-    local structure_errors=($(validate_structure "$file"))
-    local content_errors=($(validate_content "$file"))
-    local filename_errors=($(validate_filename "$file"))
-    local outdated_warnings=($(check_outdated_versions "$file"))
+    # Run all validation checks. Each prints one message per line (if any);
+    # read line-by-line rather than word-splitting a command substitution,
+    # since error messages contain spaces and would otherwise be shredded.
+    local metadata_errors=()
+    while IFS= read -r line; do metadata_errors+=("$line"); done < <(validate_metadata "$file")
+    local structure_errors=()
+    while IFS= read -r line; do structure_errors+=("$line"); done < <(validate_structure "$file")
+    local content_errors=()
+    while IFS= read -r line; do content_errors+=("$line"); done < <(validate_content "$file")
+    local filename_errors=()
+    while IFS= read -r line; do filename_errors+=("$line"); done < <(validate_filename "$file")
+    local outdated_warnings=()
+    while IFS= read -r line; do outdated_warnings+=("$line"); done < <(check_outdated_versions "$file")
 
-    # Collect all errors
-    errors+=("${metadata_errors[@]}")
-    errors+=("${structure_errors[@]}")
-    errors+=("${content_errors[@]}")
-    errors+=("${filename_errors[@]}")
+    # Collect all errors. Guard each append on the source array being non-empty:
+    # this machine's /bin/bash is 3.2 (macOS's frozen system bash), where
+    # "${empty_array[@]}" throws "unbound variable" under `set -u`. And under
+    # `set -e`, "[[ cond ]] && cmd" itself aborts the script when cond is false,
+    # so this uses `if` blocks rather than `&&` short-circuiting.
+    if [[ ${#metadata_errors[@]} -gt 0 ]]; then errors+=("${metadata_errors[@]}"); fi
+    if [[ ${#structure_errors[@]} -gt 0 ]]; then errors+=("${structure_errors[@]}"); fi
+    if [[ ${#content_errors[@]} -gt 0 ]]; then errors+=("${content_errors[@]}"); fi
+    if [[ ${#filename_errors[@]} -gt 0 ]]; then errors+=("${filename_errors[@]}"); fi
 
     # Collect warnings
-    warnings+=("${outdated_warnings[@]}")
+    if [[ ${#outdated_warnings[@]} -gt 0 ]]; then warnings+=("${outdated_warnings[@]}"); fi
 
     # Report results
     if [[ ${#errors[@]} -eq 0 ]]; then
         echo "✅ $filename: PASSED"
         # Show warnings if any
         if [[ ${#warnings[@]} -gt 0 ]]; then
-            for warning in "${warnings[@]}"; do
+            for warning in "${warnings[@]:-}"; do
                 echo "   ⚠️  $warning"
             done
         fi
         return 0
     else
         echo "❌ $filename: FAILED"
-        for error in "${errors[@]}"; do
+        for error in "${errors[@]:-}"; do
             echo "   - $error"
         done
         # Show warnings even for failed files
         if [[ ${#warnings[@]} -gt 0 ]]; then
-            for warning in "${warnings[@]}"; do
+            for warning in "${warnings[@]:-}"; do
                 echo "   ⚠️  $warning"
             done
         fi
@@ -246,7 +272,7 @@ auto_fix_prompt() {
         # Update the id field
         local new_id=$(echo "$filename" | sed 's/\.md$//')
         sed -i '' "s/id: prompt-format-template-v1.0.0/id: $new_id/" "$file"
-        sed -i '' "s/name: DgtlEnv Prompt Format Template/name: $(echo $new_id | sed 's/-/ /g' | sed 's/\b\w/\U&/g')/" "$file"
+        sed -i '' "s/name: CtxRtr Prompt Format Template/name: $(echo $new_id | sed 's/-/ /g' | sed 's/\b\w/\U&/g')/" "$file"
     fi
 
     # 2. Fix version inconsistencies
@@ -270,7 +296,7 @@ main() {
                 shift
                 ;;
             --help|-h)
-                echo "DgtlEnv Prompt Validator v1.0.0"
+                echo "CtxRtr Prompt Validator v1.0.0"
                 echo ""
                 echo "Usage:"
                 echo "  $0              # Validate all prompts"
@@ -299,12 +325,12 @@ main() {
     # Find all prompt files
     while IFS= read -r -d '' file; do
         if [[ "$(basename "$file")" != "README.md" ]]; then
-            ((total_prompts++))
+            total_prompts=$((total_prompts + 1))
 
             if validate_prompt "$file"; then
-                ((passed_prompts++))
+                passed_prompts=$((passed_prompts + 1))
             else
-                ((failed_prompts++))
+                failed_prompts=$((failed_prompts + 1))
 
                 if [[ "$fix_mode" == "true" ]]; then
                     auto_fix_prompt "$file"

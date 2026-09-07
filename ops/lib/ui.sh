@@ -2,7 +2,7 @@
 set -euo pipefail
 
 # ##############################################################################
-# DgtlEnv UI Library
+# CtxRtr UI Library
 #
 # Provides user interface functions like help, list, search, and output.
 # ##############################################################################
@@ -64,7 +64,7 @@ suggest_alternatives() {
 
 show_help() {
     local version="${1:-v2.0.0}" # Use passed version or a default
-    echo "DgtlEnv Prompt Router $version"
+    echo "CtxRtr Prompt Router $version"
     echo ""
     echo "Usage:"
     echo "  $0 [-d|--dry-run] <prompt-alias>"

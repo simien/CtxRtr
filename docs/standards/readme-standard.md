@@ -1,6 +1,6 @@
 # README Standard Structure
 
-This document defines the standard structure for `README.md` files within the DgtlEnv project to ensure consistency and discoverability.
+This document defines the standard structure for `README.md` files within the CtxRtr project to ensure consistency and discoverability.
 
 ## standard Structure
 

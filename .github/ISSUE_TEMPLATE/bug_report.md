@@ -1,6 +1,6 @@
 ---
 name: Bug report
-about: Create a report to help us improve DgtlEnv
+about: Create a report to help us improve CtxRtr
 title: '[BUG] '
 labels: 'bug'
 assignees: ''
@@ -24,7 +24,7 @@ A clear and concise description of what actually happened.
 **Environment Information**
 - **Device:** MacBook Pro (Retina, 15-inch, Mid 2015)
 - **OS:** macOS 12.7.6 Monterey
-- **DgtlEnv Version:** [e.g., 1.0.0]
+- **CtxRtr Version:** [e.g., 1.0.0]
 - **Shell:** [e.g., zsh, bash]
 
 **System Information**

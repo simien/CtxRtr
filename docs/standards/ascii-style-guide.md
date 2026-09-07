@@ -1,10 +1,10 @@
-# **DgtlEnv** ASCII Style Guide
+# **CtxRtr** ASCII Style Guide
 
-A unified monochromatic ASCII art system for DgtlEnv documentation and outputs.
+A unified monochromatic ASCII art system for CtxRtr documentation and outputs.
 
 ## 🎨 Design Philosophy
 
-DgtlEnv uses a **monochromatic ASCII-first** approach that prioritizes:
+CtxRtr uses a **monochromatic ASCII-first** approach that prioritizes:
 - **Consistency** across all documentation and outputs
 - **Readability** in any terminal or text editor
 - **Universality** - works everywhere without special fonts
@@ -38,7 +38,7 @@ DgtlEnv uses a **monochromatic ASCII-first** approach that prioritizes:
 
 ### File Structure Trees
 ```
-DgtlEnv/
+CtxRtr/
 ├── 📁 docs/                    # Documentation
 │   ├── 📄 README.md           # Main docs
 │   └── 📊 metrics/            # Performance data
@@ -112,29 +112,29 @@ Status: In Progress | Remaining: 3 tasks
 └─────────────────────────────────────┘
 ```
 
-## 🎨 DgtlEnv Logo Variations
+## 🎨 CtxRtr Logo Variations
 
 ### Simple Logo
 ```
-DgtlEnv
+CtxRtr
 ```
 
 ### Styled Logo
 ```
 ┌─────────────────────────────────────┐
-│  DgtlEnv - Digital Environment     │
+│  CtxRtr - Digital Environment     │
 │  Management System                 │
 └─────────────────────────────────────┘
 ```
 
 ### ASCII Art Logo
 ```
-DgtlEnv
+CtxRtr
 ```
 
 ### Minimal Logo
 ```
-DgtlEnv
+CtxRtr
 Digital Environment Management
 ```
 
@@ -202,7 +202,7 @@ Memory Usage: 34% ✅
 # Generate ASCII dashboard
 cat << EOF
 ┌─────────────────────────────────────┐
-│  DgtlEnv System Dashboard        │
+│  CtxRtr System Dashboard        │
 ├─────────────────────────────────────┤
 │  Memory: ████████░░░░░░░░░░░░░░░░  │
 │  CPU:    ████░░░░░░░░░░░░░░░░░░░░  │
@@ -238,7 +238,7 @@ EOF
 ### System Health Dashboard
 ```
 ┌─────────────────────────────────────┐
-│  DgtlEnv System Health           │
+│  CtxRtr System Health           │
 ├─────────────────────────────────────┤
 │  🖥️  System:    ✅ OPERATIONAL     │
 │  💾 Memory:    🟢 34% (Target: <80%)│
@@ -264,7 +264,7 @@ Before vs After Optimization
 
 ### File Structure
 ```
-DgtlEnv/
+CtxRtr/
 ├── 📁 docs/                    # Documentation
 │   ├── 📄 README.md           # Main documentation
 │   ├── 📊 optimization-summary.md
@@ -282,4 +282,4 @@ DgtlEnv/
 └── 🔧 scripts/                # Utility scripts
 ```
 
-This ASCII style guide ensures consistent, professional, and universally compatible visual elements throughout the DgtlEnv project.
+This ASCII style guide ensures consistent, professional, and universally compatible visual elements throughout the CtxRtr project.

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # ##############################################################################
-# DgtlEnv Prompt Router Test Suite v1.0.0
+# CtxRtr Prompt Router Test Suite v1.0.0
 #
 # Comprehensive testing for the enhanced Prompt Router script
 #
@@ -234,7 +234,7 @@ while [[ $# -gt 0 ]]; do
             shift
             ;;
         --help|-h)
-            echo "DgtlEnv Prompt Router Test Suite"
+            echo "CtxRtr Prompt Router Test Suite"
             echo ""
             echo "Usage:"
             echo "  $0 [--verbose]"

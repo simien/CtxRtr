@@ -9,7 +9,7 @@ set -e
 PROJECT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 DOCS_DIR="$PROJECT_ROOT/docs"
 INCOMING_DIR="$DOCS_DIR/incoming"
-CONVERTER_SCRIPT="$(dirname "$0")/simple-pdf-converter.sh"
+CONVERTER_SCRIPT="$(dirname "$0")/pdf-to-markdown-converter.sh"
 LOG_FILE="$PROJECT_ROOT/logs/backup/pdf-watcher.log"
 
 # Colors for output

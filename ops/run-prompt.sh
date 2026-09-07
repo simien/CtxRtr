@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # ##############################################################################
-# DgtlEnv Prompt Router v2.1.0 (Modular)
+# CtxRtr Prompt Router v2.1.0 (Modular)
 #
 # Orchestrates prompt routing by sourcing modular libraries for core logic,
-# UI, and logging. Follows DgtlEnv standards for maintainability.
+# UI, and logging. Follows CtxRtr standards for maintainability.
 #
 # Usage:
 #   ./ops/run-prompt.sh [-d|--dry-run] <prompt-alias>

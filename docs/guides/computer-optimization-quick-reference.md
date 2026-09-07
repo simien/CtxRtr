@@ -1,6 +1,6 @@
 # Environment Optimization Quick Reference
 
-**DgtlEnv Environment Optimization Tools** - Personal experimental project for improving environment to run modern products
+**CtxRtr Environment Optimization Tools** - Personal experimental project for improving environment to run modern products
 
 ## 🧪 Test Your Environment
 
@@ -40,7 +40,7 @@ cat ~/Library/Logs/swap-ssd-health.log
 
 # Set up automated monitoring
 crontab -e
-# Add: 0 9 * * 1 /path/to/DgtlEnv/ops/monitoring/swap-ssd-health.sh
+# Add: 0 9 * * 1 /path/to/CtxRtr/ops/monitoring/swap-ssd-health.sh
 ```
 
 ---

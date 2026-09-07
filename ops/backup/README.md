@@ -1,6 +1,6 @@
 # backup/
 
-Scripts for creating backups of the DgtlEnv project and optimization configurations.
+Scripts for creating backups of the CtxRtr project and optimization configurations.
 
 ## PDF Conversion Workflow (Updated)
 
@@ -13,21 +13,21 @@ Scripts for creating backups of the DgtlEnv project and optimization configurati
 See `docs/pdf-incoming-workflow.md` for full details.
 
 ## Scripts
-- `create-digitalenv-backup.sh` — Creates a timestamped zip archive of the entire DgtlEnv project
+- `create-ctxrtr-backup.sh` — Creates a timestamped zip archive of the entire CtxRtr project
 - `pdf-to-markdown-converter.sh` — Converts all PDFs in `docs/incoming/` to markdown in `docs/`
 - `pdf-watcher.sh` — Watches `docs/incoming/` for new PDFs and auto-converts
-- `simple-pdf-converter.sh` — Fallback/manual converter for PDFs
+- `pdf-to-markdown-converter.sh` — Fallback/manual converter for PDFs
 - `move-converted-files.sh` — Moves markdown files from old `docs/converted/` to `docs/`
 
 ## Usage
 - Make scripts executable: `chmod +x scriptname.sh`
-- Run from project root: `./ops/backup/create-digitalenv-backup.sh`
+- Run from project root: `./ops/backup/create-ctxrtr-backup.sh`
 
 ## Backup Features
 
 ### Automatic Timestamping
-- Creates backups with format: `DgtlEnv_Backup_YYYYMMDD_HHMMSS.zip`
-- Example: `DgtlEnv_Backup_20250725_143022.zip`
+- Creates backups with format: `CtxRtr_Backup_YYYYMMDD_HHMMSS.zip`
+- Example: `CtxRtr_Backup_20250725_143022.zip`
 
 ### Smart Exclusions
 The backup script automatically excludes unnecessary files:
@@ -42,7 +42,7 @@ The backup script automatically excludes unnecessary files:
 - `docs/converted/` — (no longer used)
 
 ### Backup Location
-- **Default**: `~/Downloads/DgtlEnv-Backups/`
+- **Default**: `~/Downloads/CtxRtr-Backups/`
 - **Format**: Timestamped zip files
 - **Access**: Script can open backup location in Finder
 
@@ -57,32 +57,32 @@ The backup script automatically excludes unnecessary files:
 ### Backup Schedule
 ```bash
 # Monthly backup (recommended)
-./ops/backup/create-digitalenv-backup.sh
+./ops/backup/create-ctxrtr-backup.sh
 
 # Before optimization changes
-./ops/backup/create-digitalenv-backup.sh
+./ops/backup/create-ctxrtr-backup.sh
 
 # After successful optimizations
-./ops/backup/create-digitalenv-backup.sh
+./ops/backup/create-ctxrtr-backup.sh
 ```
 
 ## Script Output
 
 ### Sample Output
 ```bash
-=== DgtlEnv Backup Script ===
-Project Root: ./DgtlEnv
-Backup Name: DgtlEnv_Backup_20250725_143022.zip
-Backup Path: ~/Downloads/DgtlEnv-Backups/DgtlEnv_Backup_20250725_143022.zip
+=== CtxRtr Backup Script ===
+Project Root: ./CtxRtr
+Backup Name: CtxRtr_Backup_20250725_143022.zip
+Backup Path: ~/Downloads/CtxRtr-Backups/CtxRtr_Backup_20250725_143022.zip
 
 Creating backup...
 ✅ Backup created successfully!
-File: ~/Downloads/DgtlEnv-Backups/DgtlEnv_Backup_20250725_143022.zip
+File: ~/Downloads/CtxRtr-Backups/CtxRtr_Backup_20250725_143022.zip
 Size: 2.1M
 
-Recent backups in ~/Downloads/DgtlEnv-Backups:
--rw-r--r--  1 user  staff   2.1M Jul 25 14:30 DgtlEnv_Backup_20250725_143022.zip
--rw-r--r--  1 user  staff   2.0M Jul 15 10:15 DgtlEnv_Backup_20250725_101500.zip
+Recent backups in ~/Downloads/CtxRtr-Backups:
+-rw-r--r--  1 user  staff   2.1M Jul 25 14:30 CtxRtr_Backup_20250725_143022.zip
+-rw-r--r--  1 user  staff   2.0M Jul 15 10:15 CtxRtr_Backup_20250725_101500.zip
 
 Open backup location in Finder? (y/n): y
 
@@ -161,8 +161,8 @@ Backup completed at Thu Jul 25 14:30:22 PDT 2025
 - `pdf-watcher.sh` - [Description of purpose]
 - `pdf-to-markdown-converter.sh` - [Description of purpose]
 - `move-converted-files.sh` - [Description of purpose]
-- `simple-pdf-converter.sh` - [Description of purpose]
-- `create-dgtlenv-backup.sh` - [Description of purpose]
+- `pdf-to-markdown-converter.sh` - [Description of purpose]
+- `create-ctxrtr-backup.sh` - [Description of purpose]
 
 ### **Subdirectories**
 - No subdirectories found

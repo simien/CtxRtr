@@ -4,7 +4,7 @@ This directory organizes prompts by functional category to ensure easy navigatio
 
 ## Category Organization
 
-Each category contains prompts designed for specific types of tasks and workflows within the DgtlEnv project ecosystem.
+Each category contains prompts designed for specific types of tasks and workflows within the CtxRtr project ecosystem.
 
 ### Available Categories
 

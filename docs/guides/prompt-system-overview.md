@@ -1,10 +1,10 @@
-# DgtlEnv Prompt System Overview
+# CtxRtr Prompt System Overview
 
 ## Introduction
 
 > **Contextual orchestration** - A sophisticated prompt management solution for semantic routing and quality control
 
-The DgtlEnv Prompt System is a sophisticated contextual prompt management solution that provides semantic routing, quality control, and analytics for structured prompts across the project. This system enables efficient contextual workflows with natural language access and comprehensive validation.
+The CtxRtr Prompt System is a sophisticated contextual prompt management solution that provides semantic routing, quality control, and analytics for structured prompts across the project. This system enables efficient contextual workflows with natural language access and comprehensive validation.
 
 ## System Architecture
 
@@ -18,7 +18,7 @@ The DgtlEnv Prompt System is a sophisticated contextual prompt management soluti
    - Context injection with `{{include:path/to/file}}`
    - Clipboard integration for immediate use
 
-2. **Enhanced Router** (`ops/run-prompt-enhanced.sh`)
+2. **Enhanced Router** (`ops/run-prompt.sh`)
    - Configuration-driven architecture
    - Comprehensive logging and analytics
    - Variable substitution (`{{date}}`, `{{project}}`, etc.)
@@ -95,13 +95,13 @@ The DgtlEnv Prompt System is a sophisticated contextual prompt management soluti
 > **Advanced Usage Examples** - Sophisticated router features
 > ```bash
 > # Enhanced router with logging
-> ./ops/run-prompt-enhanced.sh diagnose-ci
+> ./ops/run-prompt.sh diagnose-ci
 >
 > # Prompt chaining
-> ./ops/run-prompt-enhanced.sh --chain diagnose-ci generate-report
+> ./ops/run-prompt.sh --chain diagnose-ci generate-report
 >
 > # Custom configuration
-> ./ops/run-prompt-enhanced.sh --config custom-config.json diagnose-ci
+> ./ops/run-prompt.sh --config custom-config.json diagnose-ci
 > ```
 
 ### Analytics and Validation
@@ -173,7 +173,7 @@ The enhanced router supports dynamic variable substitution:
 - `{{date}}` - Current date (YYYY-MM-DD)
 - `{{time}}` - Current time (HH:MM:SS)
 - `{{timestamp}}` - Full timestamp (YYYYMMDD-HHMMSS)
-- `{{project}}` - Project name (DgtlEnv)
+- `{{project}}` - Project name (CtxRtr)
 - `{{user}}` - Current user
 - `{{pwd}}` - Current working directory
 
@@ -268,7 +268,7 @@ The analytics system provides:
 
 ## Conclusion
 
-The DgtlEnv Prompt System provides a robust, extensible foundation for contextual workflows. With comprehensive validation, analytics, and natural language access, it enables efficient prompt management while maintaining high quality standards.
+The CtxRtr Prompt System provides a robust, extensible foundation for contextual workflows. With comprehensive validation, analytics, and natural language access, it enables efficient prompt management while maintaining high quality standards.
 
 For detailed usage instructions, see [prompts/README.md](../prompts/README.md) and [docs/prompt-router-system-guide.md](prompt-router-system-guide.md).
 

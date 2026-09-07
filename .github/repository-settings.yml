@@ -2,7 +2,7 @@
 # This file documents the recommended repository settings for the DigitalEnv project
 
 repository:
-  name: dgtlenv
+  name: ctxrtr
   description: "Digital Environment Management System for macOS - Optimized for MacBook Pro (Retina, 15-inch, Mid 2015) running macOS 12.7.6 Monterey"
   homepage: "https://example.com/"
   topics:
@@ -116,5 +116,5 @@ automation:
   rebase_merge: false
 
 collaborators:
-  - username: "dgtlenv-maintainer"
+  - username: "simien"
     permission: "admin"

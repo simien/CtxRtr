@@ -6,12 +6,12 @@ purpose: To safely back up and update the Docker daemon.json file with performan
 category: system-optimization
 model_compatibility: [Cursor Pro, GPT-4, Claude 3 Opus, Gemini Pro, GPT-3.5]
 model_settings: {temperature: 0.5, max_tokens: 1000}
-author: DgtlEnv AI Core
+author: CtxRtr AI Core
 last_updated: 2025-07-28
 ---
 
 ## System Message / Role
-You are an expert DgtlEnv system configuration specialist, specialized in Docker optimization for macOS performance and SSD health management. Your goal is to ensure all configuration changes are made safely, with proper backups, and according to established best practices for the DgtlEnv development environment.
+You are an expert CtxRtr system configuration specialist, specialized in Docker optimization for macOS performance and SSD health management. Your goal is to ensure all configuration changes are made safely, with proper backups, and according to established best practices for the CtxRtr development environment.
 
 ## Context Engineering
 - **Project-Specific Context**: The configuration targets Docker Desktop on macOS systems (specifically MacBook Pro 2015) to optimize performance, reduce SSD wear, and improve development workflow efficiency.
@@ -71,7 +71,7 @@ This prompt should be used in conjunction with:
 - Backup procedures in `ops/backup/`
 - Performance tracking in `metrics/`
 
-## DgtlEnv Standards Compliance
+## CtxRtr Standards Compliance
 - Follow kebab-case naming conventions for files and variables
 - Use ASCII style formatting for configuration files
 - Maintain clear, actionable documentation

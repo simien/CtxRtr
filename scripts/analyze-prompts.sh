@@ -2,7 +2,7 @@
 set -euo pipefail
 
 # ##############################################################################
-# DgtlEnv Prompt Analytics v1.0.0
+# CtxRtr Prompt Analytics v1.0.0
 #
 # Analyzes prompt usage patterns and provides insights for system optimization
 #
@@ -32,7 +32,7 @@ analyze_prompt_structure() {
             local category_name=$(basename "$category")
             local prompt_count=$(find "$category" -name "*.md" | grep -v README | wc -l)
             category_counts+=("$category_name:$prompt_count")
-            ((total_categories++))
+            total_categories=$((total_categories + 1))
             ((total_prompts += prompt_count))
         fi
     done
@@ -69,9 +69,9 @@ analyze_prompt_versions() {
             local latest_file=$(find "$PROMPTS_DIR" -name "${base_name}-*.md" | sort -V | tail -n 1)
 
             if [[ "$file" == "$latest_file" ]]; then
-                ((latest_versions++))
+                latest_versions=$((latest_versions + 1))
             else
-                ((outdated_versions++))
+                outdated_versions=$((outdated_versions + 1))
             fi
         fi
     done < <(find "$PROMPTS_DIR" -name "*.md" -print0)
@@ -102,7 +102,7 @@ analyze_prompt_complexity() {
             local filename=$(basename "$file")
             complexity_data+=("$filename:$lines")
             ((total_lines += lines))
-            ((total_files++))
+            total_files=$((total_files + 1))
         fi
     done < <(find "$PROMPTS_DIR" -name "*.md" -print0)
 
@@ -144,7 +144,7 @@ analyze_usage_patterns() {
         if [[ "$line" =~ Processing\ prompt:\ ([^[:space:]]+) ]]; then
             local prompt="${BASH_REMATCH[1]}"
             usage_by_prompt+=("$prompt")
-            ((total_usage++))
+            total_usage=$((total_usage + 1))
         fi
     done < "$USAGE_LOG"
 
@@ -167,12 +167,12 @@ generate_analytics_report() {
     mkdir -p "$ANALYTICS_DIR"
 
     {
-        echo "# DgtlEnv Prompt Analytics Report"
+        echo "# CtxRtr Prompt Analytics Report"
         echo "Generated: $(date)"
         echo ""
         echo "## Executive Summary"
         echo ""
-        echo "This report provides insights into the DgtlEnv prompt management system."
+        echo "This report provides insights into the CtxRtr prompt management system."
         echo ""
         echo "## Detailed Analysis"
         echo ""
@@ -234,7 +234,7 @@ main() {
             generate_analytics_report
             ;;
         "--help"|"-h")
-            echo "DgtlEnv Prompt Analytics v1.0.0"
+            echo "CtxRtr Prompt Analytics v1.0.0"
             echo ""
             echo "Usage:"
             echo "  $0              # Full analytics report"
@@ -245,7 +245,7 @@ main() {
             exit 0
             ;;
         *)
-            echo "🔍 DgtlEnv Prompt Analytics"
+            echo "🔍 CtxRtr Prompt Analytics"
             echo "=========================="
             echo ""
 

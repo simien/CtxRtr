@@ -2,7 +2,7 @@
 set -euo pipefail
 
 # ##############################################################################
-# DgtlEnv Core Prompt Library
+# CtxRtr Core Prompt Library
 #
 # Provides the core prompt processing logic, including discovery, context
 # engineering, and variable substitution.
@@ -151,10 +151,22 @@ inject_context() {
     if [[ -f "$global_context_file" ]]; then
         local global_content
         global_content=$(cat "$global_context_file")
-        prompt_body="${global_content}
+        final_body="${global_content}
 
-${prompt_body}"
+${final_body}"
         log "debug" "Injected global system context"
+    fi
+
+    # Inject Sources of Truth: the project's canonical, iteratively-updated reference
+    # (contact info, config file locations, operational/workflow standards)
+    local sources_of_truth_file="${PROJ_ROOT}/docs/SOURCES_OF_TRUTH.md"
+    if [[ -f "$sources_of_truth_file" ]]; then
+        local sot_content
+        sot_content=$(cat "$sources_of_truth_file")
+        final_body="${sot_content}
+
+${final_body}"
+        log "debug" "Injected sources of truth"
     fi
 
     # Substitute variables
@@ -241,14 +253,14 @@ substitute_variables() {
     echo "$content" | sed "s/{{date}}/$(date +%Y-%m-%d)/g" \
                     | sed "s/{{time}}/$(date +%H:%M:%S)/g" \
                     | sed "s/{{timestamp}}/$(date +%Y%m%d-%H%M%S)/g" \
-                    | sed "s/{{project}}/DgtlEnv/g" \
-                    | sed "s/{{project}}/DgtlEnv/g" \
+                    | sed "s/{{project}}/CtxRtr/g" \
+                    | sed "s/{{project}}/CtxRtr/g" \
                     | sed "s/{{user}}/$(whoami)/g" \
                     | sed "s|{{pwd}}|$(pwd)|g" \
-                    | sed "s/{{contact_name}}/${CONTACT_NAME:-DgtlEnv Maintainer}/g" \
+                    | sed "s/{{contact_name}}/${CONTACT_NAME:-CtxRtr Maintainer}/g" \
                     | sed "s/{{contact_email}}/${CONTACT_EMAIL:-maintainer@example.com}/g" \
                     | sed "s|{{contact_website}}|${CONTACT_WEBSITE:-https://example.com/}|g" \
-                    | sed "s/{{contact_github}}/${CONTACT_GITHUB:-dgtlenv-maintainer}/g"
+                    | sed "s/{{contact_github}}/${CONTACT_GITHUB:-simien}/g"
 }
 
 # --- Analytics Functions ---

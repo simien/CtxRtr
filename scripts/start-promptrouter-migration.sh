@@ -3,7 +3,7 @@
 # ##############################################################################
 # PromptRouter Migration Starter Script
 #
-# Automated script to begin the PromptRouter migration from DgtlEnv
+# Automated script to begin the PromptRouter migration from CtxRtr
 # This script creates the initial project structure and extracts core components.
 #
 # Usage:
@@ -80,7 +80,7 @@ show_help() {
     echo ""
     echo "This script will:"
     echo "  1. Create the new PromptRouter project structure"
-    echo "  2. Extract core components from DgtlEnv"
+    echo "  2. Extract core components from CtxRtr"
     echo "  3. Set up initial configuration"
     echo "  4. Create basic documentation"
 }
@@ -91,7 +91,7 @@ validate_environment() {
 
     # Check if we're in the right directory
     if [[ ! -f "$PROJECT_ROOT/README.md" ]]; then
-        log "error" "Must be run from DgtlEnv project root"
+        log "error" "Must be run from CtxRtr project root"
         exit 1
     fi
 
@@ -295,11 +295,11 @@ All notable changes to PromptRouter will be documented in this file.
 - Comprehensive documentation
 
 ### Changed
-- Extracted from DgtlEnv project
+- Extracted from CtxRtr project
 - Adapted for standalone deployment
 
 ### Removed
-- DgtlEnv-specific dependencies
+- CtxRtr-specific dependencies
 EOF
 
     # Create .gitignore
@@ -497,7 +497,7 @@ initialize_git() {
     git add .
     git commit -m "Initial PromptRouter project structure
 
-- Extracted core router from DgtlEnv
+- Extracted core router from CtxRtr
 - Created modular component architecture
 - Set up configuration system
 - Added comprehensive documentation

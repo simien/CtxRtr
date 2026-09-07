@@ -1,6 +1,6 @@
 ---
 name: Feature request
-about: Suggest an idea for DgtlEnv
+about: Suggest an idea for CtxRtr
 title: '[FEATURE] '
 labels: 'enhancement'
 assignees: ''

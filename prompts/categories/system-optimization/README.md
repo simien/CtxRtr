@@ -1,6 +1,6 @@
 # System Optimization Prompts
 
-This directory contains prompts designed for system performance optimization, resource management, and development environment enhancement within the DgtlEnv project.
+This directory contains prompts designed for system performance optimization, resource management, and development environment enhancement within the CtxRtr project.
 
 ## Overview
 
@@ -39,7 +39,7 @@ System optimization prompts focus on improving performance, managing resources e
 
 ## Standards
 
-- Follows DgtlEnv performance optimization standards
+- Follows CtxRtr performance optimization standards
 - Maintains system stability and security
 - Includes proper backup and rollback procedures
 - Provides comprehensive monitoring and validation

@@ -1,7 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 
-# Quick test script for DgtlEnv Test Suite
+# Quick test script for CtxRtr Test Suite
 # Tests the core functionality we verified manually
 
 # Check for non-interactive mode
@@ -11,7 +11,7 @@ if [[ "$1" == "--non-interactive" ]]; then
 fi
 
 echo "=========================================="
-echo "  DgtlEnv Quick Test Suite"
+echo "  CtxRtr Quick Test Suite"
 echo "=========================================="
 echo
 
@@ -39,21 +39,27 @@ test_function() {
 
     if eval "$command" > /dev/null 2>&1; then
         echo -e "${GREEN}[PASS]${NC} $test_name"
-        ((PASSED_TESTS++))
+        PASSED_TESTS=$((PASSED_TESTS + 1))
     else
         if [[ "$test_type" == "security" ]]; then
             echo -e "${YELLOW}[EXPECTED]${NC} $test_name (expected to find issues)"
-            ((EXPECTED_FAILURES++))
+            EXPECTED_FAILURES=$((EXPECTED_FAILURES + 1))
         else
             echo -e "${RED}[FAIL]${NC} $test_name"
-            ((FAILED_TESTS++))
+            FAILED_TESTS=$((FAILED_TESTS + 1))
         fi
     fi
-    ((TOTAL_TESTS++))
+    TOTAL_TESTS=$((TOTAL_TESTS + 1))
     echo
 }
 
-echo "🖥️ Environment Optimization Tests"
+echo "🧠 Contextual Prompt Router Tests"
+echo "----------------------------------------"
+
+test_function "Prompt Validation" "./scripts/validate-prompts.sh"
+test_function "Prompt Router Functional Suite" "./tests/prompt-router-tests.sh"
+
+echo "🖥️ Environment Optimization Tests (supporting infrastructure)"
 echo "----------------------------------------"
 
 test_function "System Health Check" "./ops/monitoring/swap-ssd-health.sh"
@@ -63,16 +69,16 @@ if command -v docker >/dev/null 2>&1 && docker info >/dev/null 2>&1; then
     test_function "Docker Cleanup" "./ops/cleanup/docker-cleanup.sh"
 else
     echo -e "${YELLOW}[SKIP]${NC} Docker Cleanup (Docker not available or not running)"
-    ((SKIPPED_TESTS++))
-    ((TOTAL_TESTS++))
+    SKIPPED_TESTS=$((SKIPPED_TESTS + 1))
+    TOTAL_TESTS=$((TOTAL_TESTS + 1))
     echo
 fi
 # Interactive IDE test - ask user if they want to sync
 if command -v cursor >/dev/null 2>&1 || [ -d "/Applications/Cursor.app" ] || [ -d "$HOME/Library/Application Support/Code" ]; then
     if [[ "$NON_INTERACTIVE" == "true" ]]; then
         echo -e "${YELLOW}[SKIP]${NC} IDE Optimization (non-interactive mode)"
-        ((SKIPPED_TESTS++))
-        ((TOTAL_TESTS++))
+        SKIPPED_TESTS=$((SKIPPED_TESTS + 1))
+        TOTAL_TESTS=$((TOTAL_TESTS + 1))
         echo
     else
         echo -e "${BLUE}[QUESTION]${NC} Do you want to sync project settings to your IDE? (y/N): "
@@ -81,15 +87,15 @@ if command -v cursor >/dev/null 2>&1 || [ -d "/Applications/Cursor.app" ] || [ -
             test_function "IDE Optimization" "./scripts/sync-ide-settings.sh"
         else
             echo -e "${YELLOW}[SKIP]${NC} IDE Optimization (user declined)"
-            ((SKIPPED_TESTS++))
-            ((TOTAL_TESTS++))
+            SKIPPED_TESTS=$((SKIPPED_TESTS + 1))
+            TOTAL_TESTS=$((TOTAL_TESTS + 1))
             echo
         fi
     fi
 else
     echo -e "${YELLOW}[SKIP]${NC} IDE Optimization (No compatible IDE installed)"
-    ((SKIPPED_TESTS++))
-    ((TOTAL_TESTS++))
+    SKIPPED_TESTS=$((SKIPPED_TESTS + 1))
+    TOTAL_TESTS=$((TOTAL_TESTS + 1))
     echo
 fi
 test_function "Real-time Dashboard" "./metrics/comprehensive-dashboard.sh status"
@@ -113,6 +119,7 @@ echo "----------------------------------------"
 test_function "Main README Exists" "test -f README.md"
 test_function "Environment Optimization Guide" "test -f docs/guides/computer-optimization-quick-reference.md"
 test_function "Environment Terminology" "grep -q 'environment optimization' README.md"
+test_function "Prompt Router Terminology" "grep -q 'Contextual Prompt Router' README.md"
 
 echo "=========================================="
 echo "  Test Results Summary"

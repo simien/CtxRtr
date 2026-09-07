@@ -1,38 +1,37 @@
-# **DgtlEnv** - Digital Environment Optimization
+# **CtxRtr** - Local-First Agentic Tooling
 
-> **Personal Experimental Project** - A personal toolkit for improving my environment to run modern products.
+> **Personal project** - Disciplined prompt engineering and agentic dev tooling, built and run entirely on a decade-old MacBook Pro.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![macOS](https://img.shields.io/badge/macOS-12.7.6%20Monterey-blue.svg)](https://www.apple.com/macos/)
-[![System Status](https://img.shields.io/badge/System%20Status-Optimized-brightgreen.svg)](https://github.com/dgtlenv-maintainer/DgtlEnv)
+[![System Status](https://img.shields.io/badge/System%20Status-Optimized-brightgreen.svg)](https://github.com/simien/CtxRtr)
 
 **Device:** MacBook Pro (Retina, 15-inch, Mid 2015) | **OS:** macOS 12.7.6 Monterey
 
 ---
 
-## 🎯 What is DgtlEnv?
+## 🎯 What is CtxRtr?
 
-**DgtlEnv** is a personal experimental project focused on improving my environment to run modern products. It contains explorations for internal management and personal interests in design, development, context systems, and processes. Built as a shell script toolkit for maximum simplicity and extensibility.
+**CtxRtr** is two things that turned out to depend on each other. The headline is a **Contextual Prompt Router**: a versioned, validated, and audited prompt library, treated with the same discipline you'd expect from a codebase rather than a folder of text files. The reason it exists at all is the second thing: everything here runs on a **2015 MacBook Pro**, with no cloud compute and no assumption of headroom. Most agentic-dev tooling quietly assumes an unlimited-resource machine. This is what it looks like to build that tooling somewhere resource actually matters, and to monitor the machine closely enough to trust the result.
 
 **💡 Leverage what works well, share how you implement it, and please contribute if you would like to.**
 
-### **Primary Focus: Environment Optimization**
-> **Performance refinement** - Tools that directly improve your Mac's performance
+### **Primary Focus: Contextual Prompt Router (PromptOps)**
+> **Prompts as a versioned, governed system**, not just a folder of `.md` files
 
-- **System Health Monitoring** - Prevents slowdowns and data loss
-- **System Cleanup** - Frees up disk space and memory
-- **Docker Optimization** - Prevents resource hogging
-- **IDE Performance** - Optimizes Cursor IDE for faster development
-- **Performance Tracking** - Shows real-time improvements
+- **Natural-Language Routing** - `./ops/run-prompt.sh "diagnose ci"` instead of remembering exact filenames
+- **Version Management** - Semantic versioning with automatic latest-version selection and outdated-version archiving
+- **Validation & Auditing** - `validate-prompts.sh`, `audit-prompts.sh`, `analyze-prompts.sh` check template compliance, metadata, and usage before a prompt ships
+- **Prompt Chaining** - Run multiple prompts in sequence (`--chain`) for multi-step workflows
 
-### **Secondary Focus: Environment Management**
-> **Environment orchestration** - Tools that help manage the development environment
+### **Supporting Infrastructure: Constrained-Hardware Optimization**
+> **Why it matters here**: this tooling has to earn its keep on genuinely limited hardware, so the system has to stay observable
 
-- **PDF Management** - Automated document conversion
-- **Security & Release** - Pre-release sanitization
-- **Todo Management** - Quality control and organization
-- **Contextual Workflows** - Structured prompts for optimization and automation
-- **Comprehensive Testing** - Interactive and automated validation suite
+- **System Health Monitoring** - Catches slowdowns and data loss before they happen on aging storage
+- **System Cleanup** - Frees up disk space and memory that a newer machine could afford to waste
+- **Docker Optimization** - Keeps containerized services from starving everything else running
+- **Performance Tracking** - Before/after metrics for every optimization, not just a claim that it worked
+- **PDF Management, Release Sanitization, Todo Management** - Housekeeping that keeps the above two systems maintainable
 
 ---
 
@@ -40,15 +39,33 @@
 
 ### Installation
 ```bash
-git clone https://github.com/dgtlenv-maintainer/DgtlEnv.git
-cd DgtlEnv
+git clone https://github.com/simien/CtxRtr.git
+cd CtxRtr
 chmod +x ops/monitoring/swap-ssd-health.sh
 ./ops/monitoring/swap-ssd-health.sh
 # Note: You may be prompted for your password to see detailed SSD health stats
 ```
 
+### Prompt Router: Start Here
+> **The main event**: contextual, validated, versioned prompt routing
+
+```bash
+# Natural-language prompt routing
+./ops/run-prompt.sh "diagnose ci"
+./ops/run-prompt.sh "find bugs"
+./ops/run-prompt.sh "create todo"
+
+# Chain multiple prompts in sequence
+./ops/run-prompt.sh --chain diagnose-ci generate-report
+
+# Version management, analytics, and validation
+./scripts/audit-prompts.sh --dry-run
+./scripts/analyze-prompts.sh
+./scripts/validate-prompts.sh
+```
+
 ### Essential Environment Optimization Commands
-> **Performance enhancement** - Start here to improve your Mac's performance
+> **Supporting infrastructure**: keeps the machine trustworthy enough to build on
 
 ```bash
 # System Health Check (Prevents slowdowns & data loss)
@@ -74,11 +91,11 @@ chmod +x ops/monitoring/swap-ssd-health.sh
 ```
 
 ### Environment Management Commands
-> **Environment orchestration** - For managing the development environment
+> **Housekeeping** - For managing the development environment
 
 ```bash
 # PDF Management
-./ops/backup/simple-pdf-converter.sh all
+./ops/backup/pdf-to-markdown-converter.sh all
 ./ops/backup/pdf-watcher.sh watch
 
 # Security & Release Management
@@ -93,6 +110,58 @@ chmod +x ops/monitoring/swap-ssd-health.sh
 ./tests/quick-test.sh
 ./tests/quick-test.sh --non-interactive
 ```
+
+---
+
+## 🧠 Contextual Prompt Router: PromptOps in Detail
+
+> **Prompts treated like code**: versioned, validated, audited, and measured, not just written down
+
+### Prompt Router Features
+- **Natural Language Support** - Type `"diagnose ci"` instead of remembering exact filenames
+- **Fuzzy Matching** - Contextual prompt discovery with semantic suggestions
+- **Context Injection** - Dynamic file inclusion with `{{include:path/to/file}}`
+- **Version Management** - Automatic latest version selection with semantic versioning
+- **Quality Control** - Comprehensive validation and analytics
+- **Automated Version Management** - Outdated version detection and archiving
+
+### Sample Prompt Analytics
+> **Illustrative snapshot**: captured 2025-07-28, kept here to show what `analyze-prompts.sh` reports. Run it yourself for current numbers
+
+```
+📊 Prompt Structure Analysis
+==========================
+Total prompts: 24 (active)
+Archived prompts: 1 (properly managed)
+Total categories: 5
+
+Prompts by category:
+  code-analysis               5 (20%)
+  documentation-generation    5 (20%)
+  meta-prompts                3 (12%)
+  system-optimization         5 (20%)
+  workflow-management         6 (25%)
+
+📈 Quality Metrics
+=================
+Template Compliance: 100% ✅
+Metadata Completeness: 100% ✅
+Version Consistency: 100% ✅
+File Naming Standards: 100% ✅
+Validation Success Rate: 100% ✅
+Outdated Version Management: 100% ✅
+
+📦 Version Management
+====================
+Active prompts: 24 (clean, current versions only)
+Archived prompts: 1 (outdated version)
+Outdated versions: 0 (all handled)
+Archive system: 100% operational
+```
+
+**📖 See [prompts/README.md](prompts/README.md) for detailed prompt system documentation**
+
+**📚 See [docs/guides/prompt-system-overview.md](docs/guides/prompt-system-overview.md) for comprehensive system architecture and advanced features**
 
 ---
 
@@ -130,6 +199,14 @@ Disk Usage: 21% ✅ (Target: < 85%)
 
 > **Comprehensive tooling** - Sophisticated scripts for environment optimization and management
 
+### Contextual Prompt Router (PromptOps)
+> **The main system**: routing, versioning, validation, analytics
+
+- **`./ops/run-prompt.sh`** - Natural-language prompt router with chaining support
+- **`./scripts/validate-prompts.sh`** - Template compliance and metadata validation
+- **`./scripts/analyze-prompts.sh`** - Usage pattern and complexity analytics
+- **`./scripts/audit-prompts.sh`** - Outdated-version detection and archiving
+
 ### Environment Optimization (System Performance)
 > **Performance refinement** - Tools that directly improve your Mac's performance
 
@@ -152,12 +229,12 @@ Disk Usage: 21% ✅ (Target: < 85%)
 - **`./metrics/comprehensive-dashboard.sh`** - Visual dashboards (real-time system status)
 
 ### Environment Management (Project Tools)
-> **Environment orchestration** - Tools that help manage the development environment
+> **Housekeeping** - Tools that help manage the development environment
 
 #### PDF Management
-- **`./ops/backup/simple-pdf-converter.sh`** - PDF to markdown conversion
+- **`./ops/backup/pdf-to-markdown-converter.sh`** - PDF to markdown conversion (extracts real text via poppler)
 - **`./ops/backup/pdf-watcher.sh`** - Automatic file watching
-- **`./ops/backup/create-dgtlenv-backup.sh`** - Project backup
+- **`./ops/backup/create-ctxrtr-backup.sh`** - Project backup
 
 #### Security & Release Management
 - **`./scripts/pre-release-sanitizer.sh`** - Security sanitization
@@ -165,84 +242,10 @@ Disk Usage: 21% ✅ (Target: < 85%)
 - **`./scripts/setup-github.sh`** - GitHub repository setup
 
 #### Todo Management & Quality Control
-- **`./scripts/migrate-todo-items.sh`** - ✅ **FIXED** - Automated todo migration with comprehensive reporting
+- **`./scripts/migrate-todo-items.sh`** - Automated todo migration with comprehensive reporting
 - **`./scripts/enforce-organization-standards.sh`** - Organization standards enforcement
 
 **📖 See [ops/README.md](ops/README.md) for detailed operations documentation**
-
----
-
-## 🧠 Contextual Prompt Management System
-
-> **Sophisticated prompt orchestration** - A refined system for contextual routing and quality control
-
-### Prompt Router Features
-- **Natural Language Support** - Type `"diagnose ci"` instead of remembering exact filenames
-- **Fuzzy Matching** - Contextual prompt discovery with semantic suggestions
-- **Context Injection** - Dynamic file inclusion with `{{include:path/to/file}}`
-- **Version Management** - Automatic latest version selection with semantic versioning
-- **Quality Control** - Comprehensive validation and analytics
-- **Automated Version Management** - Outdated version detection and archiving
-
-### Current Prompt Analytics (July 28, 2025)
-> **Performance insights** - Comprehensive analytics for prompt system optimization
-
-```
-📊 Prompt Structure Analysis
-==========================
-Total prompts: 24 (active)
-Archived prompts: 1 (properly managed)
-Total categories: 5
-
-Prompts by category:
-  code-analysis               5 (20%)
-  documentation-generation    5 (20%)
-  meta-prompts                3 (12%)
-  system-optimization         5 (20%)
-  workflow-management         6 (25%)
-
-📈 Quality Metrics
-=================
-Template Compliance: 100% ✅
-Metadata Completeness: 100% ✅
-Version Consistency: 100% ✅
-File Naming Standards: 100% ✅
-Validation Success Rate: 100% ✅
-Outdated Version Management: 100% ✅
-
-📦 Version Management
-====================
-Active prompts: 24 (clean, current versions only)
-Archived prompts: 1 (outdated version)
-Outdated versions: 0 (all handled)
-Archive system: 100% operational
-```
-
-### Quick Prompt Usage
-> **Contextual routing** - Natural language access to structured prompts
-
-```bash
-# Basic prompt routing
-./ops/run-prompt.sh "diagnose ci"
-./ops/run-prompt.sh "find bugs"
-./ops/run-prompt.sh "create todo"
-
-# Enhanced router with logging
-./ops/run-prompt-enhanced.sh diagnose-ci
-./ops/run-prompt-enhanced.sh --chain diagnose-ci generate-report
-
-# Version management tools
-./scripts/audit-prompts.sh --dry-run
-./scripts/audit-prompts.sh --archive
-
-# Analytics and validation
-./scripts/analyze-prompts.sh
-./scripts/validate-prompts.sh
-```
-
-**📖 See [prompts/README.md](prompts/README.md) for detailed prompt system documentation**
-
-**📚 See [docs/prompt-system-overview.md](docs/prompt-system-overview.md) for comprehensive system architecture and advanced features**
 
 ---
 
@@ -277,17 +280,21 @@ Archive system: 100% operational
 
 ## 📚 Documentation
 
-> **Comprehensive knowledge base** - Documentation for all aspects of environment optimization
+> **Comprehensive knowledge base** - Documentation for all aspects of this project
+
+### Contextual Prompt Router
+> **Start here**: prompt management and workflow automation
+
+- **[Prompts System](prompts/README.md)** - Structured AI prompts for system optimization
+- **[Prompt System Overview](docs/guides/prompt-system-overview.md)** - Full architecture and advanced features
+- **[System Optimization Prompts](prompts/categories/system-optimization/)** - Performance tuning and resource management
+- **[Meta-Prompts](prompts/categories/meta-prompts/)** - Conversation management and utilities
 
 ### Environment Optimization
 > **Performance refinement** - Complete guides for system optimization and performance tuning
 
 - **[Environment Optimization Quick Reference](docs/guides/computer-optimization-quick-reference.md)** - Complete optimization guide with cards and workflows
 - **[Cursor IDE Optimization](ops/README.md#cursor-ide-performance-optimization-macos)** - IDE performance tuning guide
-
-### Environment Management
-> **Environment orchestration** - Tools and workflows for development environment management
-
 
 ### Performance & Metrics
 > **Performance insights** - Monitoring and analytics systems
@@ -296,13 +303,6 @@ Archive system: 100% operational
 - **[Operations Documentation](ops/README.md)** - Environment optimization tools
 - **[Scripts Documentation](scripts/README.md)** - Environment management tools
 - **[Test Suite](tests/README.md)** - Validation and testing with interactive and automated modes
-
-### Contextual Workflows
-> **Advanced orchestration** - Prompt management and workflow automation
-
-- **[Prompts System](prompts/README.md)** - Structured AI prompts for system optimization
-- **[System Optimization Prompts](prompts/categories/system-optimization/)** - Performance tuning and resource management
-- **[Meta-Prompts](prompts/categories/meta-prompts/)** - Conversation management and utilities
 
 ### Setup & Configuration
 > **Configuration management** - Setup guides and development standards
@@ -331,10 +331,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact Information
 
-**Name:** DgtlEnv Maintainer
+**Name:** CtxRtr Maintainer
 **Email:** maintainer@example.com
 **Website:** [example.com](https://example.com/)
-**GitHub:** [dgtlenv-maintainer](https://github.com/dgtlenv-maintainer)
+**GitHub:** [simien](https://github.com/simien)
 
 ## 📁 Project Structure
 
@@ -344,11 +344,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - `SECURITY.md` - Security policies and vulnerability reporting
 
 ### **Key Directories**
-- `ops/` - Environment optimization tools (monitoring, cleanup, Docker)
+- `prompts/` - Versioned, validated, audited prompt library (the Contextual Prompt Router)
+- `ops/` - Environment optimization tools (monitoring, cleanup, Docker) plus `run-prompt.sh`
 - `metrics/` - Performance tracking and analytics dashboards
-- `scripts/` - Environment management and automation tools
+- `scripts/` - Environment management, prompt validation/analytics, and automation tools
 - `docs/` - Comprehensive documentation and guides
-- `prompts/` - Structured AI prompts for system optimization
 - `tests/` - Validation and testing suite
 - `config/` - Project configuration and settings
 - `security/` - Security policies and audit reports

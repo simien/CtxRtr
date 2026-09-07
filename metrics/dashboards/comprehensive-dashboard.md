@@ -1,4 +1,4 @@
-# DgtlEnv Comprehensive Dashboard
+# CtxRtr Comprehensive Dashboard
 
 **Last Updated:** 2025-07-29 13:39:23  
 **Device:** MacBook Pro (Retina, 15-inch, Mid 2015)  
@@ -76,7 +76,7 @@ No converted directory found
 ### PDF Management
 - **pdf-to-markdown-converter.sh**: Convert PDFs to markdown
 - **pdf-watcher.sh**: Automatic PDF conversion on changes
-- **create-digitalenv-backup.sh**: Create project backups
+- **create-ctxrtr-backup.sh**: Create project backups
 
 ### Optimization Scripts
 - **system-metrics-tracker.sh**: Track performance improvements
@@ -135,11 +135,11 @@ No recent activity logged
 
 ## 📁 File Locations
 
-- **Dashboard:** $HOME/Dropbox/Admin/DgtlEnv/metrics/dashboards/
-- **Metrics:** $HOME/Dropbox/Admin/DgtlEnv/metrics/
-- **Converted PDFs:** $HOME/Dropbox/Admin/DgtlEnv/docs/converted/
-- **Logs:** $HOME/Dropbox/Admin/DgtlEnv/logs/
-- **Documentation:** $HOME/Dropbox/Admin/DgtlEnv/docs/
+- **Dashboard:** $HOME/Dropbox/Admin/CtxRtr/metrics/dashboards/
+- **Metrics:** $HOME/Dropbox/Admin/CtxRtr/metrics/
+- **Converted PDFs:** $HOME/Dropbox/Admin/CtxRtr/docs/converted/
+- **Logs:** $HOME/Dropbox/Admin/CtxRtr/logs/
+- **Documentation:** $HOME/Dropbox/Admin/CtxRtr/docs/
 
 ---
 

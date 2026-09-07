@@ -1,6 +1,6 @@
 # Style & Branding
 
-This directory contains style guides, branding documentation, and visual design standards for the DgtlEnv project.
+This directory contains style guides, branding documentation, and visual design standards for the CtxRtr project.
 
 ## 📁 Contents
 
@@ -47,7 +47,7 @@ Reference style guides when creating new content and tools:
 ---
 
 **Last Updated:** 2025-07-27
-**Maintainer:** DgtlEnv Maintainer
+**Maintainer:** CtxRtr Maintainer
 
 ## 🚀 Quick Start
 

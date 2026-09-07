@@ -113,7 +113,7 @@ generate_comprehensive_dashboard() {
     local conversion_bar=$(create_progress_bar $conversion_rate)
     
     cat > "$dashboard_file" << EOF
-# DgtlEnv Comprehensive Dashboard
+# CtxRtr Comprehensive Dashboard
 
 **Last Updated:** ${current_date}  
 **Device:** MacBook Pro (Retina, 15-inch, Mid 2015)  
@@ -198,7 +198,7 @@ fi)
 ### PDF Management
 - **pdf-to-markdown-converter.sh**: Convert PDFs to markdown
 - **pdf-watcher.sh**: Automatic PDF conversion on changes
-- **create-digitalenv-backup.sh**: Create project backups
+- **create-ctxrtr-backup.sh**: Create project backups
 
 ### Optimization Scripts
 - **system-metrics-tracker.sh**: Track performance improvements

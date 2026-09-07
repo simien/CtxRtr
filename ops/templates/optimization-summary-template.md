@@ -261,7 +261,7 @@ Running containers: 2
 ├── docker-optimize.log    # Docker optimization logs
 └── [other system logs]
 
-DgtlEnv/
+CtxRtr/
 ├── docs/
 │   ├── optimization-summary.md     # This comprehensive summary
 │   ├── cursor-ide-disable-extensions.md

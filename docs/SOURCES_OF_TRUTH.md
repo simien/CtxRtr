@@ -1,8 +1,10 @@
 # Sources of Truth
 
-> **Central Reference** - The definitive guide to DgtlEnv's configuration, structure, and standards.
+> **Central Reference** - The definitive guide to CtxRtr's configuration, structure, and standards.
 
 This document serves as the primary index for the project's "Sources of Truth". It consolidates contact information, directory structures, prompt systems, and configuration variables into a single reference point to ensure consistency across the codebase.
+
+**This file is live, not just documentation**: `ops/lib/core.sh`'s `inject_context()` prepends it to every prompt the router runs (alongside `prompts/system/global-context.md`), so edits here reach the router, and any prompt, the next time it runs. Keep it accurate and current; there's no separate "publish" step.
 
 ## 1. Contact Information
 
@@ -10,11 +12,11 @@ The following contact details are the official project standards. They are progr
 
 | Field           | Value                     | Variable (Bash)   | Key (JSON)           |
 | --------------- | ------------------------- | ----------------- | -------------------- |
-| **Name**        | DgtlEnv Maintainer       | `CONTACT_NAME`    | `project.author`     |
+| **Name**        | CtxRtr Maintainer       | `CONTACT_NAME`    | `project.author`     |
 | **Email**       | maintainer@example.com        | `CONTACT_EMAIL`   | `project.email`      |
 | **Website**     | https://example.com/ | `CONTACT_WEBSITE` | `project.website`    |
-| **GitHub User** | dgtlenv-maintainer                    | `CONTACT_GITHUB`  | *N/A*                |
-| **Repository**  | dgtlenv-maintainer/DgtlEnv            | *N/A*             | `project.repository` |
+| **GitHub User** | simien                    | `CONTACT_GITHUB`  | *N/A*                |
+| **Repository**  | simien/CtxRtr            | *N/A*             | `project.repository` |
 
 > **Note**: To update these values, modify `config/project-config.json` and `config/variables.sh`.
 
@@ -24,7 +26,7 @@ The `config/` directory is the single source of truth for all project-wide varia
 
 *   **`config/project-config.json`**: The master configuration file. Contains metadata, system targets, feature flags, and file paths.
 *   **`config/variables.sh`**: Shell environment variables (derived from the JSON config where possible) for use in scripts.
-*   **`config/cursor-settings.json`**: IDE-specific settings for Cursor.
+*   **`config/ide-settings.json`**: IDE-specific settings for Cursor.
 *   **`config/prompt-router-config.json`**: Configuration for the prompt orchestration system.
 
 ## 3. Directory Structure & Prompts

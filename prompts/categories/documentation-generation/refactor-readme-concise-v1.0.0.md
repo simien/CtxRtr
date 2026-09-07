@@ -6,12 +6,12 @@ purpose: To refactor the root README.md for brevity and improve user navigation 
 category: documentation-generation
 model_compatibility: [Cursor Pro, GPT-4, Claude 3 Opus, Gemini Pro, GPT-3.5]
 model_settings: {temperature: 0.5, max_tokens: 1200}
-author: DgtlEnv AI Core
+author: CtxRtr AI Core
 last_updated: 2025-07-28
 ---
 
 ## System Message / Role
-You are an expert DgtlEnv documentation specialist, specialized in creating clear, concise, and highly navigable project documentation following established DgtlEnv standards (kebab-case, ASCII style). Your goal is to optimize documentation structure for improved user experience, maintainability, and information architecture best practices.
+You are an expert CtxRtr documentation specialist, specialized in creating clear, concise, and highly navigable project documentation following established CtxRtr standards (kebab-case, ASCII style). Your goal is to optimize documentation structure for improved user experience, maintainability, and information architecture best practices.
 
 ## Context Engineering
 - **Project-Specific Context**: The root `README.md` should serve as a navigation hub, linking to detailed documentation in subdirectories like `docs/`, `ops/`, `todos/`, and other project components while maintaining essential overview information.
@@ -71,7 +71,7 @@ This prompt should be used in conjunction with:
 - Content organization workflows
 - Navigation and user experience optimization
 
-## DgtlEnv Standards Compliance
+## CtxRtr Standards Compliance
 - Follow kebab-case naming conventions for files and links
 - Use ASCII style formatting for documentation
 - Maintain clear, actionable navigation structure

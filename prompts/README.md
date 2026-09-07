@@ -1,8 +1,8 @@
-# DgtlEnv Prompts
+# CtxRtr Prompts
 
 > **Contextual orchestration** - Structured prompts for sophisticated project workflows
 
-This directory contains structured prompts for the DgtlEnv project, organized by category and following established standards for consistency and maintainability.
+This directory contains structured prompts for the CtxRtr project, organized by category and following established standards for consistency and maintainability.
 
 ## Overview
 
@@ -51,7 +51,7 @@ prompts/
 2. **Version Control**: Use semantic versioning for prompt updates
 3. **Model Compatibility**: Include appropriate model compatibility lists
 4. **Documentation**: Maintain clear instructions and expected outputs
-5. **Standards**: Follow DgtlEnv naming conventions (kebab-case, ASCII style)
+5. **Standards**: Follow CtxRtr naming conventions (kebab-case, ASCII style)
 
 ## 📊 Current System Analytics (July 28, 2025)
 
@@ -109,7 +109,7 @@ prompts/
 
 - **Validation Script**: `./scripts/validate-prompts.sh`
 - **Analytics Script**: `./scripts/analyze-prompts.sh`
-- **Enhanced Router**: `./ops/run-prompt-enhanced.sh`
+- **Enhanced Router**: `./ops/run-prompt.sh`
 - **Configuration**: `config/prompt-router-config.json`
 - **Version Management**: `./scripts/audit-prompts.sh`
 - **Archive System**: `prompts/archived/`

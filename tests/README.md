@@ -1,6 +1,6 @@
 # Tests and Validation
 
-This directory contains a streamlined test suite for the DgtlEnv environment optimization system. The test suite provides comprehensive validation of environment optimization and management tools with interactive and non-interactive modes.
+This directory contains a streamlined test suite for the CtxRtr environment optimization system. The test suite provides comprehensive validation of environment optimization and management tools with interactive and non-interactive modes.
 
 ## Contents
 

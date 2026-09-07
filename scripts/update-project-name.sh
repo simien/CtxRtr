@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Update Project Name Script for DgtlEnv
-# Updates all references from "DgtlEnv" to "DgtlEnv" and establishes README as source of truth
+# Update Project Name Script for CtxRtr
+# Updates all references from "CtxRtr" to "CtxRtr" and establishes README as source of truth
 
 set -e
 
@@ -19,18 +19,18 @@ README_FILE="$PROJECT_ROOT/README.md"
 # Function to get project name from config
 get_project_name() {
     if [ -f "$CONFIG_FILE" ]; then
-        jq -r '.project.name' "$CONFIG_FILE" 2>/dev/null || echo "DgtlEnv"
+        jq -r '.project.name' "$CONFIG_FILE" 2>/dev/null || echo "CtxRtr"
     else
-        echo "DgtlEnv"
+        echo "CtxRtr"
     fi
 }
 
 # Function to get project full name from config
 get_project_full_name() {
     if [ -f "$CONFIG_FILE" ]; then
-        jq -r '.project.fullName' "$CONFIG_FILE" 2>/dev/null || echo "DgtlEnv - Digital Environment Management"
+        jq -r '.project.fullName' "$CONFIG_FILE" 2>/dev/null || echo "CtxRtr - Digital Environment Management"
     else
-        echo "DgtlEnv - Digital Environment Management"
+        echo "CtxRtr - Digital Environment Management"
     fi
 }
 
@@ -49,10 +49,10 @@ update_readme_header() {
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![macOS](https://img.shields.io/badge/macOS-12.7.6%20Monterey-blue.svg)](https://www.apple.com/macos/)
-[![System Status](https://img.shields.io/badge/System%20Status-Optimized-brightgreen.svg)](https://github.com/dgtlenv-maintainer/$project_name)
-[![PDF Conversion](https://img.shields.io/badge/PDF%20Conversion-100%25-success.svg)](https://github.com/dgtlenv-maintainer/$project_name)
-[![Memory Usage](https://img.shields.io/badge/Memory%20Usage-34%25-green.svg)](https://github.com/dgtlenv-maintainer/$project_name)
-[![CPU Usage](https://img.shields.io/badge/CPU%20Usage-14%25-green.svg)](https://github.com/dgtlenv-maintainer/$project_name)
+[![System Status](https://img.shields.io/badge/System%20Status-Optimized-brightgreen.svg)](https://github.com/simien/$project_name)
+[![PDF Conversion](https://img.shields.io/badge/PDF%20Conversion-100%25-success.svg)](https://github.com/simien/$project_name)
+[![Memory Usage](https://img.shields.io/badge/Memory%20Usage-34%25-green.svg)](https://github.com/simien/$project_name)
+[![CPU Usage](https://img.shields.io/badge/CPU%20Usage-14%25-green.svg)](https://github.com/simien/$project_name)
 
 **Device:** MacBook Pro (Retina, 15-inch, Mid 2015)
 **OS:** macOS 12.7.6 Monterey
@@ -79,7 +79,7 @@ EOF
     echo -e "${GREEN}✅ README updated with source of truth information${NC}"
 }
 
-# Function to replace DgtlEnv with DgtlEnv in files
+# Function to replace CtxRtr with CtxRtr in files
 replace_project_name() {
     local file="$1"
     local backup_suffix=".bak"
@@ -88,8 +88,8 @@ replace_project_name() {
         # Create backup
         cp "$file" "${file}${backup_suffix}"
 
-        # Replace DgtlEnv with DgtlEnv
-        sed -i '' 's/DgtlEnv/DgtlEnv/g' "$file"
+        # Replace CtxRtr with CtxRtr
+        sed -i '' 's/CtxRtr/CtxRtr/g' "$file"
 
         echo -e "${GREEN}✅ Updated: $(basename "$file")${NC}"
     fi
@@ -179,20 +179,20 @@ validate_naming() {
     local project_name=$(get_project_name)
     local inconsistencies=0
 
-    # Check for remaining "DgtlEnv" references
-    local digitalenv_count=$(grep -r "DgtlEnv" "$PROJECT_ROOT" --exclude-dir=.git --exclude="*.bak" --exclude="*.backup" | wc -l)
+    # Check for remaining "CtxRtr" references
+    local digitalenv_count=$(grep -r "CtxRtr" "$PROJECT_ROOT" --exclude-dir=.git --exclude="*.bak" --exclude="*.backup" | wc -l)
 
     if [ "$digitalenv_count" -gt 0 ]; then
-        echo -e "${YELLOW}⚠️  Found $digitalenv_count remaining 'DgtlEnv' references:${NC}"
-        grep -r "DgtlEnv" "$PROJECT_ROOT" --exclude-dir=.git --exclude="*.bak" --exclude="*.backup" | head -10
+        echo -e "${YELLOW}⚠️  Found $digitalenv_count remaining 'CtxRtr' references:${NC}"
+        grep -r "CtxRtr" "$PROJECT_ROOT" --exclude-dir=.git --exclude="*.bak" --exclude="*.backup" | head -10
         inconsistencies=$((inconsistencies + 1))
     else
-        echo -e "${GREEN}✅ No remaining 'DgtlEnv' references found${NC}"
+        echo -e "${GREEN}✅ No remaining 'CtxRtr' references found${NC}"
     fi
 
-    # Check for correct "DgtlEnv" usage
-    local dgtlenv_count=$(grep -r "DgtlEnv" "$PROJECT_ROOT" --exclude-dir=.git --exclude="*.bak" --exclude="*.backup" | wc -l)
-    echo -e "${GREEN}✅ Found $dgtlenv_count 'DgtlEnv' references${NC}"
+    # Check for correct "CtxRtr" usage
+    local ctxrtr_count=$(grep -r "CtxRtr" "$PROJECT_ROOT" --exclude-dir=.git --exclude="*.bak" --exclude="*.backup" | wc -l)
+    echo -e "${GREEN}✅ Found $ctxrtr_count 'CtxRtr' references${NC}"
 
     if [ "$inconsistencies" -eq 0 ]; then
         echo -e "${GREEN}✅ Naming validation passed${NC}"
@@ -206,41 +206,41 @@ create_naming_guidelines() {
     local guidelines_file="$PROJECT_ROOT/docs/naming-guidelines.md"
 
     cat > "$guidelines_file" << EOF
-# DgtlEnv Naming Guidelines
+# CtxRtr Naming Guidelines
 
 ## 📋 Project Name Standards
 
-### Primary Name: DgtlEnv
-- **Official Name:** DgtlEnv
-- **Full Name:** DgtlEnv - Digital Environment Management
+### Primary Name: CtxRtr
+- **Official Name:** CtxRtr
+- **Full Name:** CtxRtr - Digital Environment Management
 - **Source of Truth:** \`README.md\` (line 1)
 - **Configuration:** \`config/project-config.json\`
 
 ### Usage Guidelines
 
 #### ✅ Correct Usage
-- "DgtlEnv" (primary name)
-- "DgtlEnv - Digital Environment Management" (full name)
-- "DgtlEnv project"
-- "DgtlEnv system"
+- "CtxRtr" (primary name)
+- "CtxRtr - Digital Environment Management" (full name)
+- "CtxRtr project"
+- "CtxRtr system"
 
 #### ❌ Incorrect Usage
-- "DgtlEnv" (old name)
-- "Digital Environment" (without DgtlEnv)
-- "DgtlEnv" (inconsistent casing)
+- "CtxRtr" (old name)
+- "Digital Environment" (without CtxRtr)
+- "CtxRtr" (inconsistent casing)
 
 ### File Naming Conventions
 
 #### Scripts
-- Use lowercase with hyphens: \`create-dgtlenv-backup.sh\`
+- Use lowercase with hyphens: \`create-ctxrtr-backup.sh\`
 - Avoid camelCase or snake_case for script names
 
 #### Directories
-- Use lowercase with hyphens: \`dgtlenv-config\`
+- Use lowercase with hyphens: \`ctxrtr-config\`
 - Keep existing directory structure
 
 #### Configuration
-- Use kebab-case: \`dgtlenv-settings.json\`
+- Use kebab-case: \`ctxrtr-settings.json\`
 - Maintain consistency with existing patterns
 
 ### Implementation
@@ -253,7 +253,7 @@ PROJECT_NAME=\$(jq -r '.project.name' config/project-config.json)
 
 #### Documentation
 \`\`\`markdown
-# **DgtlEnv** - Digital Environment Management
+# **CtxRtr** - Digital Environment Management
 \`\`\`
 
 ### Validation
@@ -264,13 +264,13 @@ Run the naming validation script:
 \`\`\`
 
 This will check for:
-- Remaining "DgtlEnv" references
-- Consistent "DgtlEnv" usage
+- Remaining "CtxRtr" references
+- Consistent "CtxRtr" usage
 - Proper casing and formatting
 
 ### Migration Notes
 
-- All "DgtlEnv" references should be updated to "DgtlEnv"
+- All "CtxRtr" references should be updated to "CtxRtr"
 - Script names should use lowercase with hyphens
 - Configuration files should reference the centralized config
 - README.md serves as the authoritative source of truth
@@ -304,12 +304,12 @@ case "${1:-help}" in
         validate_naming
         ;;
     "help"|*)
-        echo "DgtlEnv Project Name Update Script"
+        echo "CtxRtr Project Name Update Script"
         echo ""
         echo "Usage: $0 [command]"
         echo ""
         echo "Commands:"
-        echo "  update     - Update all files to use DgtlEnv"
+        echo "  update     - Update all files to use CtxRtr"
         echo "  header     - Update README header with source of truth"
         echo "  config     - Show current project configuration"
         echo "  validate   - Validate naming consistency"

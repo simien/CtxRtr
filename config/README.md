@@ -1,6 +1,6 @@
 # Configuration Files
 
-This directory contains configuration files and templates for the DgtlEnv environment optimization system.
+This directory contains configuration files and templates for the CtxRtr environment optimization system.
 For a comprehensive overview of how these configurations fit into the wider project, see the **[Sources of Truth](../docs/SOURCES_OF_TRUTH.md)**.
 
 ## Contents

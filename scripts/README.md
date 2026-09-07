@@ -226,7 +226,7 @@ Regular maintenance to ensure clean organization:
 ---
 
 **Last Updated:** 2025-07-27 (Migration Script Fixed)
-**Maintainer:** DgtlEnv Maintainer
+**Maintainer:** CtxRtr Maintainer
 
 ## 📁 Contents
 

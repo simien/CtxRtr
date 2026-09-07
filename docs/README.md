@@ -1,6 +1,6 @@
 # docs/
 
-This directory contains comprehensive documentation for the DgtlEnv project, organized by category for easy navigation and maintenance. Documentation focuses on **environment optimization** and **environment management** tools.
+This directory contains comprehensive documentation for the CtxRtr project, organized by category for easy navigation and maintenance. Documentation focuses on **environment optimization** and **environment management** tools.
 
 ## 📁 Directory Structure
 
@@ -85,10 +85,10 @@ docs/
 cp document.pdf docs/incoming/
 
 # Convert to markdown
-./ops/backup/simple-pdf-converter.sh convert docs/incoming/document.pdf
+./ops/backup/pdf-to-markdown-converter.sh convert docs/incoming/document.pdf
 
 # Check conversion status
-./ops/backup/simple-pdf-converter.sh dashboard
+./ops/backup/pdf-to-markdown-converter.sh dashboard
 ```
 
 ### System Optimization
@@ -133,7 +133,7 @@ find docs/ -name "*.md" -type f
 ./ops/run-prompt.sh "diagnose ci"
 
 # Enhanced router with logging
-./ops/run-prompt-enhanced.sh diagnose-ci
+./ops/run-prompt.sh diagnose-ci
 
 # Version management tools
 ./scripts/audit-prompts.sh --dry-run
@@ -184,7 +184,7 @@ git diff docs/
 - `ops/templates/` — Configuration templates
 
 ### Scripts
-- `ops/backup/simple-pdf-converter.sh` — PDF conversion
+- `ops/backup/pdf-to-markdown-converter.sh` — PDF conversion
 - `scripts/pre-release-sanitizer.sh` — Documentation sanitization
 - `scripts/sync-cursor-settings.sh` — Settings synchronization
 
@@ -195,7 +195,7 @@ git diff docs/
 ---
 
 **Last Updated:** 2025-07-27
-**Maintainer:** DgtlEnv Maintainer
+**Maintainer:** CtxRtr Maintainer
 **Status:** ✅ Reorganized and optimized
 
 ## 📁 Contents

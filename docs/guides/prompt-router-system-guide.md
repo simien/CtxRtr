@@ -1,10 +1,10 @@
-# DgtlEnv Prompt Router System Guide
+# CtxRtr Prompt Router System Guide
 
 ## Overview
 
 > **Contextual orchestration** - A comprehensive prompt management system for semantic routing and context injection
 
-The DgtlEnv Prompt Router is a comprehensive prompt management system that provides semantic routing, context injection, and extensible features for managing structured prompts across the project.
+The CtxRtr Prompt Router is a comprehensive prompt management system that provides semantic routing, context injection, and extensible features for managing structured prompts across the project.
 
 ## System Architecture
 
@@ -17,7 +17,7 @@ The DgtlEnv Prompt Router is a comprehensive prompt management system that provi
    - Fuzzy matching with semantic language support
    - Clipboard integration
 
-2. **Enhanced Router** (`ops/run-prompt-enhanced.sh`)
+2. **Enhanced Router** (`ops/run-prompt.sh`)
    - Configuration-driven architecture
    - Comprehensive logging
    - Variable substitution
@@ -56,8 +56,8 @@ The DgtlEnv Prompt Router is a comprehensive prompt management system that provi
 ./ops/run-prompt.sh "DIAGNOSE CI"
 
 # Enhanced router with logging
-./ops/run-prompt-enhanced.sh diagnose-ci
-./ops/run-prompt-enhanced.sh --chain diagnose-ci generate-report
+./ops/run-prompt.sh diagnose-ci
+./ops/run-prompt.sh --chain diagnose-ci generate-report
 ```
 
 ### Advanced Features
@@ -65,10 +65,10 @@ The DgtlEnv Prompt Router is a comprehensive prompt management system that provi
 
 ```bash
 # Configuration management
-./ops/run-prompt-enhanced.sh --config custom-config.json
+./ops/run-prompt.sh --config custom-config.json
 
 # Prompt chaining
-./ops/run-prompt-enhanced.sh --chain diagnose-ci generate-report create-todo
+./ops/run-prompt.sh --chain diagnose-ci generate-report create-todo
 
 # Analytics and insights
 ./scripts/analyze-prompts.sh
@@ -134,7 +134,7 @@ Prompts support dynamic variable substitution:
 - `{{date}}` - Current date (YYYY-MM-DD)
 - `{{time}}` - Current time (HH:MM:SS)
 - `{{timestamp}}` - Full timestamp (YYYYMMDD-HHMMSS)
-- `{{project}}` - Project name (DgtlEnv)
+- `{{project}}` - Project name (CtxRtr)
 - `{{user}}` - Current user
 - `{{pwd}}` - Current working directory
 
@@ -241,7 +241,7 @@ Enable detailed logging:
 ```bash
 # Set log level to debug
 jq '.logging.level = "debug"' config/prompt-router-config.json > config/debug-config.json
-./ops/run-prompt-enhanced.sh --config config/debug-config.json diagnose-ci
+./ops/run-prompt.sh --config config/debug-config.json diagnose-ci
 ```
 
 ## Performance Optimization
@@ -286,6 +286,6 @@ For large prompt collections:
 
 ## Conclusion
 
-The DgtlEnv Prompt Router System provides a robust, extensible foundation for prompt management. By following the established patterns and best practices, you can create a highly efficient and maintainable prompt ecosystem that scales with your project needs.
+The CtxRtr Prompt Router System provides a robust, extensible foundation for prompt management. By following the established patterns and best practices, you can create a highly efficient and maintainable prompt ecosystem that scales with your project needs.
 
 For additional support or feature requests, refer to the project documentation or create an issue in the repository.

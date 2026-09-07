@@ -112,7 +112,7 @@ The metrics system integrates with the pre-release sanitizer:
 sudo ./metrics/system-metrics-tracker.sh current
 
 # PDF conversion tracking issues
-./ops/backup/simple-pdf-converter.sh dashboard
+./ops/backup/pdf-to-markdown-converter.sh dashboard
 ```
 
 ### Data Validation
@@ -138,7 +138,7 @@ The metrics system works with the pre-release sanitizer to ensure:
 ---
 
 **Last Updated:** 2025-07-25
-**Maintainer:** DgtlEnv Maintainer
+**Maintainer:** CtxRtr Maintainer
 
 ## 📁 Contents
 

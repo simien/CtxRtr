@@ -1,8 +1,8 @@
 #!/bin/bash
 #
 # Script Name: setup-github.sh
-# Description: Initialize DgtlEnv GitHub repository with best practices
-# Author: DgtlEnv Maintainer
+# Description: Initialize CtxRtr GitHub repository with best practices
+# Author: CtxRtr Maintainer
 # Date: 2025-07-28
 # Version: 1.0.0
 #
@@ -16,8 +16,8 @@
 #   -h, --help      Show this help message
 #
 # Examples:
-#   ./scripts/setup-github.sh -r https://github.com/dgtlenv-maintainer/DgtlEnv.git
-#   ./scripts/setup-github.sh -r https://github.com/dgtlenv-maintainer/DgtlEnv.git -b develop
+#   ./scripts/setup-github.sh -r https://github.com/simien/CtxRtr.git
+#   ./scripts/setup-github.sh -r https://github.com/simien/CtxRtr.git -b develop
 #
 # Dependencies:
 #   - git
@@ -53,7 +53,7 @@ if [[ -f "${PROJECT_ROOT}/config/variables.sh" ]]; then
     source "${PROJECT_ROOT}/config/variables.sh"
 else
     # Fallback default values
-    CONTACT_NAME="DgtlEnv Maintainer"
+    CONTACT_NAME="CtxRtr Maintainer"
     CONTACT_EMAIL="maintainer@example.com"
 fi
 
@@ -67,9 +67,9 @@ print_status() {
 # Function to show help
 show_help() {
     cat << EOF
-DgtlEnv GitHub Setup Script
+CtxRtr GitHub Setup Script
 
-This script initializes the DgtlEnv project for GitHub with best practices including:
+This script initializes the CtxRtr project for GitHub with best practices including:
 - Git repository initialization
 - Remote repository setup
 - Branch protection configuration
@@ -86,8 +86,8 @@ Options:
     -h, --help          Show this help message
 
 Examples:
-    $0 -r https://github.com/dgtlenv-maintainer/DgtlEnv.git
-$0 -r https://github.com/dgtlenv-maintainer/DgtlEnv.git -b develop
+    $0 -r https://github.com/simien/CtxRtr.git
+$0 -r https://github.com/simien/CtxRtr.git -b develop
 
 Requirements:
     - Git must be installed
@@ -185,7 +185,7 @@ create_initial_commit() {
     git add .
 
     # Create initial commit
-    git commit -m "feat: initial DgtlEnv project setup
+    git commit -m "feat: initial CtxRtr project setup
 
 - Add comprehensive project structure
 - Include system optimization scripts
@@ -194,7 +194,7 @@ create_initial_commit() {
 - Add GitHub best practices setup
 - Include documentation and templates
 
-This is the initial commit for the DgtlEnv project, providing
+This is the initial commit for the CtxRtr project, providing
 a comprehensive digital environment management system for macOS
 development environments."
 
@@ -297,7 +297,7 @@ handle_error() {
 
 # Main function
 main() {
-    print_status "$BLUE" "🚀 Starting DgtlEnv GitHub Setup"
+    print_status "$BLUE" "🚀 Starting CtxRtr GitHub Setup"
 
     # Parse command line arguments
     while [[ $# -gt 0 ]]; do

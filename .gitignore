@@ -31,7 +31,7 @@ dist/
 
 # Backup and temporary files
 # --------------------------
-DgtlEnv_Backup_*.zip
+CtxRtr_Backup_*.zip
 *.zip
 *.tar.gz
 *.backup

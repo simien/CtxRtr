@@ -11,7 +11,7 @@ BLUE='\033[0;34m'
 NC='\033[0m'
 
 echo "=========================================="
-echo "  DgtlEnv Directory Tree Generator"
+echo "  CtxRtr Directory Tree Generator"
 echo "=========================================="
 echo
 

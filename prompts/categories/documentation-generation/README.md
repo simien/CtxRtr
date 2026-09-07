@@ -1,6 +1,6 @@
 # Documentation Generation Prompts
 
-This directory contains prompts designed for creating, updating, and maintaining comprehensive project documentation within the DgtlEnv project.
+This directory contains prompts designed for creating, updating, and maintaining comprehensive project documentation within the CtxRtr project.
 
 ## Overview
 
@@ -39,7 +39,7 @@ Documentation generation prompts focus on producing clear, consistent, and well-
 
 ## Standards
 
-- Follows DgtlEnv documentation standards (kebab-case, ASCII style)
+- Follows CtxRtr documentation standards (kebab-case, ASCII style)
 - Maintains clear, actionable content structure
 - Ensures proper internal linking and navigation
 - Creates consistent visual language and formatting

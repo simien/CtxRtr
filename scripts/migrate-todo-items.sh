@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# DgtlEnv Todo Migration Script
+# CtxRtr Todo Migration Script
 # Migrates non-completed todo items from completed files to appropriate active/planning todo files
 
 set -euo pipefail
@@ -14,10 +14,10 @@ NC='\033[0m' # No Color
 
 # Configuration
 PROJECT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-COMPLETED_DIR="$PROJECT_ROOT/todos/completed"
-ACTIVE_DIR="$PROJECT_ROOT/todos/active"
-PLANNING_DIR="$PROJECT_ROOT/todos/planning"
-TEMPLATES_DIR="$PROJECT_ROOT/todos/templates"
+COMPLETED_DIR="$PROJECT_ROOT/.personal/todos/completed"
+ACTIVE_DIR="$PROJECT_ROOT/.personal/todos/active"
+PLANNING_DIR="$PROJECT_ROOT/.personal/todos/planning"
+TEMPLATES_DIR="$PROJECT_ROOT/.personal/todos/templates"
 
 # Logging
 LOG_FILE="$PROJECT_ROOT/logs/migration/todo-migration-$(date +%Y%m%d_%H%M%S).log"
@@ -135,7 +135,7 @@ create_or_update_todo_file() {
         debug "Target directory: $target_dir"
 
         cat > "$target_file" << EOF
-# $(echo "$category" | sed 's/^./\U&/') Todo - **DgtlEnv**
+# $(echo "$category" | sed 's/^./\U&/') Todo - **CtxRtr**
 
 **Created:** $timestamp
 **Source:** Migrated from $(basename "$source_file")
@@ -254,7 +254,7 @@ process_completed_file() {
 
             local target_file=$(migrate_todo_item "$item" "$file" "$target_dir")
             target_files+=("$target_file")
-            ((migrated_count++))
+            migrated_count=$((migrated_count + 1))
         fi
     done <<< "$items"
 
@@ -272,7 +272,7 @@ process_completed_file() {
                 if echo "$line" | grep -q "\[[-~>!?]\]"; then
                     # Replace dynamic symbol with migration note
                     echo "$line (MIGRATED: $migration_timestamp)" >> "$temp_file"
-                    ((updated_items++))
+                    updated_items=$((updated_items + 1))
                     echo "  Updated item in source: $(echo "$line" | sed 's/^[[:space:]]*//' | cut -d' ' -f2- | cut -d' ' -f1-3)" >&2
                 else
                     echo "$line" >> "$temp_file"
@@ -294,7 +294,7 @@ create_migration_report() {
     local report_file="$PROJECT_ROOT/logs/migration-report-$(date +%Y%m%d_%H%M%S).md"
 
     cat > "$report_file" << EOF
-# Todo Migration Report - **DgtlEnv**
+# Todo Migration Report - **CtxRtr**
 
 **Generated:** $(date +'%Y-%m-%d %H:%M:%S')
 **Migration Log:** $(basename "$LOG_FILE")
@@ -386,15 +386,15 @@ update_readme_files() {
     fi
 
     # Update main todos README
-    if [[ -f "$PROJECT_ROOT/todos/README.md" ]]; then
+    if [[ -f "$PROJECT_ROOT/.personal/todos/README.md" ]]; then
         local total_active=$(find "$ACTIVE_DIR" -name "*-todo.md" -type f | wc -l)
         local total_completed=$(find "$COMPLETED_DIR" -name "*-todo.md" -type f | wc -l)
         local total_planning=$(find "$PLANNING_DIR" -name "*-todo.md" -type f | wc -l)
 
-        sed -i.bak "s/Active Tasks (4)/Active Tasks ($total_active)/" "$PROJECT_ROOT/todos/README.md"
-        sed -i.bak "s/Completed Tasks (7)/Completed Tasks ($total_completed)/" "$PROJECT_ROOT/todos/README.md"
-        sed -i.bak "s/Planning Tasks (2)/Planning Tasks ($total_planning)/" "$PROJECT_ROOT/todos/README.md"
-        rm "$PROJECT_ROOT/todos/README.md.bak" 2>/dev/null || true
+        sed -i.bak "s/Active Tasks (4)/Active Tasks ($total_active)/" "$PROJECT_ROOT/.personal/todos/README.md"
+        sed -i.bak "s/Completed Tasks (7)/Completed Tasks ($total_completed)/" "$PROJECT_ROOT/.personal/todos/README.md"
+        sed -i.bak "s/Planning Tasks (2)/Planning Tasks ($total_planning)/" "$PROJECT_ROOT/.personal/todos/README.md"
+        rm "$PROJECT_ROOT/.personal/todos/README.md.bak" 2>/dev/null || true
     fi
 
     success "Updated README files with new counts"
@@ -438,7 +438,7 @@ main() {
             log "Processing file: $file"
             local file_migrations=$(process_completed_file "$file")
             TOTAL_MIGRATIONS=$((TOTAL_MIGRATIONS + file_migrations))
-            ((PROCESSED_FILES++))
+            PROCESSED_FILES=$((PROCESSED_FILES + 1))
             log "Completed processing file: $file (migrations: $file_migrations)"
             log "Progress: $PROCESSED_FILES/$total_files_to_process files processed"
         fi
@@ -483,7 +483,7 @@ main() {
 # Help function
 show_help() {
     cat << EOF
-DgtlEnv Todo Migration Script
+CtxRtr Todo Migration Script
 
 Usage: $0 [OPTIONS]
 

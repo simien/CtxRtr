@@ -1,37 +1,37 @@
-# DgtlEnv Unified Style System
+# CtxRtr Unified Style System
 
-A comprehensive guide to the unified monochromatic ASCII style system and centralized naming approach for the DgtlEnv project.
+A comprehensive guide to the unified monochromatic ASCII style system and centralized naming approach for the CtxRtr project.
 
 ## 🎨 Overview
 
-DgtlEnv uses a **unified monochromatic ASCII-first** approach that creates a consistent, professional, and universally compatible visual identity across all documentation and outputs.
+CtxRtr uses a **unified monochromatic ASCII-first** approach that creates a consistent, professional, and universally compatible visual identity across all documentation and outputs.
 
 ## 📋 Project Name Standards
 
-### Primary Name: DgtlEnv
-- **Official Name:** DgtlEnv
-- **Full Name:** DgtlEnv - Digital Environment Management
+### Primary Name: CtxRtr
+- **Official Name:** CtxRtr
+- **Full Name:** CtxRtr - Digital Environment Management
 - **Source of Truth:** `README.md` (line 1)
 - **Configuration:** `config/project-config.json`
 
 ### Naming Guidelines
 
 #### ✅ Correct Usage
-- "DgtlEnv" (primary name)
-- "DgtlEnv - Digital Environment Management" (full name)
-- "DgtlEnv project"
-- "DgtlEnv system"
+- "CtxRtr" (primary name)
+- "CtxRtr - Digital Environment Management" (full name)
+- "CtxRtr project"
+- "CtxRtr system"
 
 #### ❌ Incorrect Usage
-- "DgtlEnv" (old name)
-- "Digital Environment" (without DgtlEnv)
-- "DgtlEnv" (inconsistent casing)
+- "CtxRtr" (old name)
+- "Digital Environment" (without CtxRtr)
+- "CtxRtr" (inconsistent casing)
 
 ## 🎯 ASCII Style System
 
 ### Design Philosophy
 
-DgtlEnv uses a **monochromatic ASCII-first** approach that prioritizes:
+CtxRtr uses a **monochromatic ASCII-first** approach that prioritizes:
 - **Consistency** across all documentation and outputs
 - **Readability** in any terminal or text editor
 - **Universality** - works everywhere without special fonts
@@ -56,7 +56,7 @@ DgtlEnv uses a **monochromatic ASCII-first** approach that prioritizes:
 #### System Health Dashboard
 ```
 ┌─────────────────────────────────────┐
-│  DgtlEnv System Health              │
+│  CtxRtr System Health              │
 ├─────────────────────────────────────┤
 │  🖥️  System:    ✅ OPERATIONAL     │
 │  💾 Memory:    ✅ 34% (Target: <80%)│
@@ -95,23 +95,23 @@ DgtlEnv uses a **monochromatic ASCII-first** approach that prioritizes:
 🔧 SCRIPT       ⚙️  CONFIG       📈 METRICS     🛠️  TOOLS
 ```
 
-## 🎨 DgtlEnv Logo Variations
+## 🎨 CtxRtr Logo Variations
 
 ### Simple Logo
 ```
-DgtlEnv
+CtxRtr
 ```
 
 
 
 ### ASCII Art Logo
 ```
-DgtlEnv
+CtxRtr
 ```
 
 ### Minimal Logo
 ```
-DgtlEnv
+CtxRtr
 Digital Environment Management
 ```
 
@@ -160,14 +160,14 @@ The project uses `config/project-config.json` as the centralized configuration:
 ```json
 {
   "project": {
-    "name": "DgtlEnv",
-    "fullName": "DgtlEnv - Digital Environment Management",
+    "name": "CtxRtr",
+    "fullName": "CtxRtr - Digital Environment Management",
     "description": "A personal experimental project focused on improving my environment to run modern products...",
     "version": "1.0.0"
   },
   "ascii": {
     "logo": {
-      "simple": "DgtlEnv",
+      "simple": "CtxRtr",
       "styled": "...",
       "art": "...",
       "minimal": "..."
@@ -287,7 +287,7 @@ Commands:
 ```
 
 Commands:
-- `update` - Update all files to use DgtlEnv
+- `update` - Update all files to use CtxRtr
 - `header` - Update README header with source of truth
 - `config` - Show current project configuration
 - `validate` - Validate naming consistency
@@ -299,7 +299,7 @@ Commands:
 ### System Health Dashboard
 ```
 ┌─────────────────────────────────────┐
-│  DgtlEnv System Health              │
+│  CtxRtr System Health              │
 ├─────────────────────────────────────┤
 │  🖥️  System:    ✅ OPERATIONAL     │
 │  💾 Memory:    🟢 34% (Target: <80%)│
@@ -325,7 +325,7 @@ Before vs After Optimization
 
 ### File Structure
 ```
-DgtlEnv/
+CtxRtr/
 ├── 📁 docs/                    # Documentation
 │   ├── 📄 README.md           # Main documentation
 │   ├── 📊 optimization-summary.md
@@ -350,4 +350,4 @@ DgtlEnv/
 - **Project Configuration:** `config/project-config.json` - Centralized configuration
 - **Source of Truth:** `README.md` - Authoritative project name reference
 
-This unified style system ensures consistent, professional, and universally compatible visual elements throughout the DgtlEnv project while maintaining a single source of truth for the project name.
+This unified style system ensures consistent, professional, and universally compatible visual elements throughout the CtxRtr project while maintaining a single source of truth for the project name.

@@ -1,10 +1,10 @@
 # GitHub Repository Setup Guide
 
-This guide provides step-by-step instructions for setting up the DgtlEnv project on GitHub with all best practices implemented.
+This guide provides step-by-step instructions for setting up the CtxRtr project on GitHub with all best practices implemented.
 
 ## 🎯 Overview
 
-DgtlEnv is now ready for GitHub with comprehensive best practices including:
+CtxRtr is now ready for GitHub with comprehensive best practices including:
 - ✅ Complete project structure with documentation
 - ✅ GitHub Actions CI/CD workflow
 - ✅ Issue and PR templates
@@ -29,7 +29,7 @@ Before setting up the GitHub repository, ensure you have:
 2. Click the "+" icon in the top right corner
 3. Select "New repository"
 4. Configure the repository:
-   - **Repository name:** `DgtlEnv`
+   - **Repository name:** `CtxRtr`
    - **Description:** `Digital Environment Management System for macOS - Optimized for MacBook Pro (Retina, 15-inch, Mid 2015) running macOS 12.7.6 Monterey`
    - **Visibility:** Public (recommended) or Private
    - **Initialize with:** Don't initialize (we'll use our setup script)
@@ -37,11 +37,11 @@ Before setting up the GitHub repository, ensure you have:
 ### Step 2: Run Setup Script
 
 ```bash
-# Navigate to your DgtlEnv project directory
-cd /path/to/DgtlEnv
+# Navigate to your CtxRtr project directory
+cd /path/to/CtxRtr
 
 # Run the GitHub setup script
-./scripts/setup-github.sh -r https://github.com/YOUR_USERNAME/DgtlEnv.git
+./scripts/setup-github.sh -r https://github.com/YOUR_USERNAME/CtxRtr.git
 ```
 
 ### Step 3: Verify Setup
@@ -64,7 +64,7 @@ git push origin main
 The setup creates a comprehensive repository structure:
 
 ```
-DgtlEnv/
+CtxRtr/
 ├── .github/                          # GitHub-specific files
 │   ├── workflows/                    # GitHub Actions
 │   │   └── ci.yml                   # CI/CD workflow
@@ -194,7 +194,7 @@ Create the following labels:
 
 Create project boards:
 
-1. **DgtlEnv Roadmap**
+1. **CtxRtr Roadmap**
    - Track feature development
    - Plan releases
    - Manage milestones
@@ -249,7 +249,7 @@ The GitHub Actions workflow automatically:
 The repository includes a star history chart in the README:
 
 ```markdown
-[![Star History Chart](https://api.star-history.com/svg?repos=dgtlenv-maintainer/DgtlEnv&type=Date)](https://star-history.com/#dgtlenv-maintainer/DgtlEnv&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=simien/CtxRtr&type=Date)](https://star-history.com/#simien/CtxRtr&Date)
 ```
 
 ### Traffic Analytics
@@ -383,7 +383,7 @@ For distributing packages:
 - **GitHub Help:** [help.github.com](https://help.github.com)
 - **GitHub Actions:** [docs.github.com/actions](https://docs.github.com/actions)
 - **GitHub Security:** [docs.github.com/security](https://docs.github.com/security)
-- **DgtlEnv Issues:** Use repository issues for project-specific help
+- **CtxRtr Issues:** Use repository issues for project-specific help
 
 ## 🎉 Success Metrics
 
@@ -406,4 +406,4 @@ Track repository success with:
 
 **Last Updated:** 2025-07-25
 **Version:** 1.0.0
-**Maintainer:** DgtlEnv Maintainer
+**Maintainer:** CtxRtr Maintainer

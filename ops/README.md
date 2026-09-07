@@ -1,11 +1,11 @@
-# DgtlEnv Operations (ops/)
+# CtxRtr Operations (ops/)
 
-This directory contains operational scripts and tools for managing the DgtlEnv environment.
+This directory contains operational scripts and tools for managing the CtxRtr environment.
 
 ## 🤖 Prompt Router System
 
 ### Overview
-The Prompt Router is a sophisticated system for managing and executing AI prompts within the DgtlEnv environment. It provides modular, configurable, and robust prompt routing with advanced features like chaining, context injection, and variable substitution.
+The Prompt Router is a sophisticated system for managing and executing AI prompts within the CtxRtr environment. It provides modular, configurable, and robust prompt routing with advanced features like chaining, context injection, and variable substitution.
 
 ### Available Scripts
 
@@ -163,7 +163,7 @@ Execute multiple prompts in sequence:
 
 ### Standards Compliance
 
-The Prompt Router follows DgtlEnv standards:
+The Prompt Router follows CtxRtr standards:
 - **Naming:** kebab-case for all files and functions
 - **Formatting:** ASCII style for output and logging
 - **Documentation:** Clear, actionable documentation

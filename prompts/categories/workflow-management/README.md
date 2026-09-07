@@ -1,6 +1,6 @@
 # Workflow Management Prompts
 
-This directory contains prompts designed for effective task management, quality control, and workflow operations within the DgtlEnv project.
+This directory contains prompts designed for effective task management, quality control, and workflow operations within the CtxRtr project.
 
 ## Overview
 
@@ -39,7 +39,7 @@ Workflow management prompts focus on organizing tasks, maintaining quality stand
 
 ## Standards
 
-- Follows DgtlEnv workflow management standards
+- Follows CtxRtr workflow management standards
 - Maintains strict quality control and completion standards
 - Ensures proper version control practices
 - Creates trackable and maintainable task structures

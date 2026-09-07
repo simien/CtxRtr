@@ -1,5 +1,5 @@
 #!/bin/bash
-# Chat History Export Script for DgtlEnv
+# Chat History Export Script for CtxRtr
 # Exports development history and chat transcripts for preservation
 
 set -e
@@ -53,11 +53,11 @@ export_chat_transcript() {
     EXPORT_FILE="docs/development-history/chat-transcripts/current-session-${TIMESTAMP}.md"
 
     cat > "$EXPORT_FILE" << EOF
-# Chat Transcript - DgtlEnv Development Session
+# Chat Transcript - CtxRtr Development Session
 
 **Date**: $(date)
 **Session**: Current development session
-**Participants**: DgtlEnv Maintainer & AI Assistant
+**Participants**: CtxRtr Maintainer & AI Assistant
 
 ## 📝 Manual Export Instructions
 
@@ -73,7 +73,7 @@ Since Cursor's chat history is tied to the workspace path, please manually copy 
 
 ### Important Decisions Made:
 - [ ] Keep folder as DigitalEnv (preserves chat history)
-- [ ] Use DgtlEnv for project branding
+- [ ] Use CtxRtr for project branding
 - [ ] Shell script toolkit approach (no traditional packages)
 - [ ] GitHub releases with automated workflow
 
@@ -107,16 +107,16 @@ export_decision_log() {
 
     # Create comprehensive decision log
     cat > "docs/development-history/decision-log/development-decisions-$(date +%Y%m%d).md" << EOF
-# Development Decisions Log - DgtlEnv
+# Development Decisions Log - CtxRtr
 
 **Date**: $(date)
-**Project**: DgtlEnv
+**Project**: CtxRtr
 **Status**: Active development
 
 ## 🎯 Key Decisions Made
 
 ### 1. Folder Naming Strategy
-- **Decision**: Keep folder as DigitalEnv, use DgtlEnv for branding
+- **Decision**: Keep folder as DigitalEnv, use CtxRtr for branding
 - **Reason**: Preserves Cursor chat history
 - **Impact**: Maintains development context
 
@@ -139,7 +139,7 @@ export_decision_log() {
 
 | Decision | Options Considered | Chosen Approach | Rationale |
 |----------|-------------------|-----------------|-----------|
-| Folder Naming | DigitalEnv vs DgtlEnv | DigitalEnv (folder) + DgtlEnv (branding) | Preserves chat history |
+| Folder Naming | DigitalEnv vs CtxRtr | DigitalEnv (folder) + CtxRtr (branding) | Preserves chat history |
 | Package Management | Traditional packages vs Shell scripts | Shell script toolkit | Maximum flexibility |
 | Release Strategy | Manual vs Automated | Automated GitHub releases | Professional distribution |
 | Documentation | Basic vs Comprehensive | Comprehensive with Quick Start focus | User adoption |
@@ -147,7 +147,7 @@ export_decision_log() {
 ## 🔮 Future Considerations
 
 ### Potential Changes
-- [ ] Migrate to DgtlEnv folder name (when chat history can be exported)
+- [ ] Migrate to CtxRtr folder name (when chat history can be exported)
 - [ ] Add Homebrew tap for easier installation
 - [ ] Create NPM package for Node.js integration
 - [ ] Add Docker image for containerized usage
@@ -179,9 +179,9 @@ export_all() {
 
     # Create project evolution timeline
     cat > "docs/development-history/project-evolution/development-timeline-$(date +%Y%m%d).md" << EOF
-# Development Timeline - DgtlEnv
+# Development Timeline - CtxRtr
 
-**Project**: DgtlEnv
+**Project**: CtxRtr
 **Timeline**: $(date)
 
 ## 📅 Development Phases

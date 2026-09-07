@@ -1,7 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 
-# Centralized configuration variables for DgtlEnv
+# Centralized configuration variables for CtxRtr
 
 # Handle zsh/bash source detection
 if [ -n "${BASH_SOURCE[0]:-}" ]; then
@@ -37,10 +37,10 @@ if [[ -f "$CONFIG_FILE" ]] && command -v jq >/dev/null 2>&1; then
     export TARGET_OS=$(jq -r '.system.targetOS' "$CONFIG_FILE")
 else
     # Fallback
-    export CONTACT_NAME="DgtlEnv Maintainer"
+    export CONTACT_NAME="CtxRtr Maintainer"
     export CONTACT_EMAIL="maintainer@example.com"
     export CONTACT_WEBSITE="https://example.com/"
-    export CONTACT_GITHUB="dgtlenv-maintainer"
+    export CONTACT_GITHUB="simien"
 
     export PATH_ROOT="./"
     export PATH_DOCS="./docs/"

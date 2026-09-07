@@ -6,7 +6,7 @@ purpose: To summarize a conversation with a title under 25 characters that captu
 category: meta-prompts
 model_compatibility: [Cursor Pro, GPT-4, Claude 3 Opus, Gemini Pro, GPT-3.5]
 model_settings: {temperature: 0.5, max_tokens: 100}
-author: DgtlEnv AI Core
+author: CtxRtr AI Core
 last_updated: 2025-07-28
 ---
 
@@ -74,7 +74,7 @@ This prompt should be used in conjunction with:
 - Technical discussion documentation
 - Session summary and reference procedures
 
-## DgtlEnv Standards Compliance
+## CtxRtr Standards Compliance
 - Follow established naming conventions and formatting
 - Use clear, technical language appropriate to the project
 - Maintain consistency with project documentation standards

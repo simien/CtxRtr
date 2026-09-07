@@ -1,6 +1,6 @@
-# DgtlEnv Coding Standards
+# CtxRtr Coding Standards
 
-This document defines the mandatory coding standards for the DgtlEnv project. These standards are enforced to ensure maintainability, reliability, and security.
+This document defines the mandatory coding standards for the CtxRtr project. These standards are enforced to ensure maintainability, reliability, and security.
 
 ## 1. Bash Scripting Standards
 

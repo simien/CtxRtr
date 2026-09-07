@@ -1,15 +1,15 @@
 #!/bin/bash
 
-# DgtlEnv Backup Script
-# Creates a timestamped zip archive of the entire DgtlEnv project
+# CtxRtr Backup Script
+# Creates a timestamped zip archive of the entire CtxRtr project
 
 set -e
 
 # Configuration
 PROJECT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
-BACKUP_DIR="$HOME/Downloads/DgtlEnv-Backups"
+BACKUP_DIR="$HOME/Downloads/CtxRtr-Backups"
 TIMESTAMP=$(date '+%Y%m%d_%H%M%S')
-BACKUP_NAME="DgtlEnv_Backup_${TIMESTAMP}.zip"
+BACKUP_NAME="CtxRtr_Backup_${TIMESTAMP}.zip"
 BACKUP_PATH="$BACKUP_DIR/$BACKUP_NAME"
 
 # Colors for output
@@ -19,7 +19,7 @@ YELLOW='\033[1;33m'
 BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
-echo -e "${BLUE}=== DgtlEnv Backup Script ===${NC}"
+echo -e "${BLUE}=== CtxRtr Backup Script ===${NC}"
 echo -e "Project Root: ${GREEN}$PROJECT_ROOT${NC}"
 echo -e "Backup Name: ${GREEN}$BACKUP_NAME${NC}"
 echo -e "Backup Path: ${GREEN}$BACKUP_PATH${NC}"
@@ -33,7 +33,7 @@ fi
 
 # Check if we're in the right directory
 if [ ! -f "$PROJECT_ROOT/README.md" ]; then
-    echo -e "${RED}Error: README.md not found. Are you running this from the DgtlEnv project root?${NC}"
+    echo -e "${RED}Error: README.md not found. Are you running this from the CtxRtr project root?${NC}"
     exit 1
 fi
 

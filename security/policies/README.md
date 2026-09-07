@@ -1,6 +1,6 @@
 # Security Policies
 
-This directory contains security policies, standards, and guidelines for the DgtlEnv project.
+This directory contains security policies, standards, and guidelines for the CtxRtr project.
 
 ## Contents
 

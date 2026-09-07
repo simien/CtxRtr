@@ -1,6 +1,6 @@
 # Meta-Prompts
 
-This directory contains prompts designed for self-referential utilities, conversation management, and development history preservation within the DgtlEnv project.
+This directory contains prompts designed for self-referential utilities, conversation management, and development history preservation within the CtxRtr project.
 
 ## Overview
 

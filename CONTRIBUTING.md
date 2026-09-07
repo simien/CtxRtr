@@ -1,10 +1,10 @@
-# Contributing to **DgtlEnv**
+# Contributing to **CtxRtr**
 
-Thank you for your interest in contributing to DgtlEnv! This document provides guidelines and best practices for contributing to this digital environment management system.
+Thank you for your interest in contributing to CtxRtr! This document provides guidelines and best practices for contributing to this project.
 
 ## 🎯 Project Overview
 
-DgtlEnv is a comprehensive digital environment management system designed for macOS development environments, specifically optimized for MacBook Pro (Retina, 15-inch, Mid 2015) running macOS 12.7.6 Monterey.
+CtxRtr is a versioned, validated, and audited Contextual Prompt Router, along with the supporting environment-optimization tooling that keeps it running well on its target hardware: a MacBook Pro (Retina, 15-inch, Mid 2015) running macOS 12.7.6 Monterey.
 
 ## 📋 Table of Contents
 
@@ -49,12 +49,12 @@ DgtlEnv is a comprehensive digital environment management system designed for ma
 1. Fork the repository on GitHub
 2. Clone your fork locally:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/DgtlEnv.git
-cd DgtlEnv
+   git clone https://github.com/YOUR_USERNAME/CtxRtr.git
+cd CtxRtr
    ```
 3. Add the upstream repository:
    ```bash
-   git remote add upstream https://github.com/dgtlenv-maintainer/DgtlEnv.git
+   git remote add upstream https://github.com/simien/CtxRtr.git
    ```
 
 ## 🛠️ Development Setup
@@ -105,7 +105,7 @@ cd DgtlEnv
 ## 📁 Directory Structure
 
 ```
-DgtlEnv/
+CtxRtr/
 ├── docs/                           # Documentation
 │   ├── converted/                  # Converted PDF files
 │   │   └── README.md              # Conversion status and metadata
@@ -121,10 +121,10 @@ DgtlEnv/
 │   ├── comprehensive-dashboard.sh # Main dashboard
 │   └── README.md                 # Metrics documentation
 ├── ops/                          # Operations scripts
-│   ├── backup/                   # Backup and conversion
-│   │   ├── create-dgtlenv-backup.sh
+│   ├── backup/                   # Backup and PDF conversion
+│   │   ├── create-ctxrtr-backup.sh
 │   │   ├── pdf-watcher.sh
-│   │   ├── simple-pdf-converter.sh
+│   │   ├── pdf-to-markdown-converter.sh
 │   │   └── README.md
 │   ├── cleanup/                  # System cleanup
 │   │   ├── brew-cleanup.sh
@@ -142,10 +142,17 @@ DgtlEnv/
 │   │   ├── docker-compose-resource-limits-example.yml
 │   │   ├── optimization-summary-template.md
 │   │   └── README.md
+│   ├── run-prompt.sh              # Contextual prompt router
 │   └── README.md                 # Operations documentation
-├── todos/                        # Task management
-│   ├── optimization-todo.md
+├── prompts/                      # Prompt library: versioned, validated, audited
+│   ├── categories/                # code-analysis, documentation-generation,
+│   │                               # meta-prompts, system-optimization, workflow-management
 │   └── README.md
+├── config/                       # Centralized project configuration
+│   ├── project-config.json       # Master config (name, targets, feature flags, paths)
+│   ├── variables.sh              # Shell env vars derived from project-config.json
+│   └── prompt-router-config.json # Prompt router configuration
+├── .personal/                    # Gitignored, personal files, never committed
 ├── .gitignore                    # Git ignore rules
 ├── CONTRIBUTING.md               # This file
 ├── LICENSE                       # Project license
@@ -300,7 +307,7 @@ This project maintains a strict separation between public code and personal conf
 
 3. **PDF Conversion Testing:**
    ```bash
-   ./ops/backup/simple-pdf-converter.sh convert docs/test.pdf
+   ./ops/backup/pdf-to-markdown-converter.sh convert docs/test.pdf
    ```
 
 4. **Pre-Release Security Testing:**
@@ -349,7 +356,7 @@ Every directory should have a `README.md` file that includes:
 #
 # Script Name: system-health-check.sh
 # Description: Performs comprehensive system health check including memory, CPU, disk, and swap usage
-# Author: DgtlEnv Maintainer
+# Author: CtxRtr Maintainer
 # Date: 2025-07-28
 # Version: 1.0.0
 #
@@ -438,11 +445,11 @@ Every directory should have a `README.md` file that includes:
 
 ## 📄 License
 
-By contributing to DgtlEnv, you agree that your contributions will be licensed under the same license as the project.
+By contributing to CtxRtr, you agree that your contributions will be licensed under the same license as the project.
 
 ## 🙏 Acknowledgments
 
-Thank you for contributing to DgtlEnv! Your contributions help make digital environment management more efficient and accessible for developers worldwide.
+Thank you for contributing to CtxRtr! Your contributions help make digital environment management more efficient and accessible for developers worldwide.
 
 ## 📞 Contact
 

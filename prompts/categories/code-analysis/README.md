@@ -1,6 +1,6 @@
 # Code Analysis Prompts
 
-This directory contains prompts designed for script execution, code testing, and verification within the DgtlEnv project.
+This directory contains prompts designed for script execution, code testing, and verification within the CtxRtr project.
 
 ## Overview
 

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # ##############################################################################
-# DgtlEnv Outdated Prompt Checker v1.0.0
+# CtxRtr Outdated Prompt Checker v1.0.0
 #
 # Checks for outdated prompt versions and suggests archiving them.
 # This helps maintain a clean prompt directory structure.

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# ASCII Style Converter for DgtlEnv
+# ASCII Style Converter for CtxRtr
 # Converts existing documentation to use unified monochromatic ASCII style
 
 set -e
@@ -109,25 +109,25 @@ generate_ascii_logo() {
 
     case "$style" in
         "simple")
-            echo "DgtlEnv"
+            echo "CtxRtr"
             ;;
         "styled")
-            echo "DgtlEnv"
+            echo "CtxRtr"
             ;;
         "art")
-            echo "DgtlEnv"
+            echo "CtxRtr"
             ;;
         "kebab")
-            echo "DgtlEnv"
+            echo "CtxRtr"
             ;;
         "minimal")
             cat << EOF
-DgtlEnv
+CtxRtr
 Digital Environment Management
 EOF
             ;;
         *)
-            echo "DgtlEnv"
+            echo "CtxRtr"
             ;;
     esac
 }
@@ -152,7 +152,7 @@ create_system_dashboard() {
 
     cat << EOF
 ┌─────────────────────────────────────┐
-│  DgtlEnv System Health             │
+│  CtxRtr System Health             │
 ├─────────────────────────────────────┤
 │  🖥️  System:    ✅ OPERATIONAL     │
 │  💾 Memory:    $memory_status $memory_usage% (Target: <80%)│
@@ -194,7 +194,7 @@ EOF
 # Function to create file structure tree
 create_file_structure() {
     cat << EOF
-DgtlEnv/
+CtxRtr/
 ├── 📁 docs/                    # Documentation
 │   ├── 📄 README.md           # Main documentation
 │   ├── 📊 optimization-summary.md
@@ -219,7 +219,7 @@ update_readme_ascii() {
 
     # Create new README content with ASCII style
     cat > "$temp_file" << EOF
-# **DgtlEnv** - Digital Environment Management
+# **CtxRtr** - Digital Environment Management
 
 $(generate_ascii_logo "styled")
 
@@ -233,7 +233,7 @@ $(generate_ascii_logo "styled")
 
 ## 🎯 Project Overview
 
-🚀 **DgtlEnv** is a personal experimental project focused on improving my environment to run modern products. Contains explorations for internal management and personal interests in design, development, context systems, and processes. Features automated system monitoring, PDF document management, performance metrics tracking, and semantic resource optimization.
+🚀 **CtxRtr** is a personal experimental project focused on improving my environment to run modern products. Contains explorations for internal management and personal interests in design, development, context systems, and processes. Features automated system monitoring, PDF document management, performance metrics tracking, and semantic resource optimization.
 
 ### ✨ Key Features:
 - ✅ **System Optimization:** Cursor IDE, Docker, and system performance tuning
@@ -261,7 +261,7 @@ Available Commands:
 ├── 🏥 System Health
 │   └── ./ops/monitoring/swap-ssd-health.sh
 ├── 📄 PDF Management
-│   ├── ./ops/backup/simple-pdf-converter.sh all
+│   ├── ./ops/backup/pdf-to-markdown-converter.sh all
 │   └── ./ops/backup/pdf-watcher.sh watch
 ├── 📊 Metrics & Monitoring
 │   ├── ./metrics/comprehensive-dashboard.sh dashboard
@@ -293,9 +293,9 @@ Script Categories:
 │   ├── swap-ssd-health.sh (Health check)
 │   └── top-hogs.sh (Resource monitoring)
 ├── 📄 PDF Management
-│   ├── simple-pdf-converter.sh (Conversion)
+│   ├── pdf-to-markdown-converter.sh (Conversion)
 │   ├── pdf-watcher.sh (File watching)
-│   └── create-digitalenv-backup.sh (Backup)
+│   └── create-ctxrtr-backup.sh (Backup)
 ├── 📊 Metrics Tracking
 │   ├── system-metrics-tracker.sh (Performance)
 │   └── comprehensive-dashboard.sh (Dashboards)
@@ -398,7 +398,7 @@ EOF
 
 # Function to show ASCII style examples
 show_ascii_examples() {
-    echo -e "${BLUE}=== DgtlEnv ASCII Style Examples ===${NC}"
+    echo -e "${BLUE}=== CtxRtr ASCII Style Examples ===${NC}"
     echo ""
 
     echo -e "${YELLOW}Logo Variations:${NC}"
@@ -480,7 +480,7 @@ case "${1:-help}" in
         create_file_structure
         ;;
     "help"|*)
-        echo "DgtlEnv ASCII Style Converter"
+        echo "CtxRtr ASCII Style Converter"
         echo ""
         echo "Usage: $0 [command] [options]"
         echo ""

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# DgtlEnv Quality Control Validator
+# CtxRtr Quality Control Validator
 # usage: ./scripts/validate-quality.sh
 
 set -euo pipefail
@@ -15,7 +15,7 @@ RED='\033[0;31m'
 NC='\033[0m'
 
 log() { echo -e "${GREEN}[INFO]${NC} $1"; }
-error() { echo -e "${RED}[FAIL]${NC} $1"; ((FAILURES++)); }
+error() { echo -e "${RED}[FAIL]${NC} $1"; FAILURES=$((FAILURES + 1)); }
 
 check_bash_standards() {
     local file="$1"
